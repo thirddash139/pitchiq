@@ -118,27 +118,14 @@ export default function Index() {
       </View>
 
       {/* Bottom nav */}
-      <View style={styles.nav}>
-        <TouchableOpacity style={styles.navItem}>
-          <Text style={styles.navIconActive}>⊞</Text>
-          <Text style={styles.navLabelActive}>Games</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
-          <Text style={styles.navIcon}>🏆</Text>
-          <Text style={styles.navLabel}>Stats</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
-          <Text style={styles.navIcon}>👤</Text>
-          <Text style={styles.navLabel}>Profile</Text>
-        </TouchableOpacity>
-      </View>
+      
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   shell: { flex: 1, height: "100%", backgroundColor: "#F2EBD9" },
-  scroll: { flex: 1, marginBottom: 68, justifyContent: "flex-start" },
+  scroll: { flex: 1, justifyContent: "flex-start" },
   headerImg: { width: "100%", height: 232, justifyContent: "flex-start" },
   headerOverlay: { ...StyleSheet.absoluteFillObject, backgroundColor: "rgba(242,235,217,0.45)" },
   statusBar: { flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 24, paddingTop: 16 },
