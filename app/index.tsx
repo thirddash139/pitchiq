@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { Dimensions, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Dimensions, ImageBackground, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Circle, Path, Rect, Svg, Text as SvgText } from "react-native-svg";
 
 const { width } = Dimensions.get("window");
@@ -8,7 +8,7 @@ export default function Index() {
   const router = useRouter();
   return (
     <View style={styles.shell}>
-      <View style={styles.scroll}>
+      <ScrollView style={styles.scroll} showsVerticalScrollIndicator={false} bounces={false}>
         {/* Stadium header image */}
         <ImageBackground
           source={require("../assets/images/stadium-header.png")}
@@ -115,10 +115,7 @@ export default function Index() {
 
           <View style={{ height: 0 }} />
         </View>
-      </View>
-
-      {/* Bottom nav */}
-      
+      </ScrollView>
     </View>
   );
 }
