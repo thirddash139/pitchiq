@@ -109,6 +109,7 @@ export default function LockerRoom() {
 
   const [query, setQuery] = useState("");
   const [wrongGuesses, setWrongGuesses] = useState<string[]>([]);
+  const [totalGuesses, setTotalGuesses] = useState(0);
   const [status, setStatus] = useState<"loading" | "playing" | "won" | "lost">("loading");
   const [history, setHistory] = useState<Record<string, boolean>>({});
   const [copied, setCopied] = useState(false);
@@ -162,6 +163,8 @@ export default function LockerRoom() {
     if (status !== "playing") return;
     const g = norm(name);
     if (!g) return;
+    const newTotal = totalGuesses + 1;
+    setTotalGuesses(newTotal);
     if (g === norm(answer)) {
       setStatus("won");
       recordResult(true);
@@ -268,7 +271,7 @@ export default function LockerRoom() {
             </Text>
             <Text style={styles.endAnswerBig}>{answer}</Text>
             <Text style={styles.endSubLabel}>
-              {status === "won" ? `Solved in ${wrongGuesses.length + 1} ${wrongGuesses.length + 1 === 1 ? "guess" : "guesses"}` : "The mystery player revealed"}
+              {status === "won" ? `Solved in ${totalGuesses} ${totalGuesses === 1 ? "guess" : "guesses"}` : "The mystery player revealed"}
             </Text>
 
             {/* Streak card */}
@@ -361,17 +364,17 @@ const styles = StyleSheet.create({
   promptLabel: { fontSize: 11, color: "#9C8E6E", textTransform: "uppercase", letterSpacing: 1.5, fontWeight: "700", marginBottom: 8 },
   promptText: { fontFamily: "PlayfairDisplay", fontSize: 15, color: "#1A1208", lineHeight: 22, textAlign: "center" },
   tmLabel: { fontSize: 10, color: "#9C8E6E", textTransform: "uppercase", letterSpacing: 1.5, fontWeight: "700", marginTop: 24, marginBottom: 16, paddingHorizontal: 24 },
-  tmCard: { backgroundColor: "#fff", borderRadius: 16, padding: 16, marginBottom: 8, marginHorizontal: 24, flexDirection: "row", alignItems: "center", gap: 16, borderWidth: 1, borderColor: "rgba(0,0,0,0.06)", shadowColor: "#1E4D24", shadowOpacity: 0.04, shadowRadius: 8, shadowOffset: { width: 0, height: 2 } },
+  tmCard: { backgroundColor: "#fff", borderRadius: 16, padding: 11, marginBottom: 8, marginHorizontal: 24, flexDirection: "row", alignItems: "center", gap: 12, borderWidth: 1, borderColor: "rgba(0,0,0,0.06)", shadowColor: "#1E4D24", shadowOpacity: 0.04, shadowRadius: 8, shadowOffset: { width: 0, height: 2 } },
   tmCardLocked: { backgroundColor: "#ece5d6", borderStyle: "dashed", borderColor: "#d5cab2", shadowOpacity: 0 },
   tmNum: { width: 32, height: 32, borderRadius: 8, backgroundColor: "#1E4D24", alignItems: "center", justifyContent: "center" },
   tmNumLocked: { backgroundColor: "#d5cab2" },
   tmNumText: { fontFamily: "BebasNeue", fontSize: 16, color: "#fff" },
   tmNumTextLocked: { color: "#a89a78" },
-  tmName: { fontSize: 15, fontWeight: "600", color: "#1A1208" },
+  tmName: { fontSize: 13, fontWeight: "600", color: "#1A1208" },
   tmLockedText: { fontSize: 13, color: "#b0a486", fontStyle: "italic" },
-  guessPills: { flexDirection: "row", flexWrap: "wrap", gap: 8, paddingHorizontal: 24, marginTop: 16 },
-  guessPill: { backgroundColor: "#f0d9d4", borderRadius: 16, paddingHorizontal: 12, paddingVertical: 4 },
-  guessPillText: { color: "#a3402f", fontSize: 11, fontWeight: "600" },
+  guessPills: { flexDirection: "row", flexWrap: "wrap", gap: 8, paddingHorizontal: 24, marginTop: 16, marginBottom: 8 },
+  guessPill: { backgroundColor: "#f0d9d4", borderRadius: 12, paddingHorizontal: 12, paddingVertical: 6, borderWidth: 1, borderColor: "#e8c4bc"},
+  guessPillText: { color: "#a3402f", fontSize: 13, fontWeight: "700" },
   endScreen: { flex: 1, alignItems: "center", paddingHorizontal: 24, paddingTop: 48, minHeight: 600 },
   endScreenWin: { backgroundColor: "#1E4D24" },
   endScreenLoss: { backgroundColor: "#2b2a26" },

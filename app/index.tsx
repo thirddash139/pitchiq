@@ -8,7 +8,7 @@ export default function Index() {
   const router = useRouter();
   return (
     <View style={styles.shell}>
-      <ScrollView style={styles.scroll} showsVerticalScrollIndicator={false} bounces={false}>
+      <ScrollView style={styles.scroll} contentContainerStyle={{ justifyContent: "flex-start" }} showsVerticalScrollIndicator={false} bounces={false}>
         {/* Stadium header image */}
         <ImageBackground
           source={require("../assets/images/stadium-header.png")}
@@ -122,7 +122,7 @@ export default function Index() {
 
 const styles = StyleSheet.create({
   shell: { flex: 1, height: "100%", backgroundColor: "#F2EBD9" },
-  scroll: { flex: 1, justifyContent: "flex-start" },
+  scroll: { flex: 1 },
   headerImg: { width: "100%", height: 232, justifyContent: "flex-start" },
   headerOverlay: { ...StyleSheet.absoluteFillObject, backgroundColor: "rgba(242,235,217,0.45)" },
   statusBar: { flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 24, paddingTop: 16 },
