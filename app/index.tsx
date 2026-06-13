@@ -16,10 +16,6 @@ export default function Index() {
           resizeMode="cover"
         >
           <View style={styles.headerOverlay} />
-          <View style={styles.statusBar}>
-            <Text style={styles.statusText}>9:41</Text>
-            <Text style={styles.statusText}>5G ▪▪▪</Text>
-          </View>
           <View style={styles.header}>
             <Text style={styles.wordmark}>Pitch <Text style={[styles.wordmark, styles.wordmarkAccent]}>IQ</Text></Text>
             <Text style={styles.tagline}>Daily Football Puzzles</Text>
@@ -125,8 +121,6 @@ const styles = StyleSheet.create({
   scroll: { flex: 1 },
   headerImg: { width: "100%", height: 232, justifyContent: "flex-start" },
   headerOverlay: { ...StyleSheet.absoluteFillObject, backgroundColor: "rgba(242,235,217,0.45)" },
-  statusBar: { flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 24, paddingTop: 16 },
-  statusText: { fontSize: 12, color: "rgba(255,255,255,0.9)", fontWeight: "500" },
   header: { alignItems: "center", paddingTop: 16 },
   wordmark: { fontFamily: "BebasNeue", fontSize: 52, color: "#fff", letterSpacing: 2, textShadowColor: "rgba(0,0,0,0.6)", textShadowRadius: 10 },
   wordmarkAccent: { color: "#4ade80" },
