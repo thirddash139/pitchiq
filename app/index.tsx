@@ -49,7 +49,6 @@ export default function Index() {
                 <Text style={styles.cardDesc}>Guess the footballer from their club teammates.</Text>
               </View>
               <View style={styles.cardFooter}>
-                <Text style={styles.cardStat}>🔥 7 day streak</Text>
                 <View style={styles.playBtnGreen}>
                   <Text style={styles.playArrow}>→</Text>
                 </View>
