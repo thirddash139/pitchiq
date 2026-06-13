@@ -1,24 +1,20 @@
 import { Analytics } from "@vercel/analytics/react";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
-import { View } from "react-native";
 import "./fonts.css";
 
 export default function RootLayout() {
-  const [fontsLoaded] = useFonts({
+  // Load fonts but DON'T block rendering on them.
+  // Web fonts load via fonts.css; native falls back gracefully until ready.
+  useFonts({
     BebasNeue: require("../assets/fonts/BebasNeue-Regular.ttf"),
     PlayfairDisplay: require("../assets/fonts/PlayfairDisplay-Bold.ttf"),
   });
-
-  if (!fontsLoaded) {
-    return <View style={{ flex: 1, backgroundColor: "#F2EBD9" }} />;
-  }
 
   return (
     <>
       <Stack screenOptions={{ headerShown: false }} />
       <Analytics />
-      </>
+    </>
   );
-  
 }
