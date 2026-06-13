@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import { View } from "react-native";
@@ -13,5 +14,11 @@ export default function RootLayout() {
     return <View style={{ flex: 1, backgroundColor: "#F2EBD9" }} />;
   }
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <>
+      <Stack screenOptions={{ headerShown: false }} />
+      <Analytics />
+      </>
+  );
+  
 }
