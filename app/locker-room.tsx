@@ -20,11 +20,18 @@ function dateKeyFor(offsetDays: number) {
 }
 
 function getDailyIndex() {
-  const start = new Date(2026, 0, 1).getTime();
+  const launch = new Date(2026, 5, 13).getTime(); // June 13, 2026 = Day #1
   const today = new Date();
   const todayMid = new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime();
-  const dayNum = Math.floor((todayMid - start) / 86400000);
-  return ((dayNum % dataset.length) + dataset.length) % dataset.length;
+  const daysSinceLaunch = Math.floor((todayMid - launch) / 86400000);
+  return ((daysSinceLaunch % dataset.length) + dataset.length) % dataset.length;
+}
+
+function getPuzzleNumber() {
+  const launch = new Date(2026, 5, 13).getTime(); // June 13, 2026 = Day 1 (month is 0-indexed)
+  const today = new Date();
+  const todayMid = new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime();
+  return Math.floor((todayMid - launch) / 86400000) + 1;
 }
 
 function buildNamePool() {
@@ -85,7 +92,7 @@ export default function LockerRoom() {
   const puzzle = useMemo(() => dataset[getDailyIndex()], []);
   const namePool = useMemo(() => buildNamePool(), []);
   const answer = puzzle.name;
-  const dayNumber = getDailyIndex() + 1;
+  const dayNumber = getPuzzleNumber();
 
   function buildShareText(won: boolean, guessesUsed: number) {
     const balls = "⚽".repeat(guessesUsed) + "⚪".repeat(LIVES_TOTAL - guessesUsed);
@@ -224,7 +231,7 @@ export default function LockerRoom() {
             </Svg>
 
             <View style={styles.prompt}>
-              <Text style={styles.promptLabel}>Who is the mystery player?</Text>
+              <Text style={styles.promptLabel}>Day #{dayNumber} · Who is the mystery player?</Text>
               <Text style={styles.promptText}>These players were all club teammates of one footballer.</Text>
             </View>
 
