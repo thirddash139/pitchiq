@@ -50,14 +50,14 @@ Verified fixes (web search):
 - Confirmed CORRECT: Kane + Vardy (Leicester 2013), Son + Van der Vaart (Hamburg 2012-13)
 
 ### Approach
-Every connection web-search verified BEFORE going in. Built a visual review tool (React artifact: expand/collapse by player, click-to-flag, search/filter). Dataset is pre-verified — no runtime verification.
+Every connection web-search verified BEFORE going in. Built a visual review tool (React artifact). Dataset is pre-verified — no runtime verification.
 
 ### Recognisability pass
 Some obscure teammates swapped for recognisable names while keeping "aha" quality: Rooney → Schweinsteiger/Arteta/Di María; Son → Leno; Kane → Adebayor; Bruno → Nani; Van Dijk → Forster/Pellè/Lovren; Özil → Pizarro/Podolski.
 
 ## Dataset Evolution
 - ~65 players → grew to 106 → **deliberately reduced to 83** (removed 21 high-risk entries whose first-3-clue answers couldn't be guaranteed unique)
-- **Evolving** — grows as new verified entries are added
+- **Evolving** — grows as new verified entries are added in the Game 1 chat
 - Each answer: exactly 5 verified teammates (name / club / years)
 - Hard rule: **no two answer players share 3+ teammates**
 - File order = play order; **APPEND new players to END** to keep daily sequence stable
@@ -82,7 +82,8 @@ Keep **Now** short (3–5 items). New ideas → drop in **Someday** immediately,
 ## 🔜 Next (this month)
 - [ ] Stats screen — total played, win rate, current + best streak, history
 - [ ] Skip option for a puzzle
-- [ ] Open Graph preview image for shared links (app-wide, helps Locker Room shares)
+- [ ] Feedback section — lightweight player idea collection (Google Form or mailto)
+- [ ] Buy Me a Coffee / Ko-fi donation link
 
 ## 💡 Someday / Ideas
 - [ ] **Leaderboard** — NOTE: requires accounts + backend/database; breaks current local-storage no-accounts model. Bigger architectural step. Revisit when daily-player numbers justify it.
@@ -90,6 +91,12 @@ Keep **Now** short (3–5 items). New ideas → drop in **Someday** immediately,
 - [ ] Unify visual language — photo header vs illustrated card art
 - [ ] Difficulty hint or "reveal a letter" mechanic
 - [ ] Archive — replay past puzzles
+
+## App-wide (not Locker Room specific)
+- [ ] Build The Grid (Game 2) — HTML prototype + 5 verified categories ready
+- [ ] Build Transfer Window (Game 3)
+- [ ] Build One Season Wonder (Game 5)
+- [ ] Native app / App Store submission (deferred — needs Apple Developer acct + Xcode)
 
 ## ✅ Shipped
 - [x] Core daily game — 83-player dataset, autocomplete, 5 lives, teammate reveals
@@ -101,3 +108,7 @@ Keep **Now** short (3–5 items). New ideas → drop in **Someday** immediately,
 - [x] Deployed live on Vercel + Web Analytics
 - [x] Fixed blank-screen bug (removed font-loading gate in `_layout.tsx`)
 - [x] Removed placeholder status bar + fake streak from home screen
+- [x] Custom domain `pitchiq.games` — purchased, pointed to Vercel, live
+- [x] Open Graph image + meta tags — branded 1200×630 preview on shared links
+- [x] Guess count bug fixed (`totalGuesses` state, not `wrongGuesses.length+1`)
+- [x] Card sizing tightened (padding 11, gap 12, name fontSize 13)
