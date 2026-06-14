@@ -97,7 +97,7 @@ export default function LockerRoom() {
   function buildShareText(won: boolean, guessesUsed: number) {
     const balls = "⚽".repeat(guessesUsed) + "⚪".repeat(LIVES_TOTAL - guessesUsed);
     const resultLine = won ? `${balls} Solved in ${guessesUsed} · 🔥 ${streak}` : `${balls} ❌ Out of lives`;
-    return `⚽ Pitch IQ · Locker Room #${dayNumber}\n${resultLine}\nCan you guess today's footballer?\npitchiq.app`;
+    return `⚽ Pitch IQ · Locker Room #${dayNumber}\n${resultLine}\nCan you guess today's footballer?\npitchiq.games`;
   }
 
   async function handleShare() {
