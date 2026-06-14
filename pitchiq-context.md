@@ -28,7 +28,9 @@ Expo / React Native, `expo-router`. Packages: `react-native-svg`, `@react-native
 │   ├── fonts.css         # @font-face + html/body overflow:hidden
 │   ├── index.tsx         # Home screen
 │   ├── locker-room.tsx   # Game 1
-│   └── data/teammates.json   # Dataset (83 players, evolving)
+│   └── data/
+│       ├── teammates.json    # Dataset (83 players, evolving)
+│       └── players.json      # 953-player autocomplete pool (separate from puzzle data)
 ├── assets/fonts/ (BebasNeue-Regular.ttf, PlayfairDisplay-Bold.ttf)
 ├── assets/images/stadium-header.png
 ├── public/og-image.png   # OG preview image (1200×630) — live at pitchiq.games/og-image.png
@@ -41,6 +43,13 @@ Expo / React Native, `expo-router`. Packages: `react-native-svg`, `@react-native
 - **RULE: APPEND new players to END** — keeps existing sequence intact
 - **Launch sequence:** Anelka(#1), Džeko(#2), Cannavaro(#3), Crespo(#4), Messi(#5), Ronaldo(#6), Zidane(#7)...
 - **To update:** get new JSON from Game 1 chat → `cp ~/Downloads/teammates.json ~/pitchiq/app/data/teammates.json` → commit/push
+
+## Autocomplete Pool (`app/data/players.json`)
+- **953 players** — comprehensive name list covering all major leagues + eras
+- Merged at runtime with the 203-name puzzle pool (answers + teammates), deduplicated
+- Separate from puzzle data — adding names here carries zero risk to puzzle integrity
+- To expand: append names to `players.json` and push. No code changes needed.
+- `buildNamePool(dataset)` in `locker-room.tsx` handles the merge
 
 ## Design System
 - Cream bg `#F2EBD9` | green `#1E4D24`/`#2D6A32` | bright green `#4ade80` (win only) | tan `#9C8E6E`/`#B0A48A` | loss bg `#2b2a26`
@@ -63,8 +72,9 @@ Removing `if (!fontsLoaded) return <blank view>` gate from `_layout.tsx` fixed b
 - **Daily index:** `getDailyIndex()` = days since launch (Jun 13 2026) % dataset.length, today=index 0
 - **Puzzle number:** `getPuzzleNumber()` = days since launch + 1, shown as "Day #N · Who is the mystery player?"
 - 5 ⚽ lives. 3 teammates shown → 4th after 2 wrong → 5th after 4 wrong. Autocomplete opens UPWARD.
+- **Teammate cards show: name + club · years** (always visible on revealed cards)
 - **`totalGuesses` state** for "Solved in N" (NOT wrongGuesses.length+1 — off-by-one bug, fixed)
-- Wrong guesses = red pills (fontSize 13, bordered). Cards: padding 11, gap 12, name fontSize 13.
+- Wrong guesses = red pills (fontSize 13, bordered). Cards: padding 11, gap 12, name fontSize 13, meta fontSize 11 tan.
 - **Persistence:** AsyncStorage key `lockerRoomHistory`, `{date: won}` map. Play-streak = consecutive days played. "Already played today" lock on mount.
 - **End screens:** Win = green takeover + confetti + Bebas answer + streak + 7-day history + Share + "How They Connect" below fold. Loss = `#2b2a26` muted, no confetti.
 - **Share format:** `⚽ Pitch IQ · Locker Room #N` / `⚽⚽⚽⚪⚪ Solved in 3 · 🔥 5` / CTA / `pitchiq.games`. Uses navigator.share or clipboard.
@@ -98,13 +108,14 @@ Vercel Web Analytics enabled. `<Analytics/>` in `_layout.tsx`. Dashboard: vercel
 Think before coding. Simplicity first. Surgical changes. Goal-driven (verifiable success criteria).
 
 ## Next Steps
-1. **Stats screen** — use existing streak/history data; then re-add bottom nav
-2. **Custom analytics events** — track puzzle completion + share rate
-3. **Polish:** help/rules screen (? button), skip option, real streak on home card
-4. **Feedback section** — lightweight way to collect player ideas (Google Form or mailto link)
+1. **The Grid (Game 2)** — highest leverage move; HTML prototype + 5 categories ready in separate chat
+2. **Stats screen** — use existing streak/history data; then re-add bottom nav
+3. **Archive** — replay past puzzles (strong retention mechanic, moved up after competitor analysis)
+4. **Feedback section** — lightweight player idea collection (Google Form or mailto link)
 5. **Buy Me a Coffee** — Ko-fi or similar donation link
-6. **Unify visual language** — photo header vs illustrated cards (deferred)
-7. **Build The Grid** (Game 2)
+6. **Custom analytics events** — track puzzle completion + share rate
+7. **Polish:** help/rules screen (? button), skip option, real streak on home card
+8. **Unify visual language** — photo header vs illustrated cards (deferred)
 
 ## Dev Tips
 - Reset puzzle: console `localStorage.clear()` + refresh. On phone: incognito tab.

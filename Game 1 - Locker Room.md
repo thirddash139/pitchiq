@@ -11,7 +11,7 @@ Wordle-style daily football quiz. Players guess a mystery footballer from their 
 ## Core Mechanic
 - 5 lives (footballs ⚽)
 - 3 teammates shown initially → 4th unlocks after 2 wrong guesses → 5th after 4 wrong
-- Free-text autocomplete input (opens upward)
+- Free-text autocomplete input (opens upward) — pool of 953 players + puzzle pool merged
 - Date-based daily puzzle, same for everyone
 - Streak tracking + spoiler-free share
 
@@ -20,8 +20,8 @@ Wordle-style daily football quiz. Players guess a mystery footballer from their 
 ### 1. Teammates span DIFFERENT clubs across the answer's career
 The heart of the uniqueness guarantee. Picking teammates from across a player's whole career (not one club) means **only one footballer in history** could have played with all five at club level. This is what makes a single correct answer possible.
 
-### 2. No club labels shown during play
-Club names were initially displayed but **deliberately removed** — makes puzzles harder and more rewarding when the player works out the career path themselves. (Clubs DO appear on the end screen's "How They Connect" as the payoff.)
+### 2. Club + years shown on teammate cards
+Initially removed to make puzzles harder, but **re-added based on player feedback** — too many players were dropping off before getting the "aha" moment. Now shows `Name / Club · Years` on each revealed card. Matches competitor standard (Who Played With). Difficulty is still maintained via the progressive reveal mechanic (3 cards initially, 2 more unlocked after wrong guesses).
 
 ### 3. Favour "aha moment" connections over famous ones
 Teammate selection prioritises **surprising, less-obvious** connections — short stints, unexpected transfers, loan spells — over the most famous associations. Emotional target: the "wait, THEY played together?!" moment on reveal.
@@ -30,6 +30,16 @@ Flavour examples:
 - Harry Kane + Jamie Vardy (forgotten 2013 Leicester loan — sat on the bench together)
 - Son + Rafael van der Vaart (Hamburg 2012-13, VdV mentored Son)
 - Ronaldo Nazário + Andrea Pirlo (Inter Milan overlap people forget)
+
+## Competitor Analysis — Who Played With (WPW)
+Reviewed June 14, 2026. Key observations:
+- Shows name + club + years + nationality on ALL cards from the start (easier than Pitch IQ)
+- 6 lives vs our 5
+- Has archive feature (replay past puzzles) — strong retention mechanic
+- Single game site — no suite of games (our key moat)
+- **What to learn:** archive is worth building; club+years is table stakes
+- **What to protect:** our progressive reveal, our share format, our multi-game suite vision
+- **Strategic conclusion:** ship The Grid ASAP — that's when Pitch IQ becomes something WPW genuinely can't compete with
 
 ## Data Accuracy — THE make-or-break factor
 A single wrong connection undermines the game's credibility. Non-negotiable.
@@ -76,11 +86,12 @@ Some obscure teammates swapped for recognisable names while keeping "aha" qualit
 Keep **Now** short (3–5 items). New ideas → drop in **Someday** immediately, but only pull work from **Now**. Check off as shipped.
 
 ## 🔥 Now (this week)
-- [ ] Real streak on home card (currently removed — wire to `lockerRoomHistory` storage)
+- [ ] Real streak on home card (wire to `lockerRoomHistory` storage)
 - [ ] Help / rules screen (the "?" button currently does nothing)
 
 ## 🔜 Next (this month)
 - [ ] Stats screen — total played, win rate, current + best streak, history
+- [ ] Archive — replay past puzzles (moved up after competitor analysis — strong retention mechanic)
 - [ ] Skip option for a puzzle
 - [ ] Feedback section — lightweight player idea collection (Google Form or mailto)
 - [ ] Buy Me a Coffee / Ko-fi donation link
@@ -90,10 +101,10 @@ Keep **Now** short (3–5 items). New ideas → drop in **Someday** immediately,
 - [ ] Custom analytics events — track puzzle completion + share rate
 - [ ] Unify visual language — photo header vs illustrated card art
 - [ ] Difficulty hint or "reveal a letter" mechanic
-- [ ] Archive — replay past puzzles
+- [ ] Nationality data on teammate cards (WPW has this — low priority, data not currently in dataset)
 
 ## App-wide (not Locker Room specific)
-- [ ] Build The Grid (Game 2) — HTML prototype + 5 verified categories ready
+- [ ] Build The Grid (Game 2) — HTML prototype + 5 verified categories ready — HIGHEST PRIORITY
 - [ ] Build Transfer Window (Game 3)
 - [ ] Build One Season Wonder (Game 5)
 - [ ] Native app / App Store submission (deferred — needs Apple Developer acct + Xcode)
@@ -112,3 +123,5 @@ Keep **Now** short (3–5 items). New ideas → drop in **Someday** immediately,
 - [x] Open Graph image + meta tags — branded 1200×630 preview on shared links
 - [x] Guess count bug fixed (`totalGuesses` state, not `wrongGuesses.length+1`)
 - [x] Card sizing tightened (padding 11, gap 12, name fontSize 13)
+- [x] Expanded autocomplete to 953 players (`app/data/players.json` merged with puzzle pool)
+- [x] Club + years added to teammate cards (`Name / Club · Years` always visible on reveal)
