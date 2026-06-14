@@ -10,14 +10,14 @@ export default function Root({ children }: { children: React.ReactNode }) {
 
         {/* Primary */}
         <title>Pitch IQ — Daily Football Puzzles</title>
-        <meta name="description" content="Daily football puzzle games testing your knowledge of the beautiful game. Guess the footballer, master the grid, and more — a new challenge every day." />
+        <meta name="description" content="Daily football puzzle games. Guess the footballer, master the grid, and more — a new challenge every day." />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://pitchiq.games" />
         <meta property="og:site_name" content="Pitch IQ" />
         <meta property="og:title" content="Pitch IQ — Daily Football Puzzles" />
-        <meta property="og:description" content="Daily football puzzle games testing your knowledge of the beautiful game. Guess the footballer, master the grid, and more — a new challenge every day." />
+        <meta property="og:description" content="Daily football puzzle games. Guess the footballer, master the grid, and more — a new challenge every day." />
         <meta property="og:image" content="https://pitchiq.games/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -25,7 +25,7 @@ export default function Root({ children }: { children: React.ReactNode }) {
         {/* Twitter/X */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Pitch IQ — Daily Football Puzzles" />
-        <meta name="twitter:description" content="Daily football puzzle games testing your knowledge of the beautiful game. Guess the footballer, master the grid, and more — a new challenge every day." />
+        <meta name="twitter:description" content="Daily football puzzle games. Guess the footballer, master the grid, and more — a new challenge every day." />
         <meta name="twitter:image" content="https://pitchiq.games/og-image.png" />
 
         <ScrollViewStyleReset />
