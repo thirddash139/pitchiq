@@ -73,7 +73,10 @@ function TeammateCard({ tm, index, isRevealed, styles }: any) {
         <Text style={[styles.tmNumText, !isRevealed && styles.tmNumTextLocked]}>{index + 1}</Text>
       </View>
       {isRevealed ? (
-        <Text style={styles.tmName}>{tm.name}</Text>
+        <View>
+          <Text style={styles.tmName}>{tm.name}</Text>
+          <Text style={styles.tmMeta}>{tm.club} · {tm.years}</Text>
+        </View>  
       ) : (
         <Text style={styles.tmLockedText}>Unlocks after {unlockAt} wrong guesses</Text>
       )}
@@ -383,6 +386,7 @@ const styles = StyleSheet.create({
   tmNumText: { fontFamily: "BebasNeue", fontSize: 16, color: "#fff" },
   tmNumTextLocked: { color: "#a89a78" },
   tmName: { fontSize: 13, fontWeight: "600", color: "#1A1208" },
+  tmMeta: { fontSize: 11, color: "#9C8E6E", marginTop: 2 },
   tmLockedText: { fontSize: 13, color: "#b0a486", fontStyle: "italic" },
   guessPills: { flexDirection: "row", flexWrap: "wrap", gap: 8, paddingHorizontal: 24, marginTop: 16, marginBottom: 8 },
   guessPill: { backgroundColor: "#f0d9d4", borderRadius: 12, paddingHorizontal: 12, paddingVertical: 6, borderWidth: 1, borderColor: "#e8c4bc"},
