@@ -34,12 +34,17 @@ function getPuzzleNumber() {
   return Math.floor((todayMid - launch) / 86400000) + 1;
 }
 
-function buildNamePool() {
+import allPlayers from "./data/players.json";
+
+function buildNamePool(data: any[]): string[] {
   const names = new Set<string>();
-  dataset.forEach((p: any) => {
+  // existing puzzle players + teammates
+  data.forEach((p) => {
     names.add(p.name);
     p.teammates.forEach((t: any) => names.add(t.name));
   });
+  // merge comprehensive player pool
+  (allPlayers as string[]).forEach((name) => names.add(name));
   return Array.from(names).sort();
 }
 
@@ -90,7 +95,7 @@ export default function LockerRoom() {
   const router = useRouter();
 
   const puzzle = useMemo(() => dataset[getDailyIndex()], []);
-  const namePool = useMemo(() => buildNamePool(), []);
+  const namePool = useMemo(() => buildNamePool(dataset), []);
   const answer = puzzle.name;
   const dayNumber = getPuzzleNumber();
 
