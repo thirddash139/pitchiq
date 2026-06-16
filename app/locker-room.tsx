@@ -50,7 +50,7 @@ function buildNamePool(data: any[]): string[] {
 
 const norm = (s: string) => s.toLowerCase().trim().replace(/\s+/g, " ");
 
-function TeammateCard({ tm, index, isRevealed, styles }: any) {
+function TeammateCard({ tm, index, isRevealed, livesUsed, styles }: any) {
   const anim = useState(new Animated.Value(isRevealed ? 1 : 0))[0];
 
   useEffect(() => {
@@ -75,7 +75,11 @@ function TeammateCard({ tm, index, isRevealed, styles }: any) {
       {isRevealed ? (
         <View>
           <Text style={styles.tmName}>{tm.name}</Text>
-          <Text style={styles.tmMeta}>{tm.club} · {tm.years}</Text>
+          {livesUsed >= 1 && (
+            <Text style={styles.tmMeta}>
+              {tm.club}{livesUsed >= 2 ? ` · ${tm.years}` : ""}
+            </Text>
+          )}
         </View>  
       ) : (
         <Text style={styles.tmLockedText}>Unlocks after {unlockAt} wrong guesses</Text>
@@ -243,11 +247,6 @@ export default function LockerRoom() {
               <Text style={styles.promptText}>These players were all club teammates of one footballer.</Text>
             </View>
 
-            <Text style={styles.tmLabel}>Teammates Revealed</Text>
-            {puzzle.teammates.map((tm: any, i: number) => (
-              <TeammateCard key={i} tm={tm} index={i} isRevealed={i < revealedCount} styles={styles} />
-            ))}
-
             {wrongGuesses.length > 0 && (
               <View style={styles.guessPills}>
                 {wrongGuesses.map((g) => (
@@ -257,6 +256,29 @@ export default function LockerRoom() {
                 ))}
               </View>
             )}
+
+            {livesUsed >= 3 && (
+              <View style={styles.hintBar}>
+                <Text style={styles.hintBarLabel}>HINTS</Text>
+                <View style={styles.hintPills}>
+                  {livesUsed >= 3 && puzzle.position && (
+                    <View style={styles.hintPill}>
+                      <Text style={styles.hintPillText}>{puzzle.position}</Text>
+                    </View>
+                  )}
+                  {livesUsed >= 4 && puzzle.nationality && (
+                    <View style={styles.hintPill}>
+                      <Text style={styles.hintPillFlag}>{puzzle.nationality}</Text>
+                    </View>
+                  )}
+                </View>
+              </View>
+            )}
+
+            <Text style={styles.tmLabel}>Teammates Revealed</Text>
+            {puzzle.teammates.map((tm: any, i: number) => (
+              <TeammateCard key={i} tm={tm} index={i} isRevealed={i < revealedCount} livesUsed={livesUsed} styles={styles} />
+            ))}
             <View style={{ height: 160 }} />
           </>
         )}
@@ -391,6 +413,12 @@ const styles = StyleSheet.create({
   guessPills: { flexDirection: "row", flexWrap: "wrap", gap: 8, paddingHorizontal: 24, marginTop: 16, marginBottom: 8 },
   guessPill: { backgroundColor: "#f0d9d4", borderRadius: 12, paddingHorizontal: 12, paddingVertical: 6, borderWidth: 1, borderColor: "#e8c4bc"},
   guessPillText: { color: "#a3402f", fontSize: 13, fontWeight: "700" },
+  hintBar: { paddingHorizontal: 24, marginTop: 12, marginBottom: 4 },
+  hintBarLabel: { fontSize: 10, color: "#9C8E6E", textTransform: "uppercase", letterSpacing: 1.5, fontWeight: "700", marginBottom: 8 },
+  hintPills: { flexDirection: "row", gap: 8 },
+  hintPill: { backgroundColor: "#F2EBD9", borderRadius: 12, paddingHorizontal: 14, paddingVertical: 6, borderWidth: 1.5, borderColor: "#1E4D24", alignItems: "center", justifyContent: "center"},
+  hintPillText: { color: "#1E4D24", fontSize: 13, fontWeight: "700" },
+  hintPillFlag: { fontSize: 24 },
   endScreen: { flex: 1, alignItems: "center", paddingHorizontal: 24, paddingTop: 48, minHeight: 600 },
   endScreenWin: { backgroundColor: "#1E4D24" },
   endScreenLoss: { backgroundColor: "#2b2a26" },
