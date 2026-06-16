@@ -1,9 +1,9 @@
 # Pitch IQ — Project Context
-*Last updated: Session — domain live, OG image, blank-screen fix, UI cleanup*
+*Last updated: Session — progressive reveal overhaul, hint pills, expanded autocomplete*
 
 ## Overview
 Football trivia web app, 5 games. Expo/React Native → static web export. Web-first, no App Store.
-- **Live:** `pitchiq.games` (was `pitchiq-gamma-hazel.vercel.app` — custom domain now active)
+- **Live:** `pitchiq.games`
 - **GitHub:** `github.com/thirddash139/pitchiq`
 - **Deploy:** `cd ~/pitchiq && git add . && git commit -m "msg" && git push` → Vercel auto-rebuilds ~2min
 - **Project root:** `~/pitchiq` | **Preview:** `npx expo start --web`
@@ -29,7 +29,7 @@ Expo / React Native, `expo-router`. Packages: `react-native-svg`, `@react-native
 │   ├── index.tsx         # Home screen
 │   ├── locker-room.tsx   # Game 1
 │   └── data/
-│       ├── teammates.json    # Dataset (83 players, evolving)
+│       ├── teammates.json    # Dataset (83 players, evolving) — now includes nationality + position fields
 │       └── players.json      # 953-player autocomplete pool (separate from puzzle data)
 ├── assets/fonts/ (BebasNeue-Regular.ttf, PlayfairDisplay-Bold.ttf)
 ├── assets/images/stadium-header.png
@@ -38,17 +38,28 @@ Expo / React Native, `expo-router`. Packages: `react-native-svg`, `@react-native
 ```
 
 ## Dataset (`app/data/teammates.json`)
-- **83 players**, evolving (reduced from 106 — removed 21 high-risk entries)
+- **83 players**, evolving
+- Now includes `nationality` (emoji flag 🇫🇷) and `position` (FWD/MID/DEF/GK) fields per player
 - File order = play order. Day #1 = first entry (Anelka), steps down daily.
 - **RULE: APPEND new players to END** — keeps existing sequence intact
 - **Launch sequence:** Anelka(#1), Džeko(#2), Cannavaro(#3), Crespo(#4), Messi(#5), Ronaldo(#6), Zidane(#7)...
 - **To update:** get new JSON from Game 1 chat → `cp ~/Downloads/teammates.json ~/pitchiq/app/data/teammates.json` → commit/push
+- **Schema:**
+```json
+{
+  "name": "Nicolas Anelka",
+  "nationality": "🇫🇷",
+  "position": "FWD",
+  "teammates": [
+    { "name": "...", "club": "...", "years": "..." }
+  ]
+}
+```
 
 ## Autocomplete Pool (`app/data/players.json`)
 - **953 players** — comprehensive name list covering all major leagues + eras
-- Merged at runtime with the 203-name puzzle pool (answers + teammates), deduplicated
+- Merged at runtime with puzzle pool (answers + teammates), deduplicated
 - Separate from puzzle data — adding names here carries zero risk to puzzle integrity
-- To expand: append names to `players.json` and push. No code changes needed.
 - `buildNamePool(dataset)` in `locker-room.tsx` handles the merge
 
 ## Design System
@@ -71,26 +82,35 @@ Removing `if (!fontsLoaded) return <blank view>` gate from `_layout.tsx` fixed b
 ## Locker Room (`locker-room.tsx`)
 - **Daily index:** `getDailyIndex()` = days since launch (Jun 13 2026) % dataset.length, today=index 0
 - **Puzzle number:** `getPuzzleNumber()` = days since launch + 1, shown as "Day #N · Who is the mystery player?"
-- 5 ⚽ lives. 3 teammates shown → 4th after 2 wrong → 5th after 4 wrong. Autocomplete opens UPWARD.
-- **Teammate cards show: name + club · years** (always visible on revealed cards)
+- **5 ⚽ lives. Progressive reveal system:**
+
+| Wrong guesses | What reveals |
+|---|---|
+| 0 | 3 teammates (name only) |
+| 1 | Club added to existing 3 cards |
+| 2 | Years added + 4th teammate revealed (full) |
+| 3 | Position hint pill appears (FWD/MID/DEF/GK) |
+| 4 | Nationality hint pill appears (🇫🇷) + 5th teammate revealed (full) |
+| 5 | Game over |
+
+- **Hint pills:** cream bg `#F2EBD9`, dark green border + text `#1E4D24`, positioned above "Teammates Revealed" label. Flag emoji size 24, position text size 13 bold, both center aligned.
+- **Wrong guesses:** shown as red pills ABOVE the hints bar and teammates section.
+- **Autocomplete** opens UPWARD, 953-player pool merged with puzzle pool.
 - **`totalGuesses` state** for "Solved in N" (NOT wrongGuesses.length+1 — off-by-one bug, fixed)
-- Wrong guesses = red pills (fontSize 13, bordered). Cards: padding 11, gap 12, name fontSize 13, meta fontSize 11 tan.
-- **Persistence:** AsyncStorage key `lockerRoomHistory`, `{date: won}` map. Play-streak = consecutive days played. "Already played today" lock on mount.
-- **End screens:** Win = green takeover + confetti + Bebas answer + streak + 7-day history + Share + "How They Connect" below fold. Loss = `#2b2a26` muted, no confetti.
-- **Share format:** `⚽ Pitch IQ · Locker Room #N` / `⚽⚽⚽⚪⚪ Solved in 3 · 🔥 5` / CTA / `pitchiq.games`. Uses navigator.share or clipboard.
+- **Persistence:** AsyncStorage key `lockerRoomHistory`, `{date: won}` map. Play-streak = consecutive days played.
+- **End screens:** Win = green takeover + confetti. Loss = `#2b2a26` muted. Both show "How They Connect" with full club + years.
+- **Share format:** `⚽ Pitch IQ · Locker Room #N` / `⚽⚽⚽⚪⚪ Solved in 3 · 🔥 5` / `pitchiq.games`.
 - **Animations:** lives shake + cards slide-in, both `useNativeDriver: false` (web compat).
 - **Nav:** back arrow + "Back to Games" both `router.replace("/")` (not back()).
 
 ## Open Graph (`app/+html.tsx` + `public/og-image.png`)
-- `app/+html.tsx` is Expo Router's HTML shell — where all `<head>` meta tags live
 - OG image: 1200×630 PNG, floodlit pitch design, live at `pitchiq.games/og-image.png`
-- Meta tags set: `og:title`, `og:description`, `og:image`, `og:site_name`, `twitter:card`, `twitter:image`
+- Meta tags: `og:title`, `og:description`, `og:image`, `og:site_name`, `twitter:card`, `twitter:image`
 - Description: "Daily football puzzle games. Guess the footballer, master the grid, and more — a new challenge every day."
-- Verified working via opengraph.xyz — image shows correctly on Facebook, X, WhatsApp, Discord
+- Verified working via opengraph.xyz
 
 ## Domain
 - Custom domain: `pitchiq.games` (purchased, pointed to Vercel via nameservers)
-- Old Vercel URL (`pitchiq-gamma-hazel.vercel.app`) still works but `pitchiq.games` is canonical
 - DNS setup: update nameservers at registrar to Vercel's NS → propagates in ~30min
 
 ## Vercel (`vercel.json` at ROOT)
@@ -99,10 +119,10 @@ Removing `if (!fontsLoaded) return <blank view>` gate from `_layout.tsx` fixed b
 ```
 
 ## Scroll Architecture
-`fonts.css`: `html,body{overflow:hidden}` + `#root{overflow:hidden;display:flex;height:100%}` kills mobile double-scroll. **Lesson:** justifyContent on ScrollView goes in `contentContainerStyle`, not `style`.
+`fonts.css`: `html,body{overflow:hidden}` + `#root{overflow:hidden;display:flex;height:100%}` kills mobile double-scroll.
 
 ## Analytics
-Vercel Web Analytics enabled. `<Analytics/>` in `_layout.tsx`. Dashboard: vercel.com → pitchiq → Analytics. Tracks visitors/page views/return rate. Custom events (puzzle completion, shares) = future work.
+Vercel Web Analytics. `<Analytics/>` in `_layout.tsx`. Dashboard: vercel.com → pitchiq → Analytics.
 
 ## Working Principles (CLAUDE.md)
 Think before coding. Simplicity first. Surgical changes. Goal-driven (verifiable success criteria).
@@ -110,19 +130,18 @@ Think before coding. Simplicity first. Surgical changes. Goal-driven (verifiable
 ## Next Steps
 1. **The Grid (Game 2)** — highest leverage move; HTML prototype + 5 categories ready in separate chat
 2. **Stats screen** — use existing streak/history data; then re-add bottom nav
-3. **Archive** — replay past puzzles (strong retention mechanic, moved up after competitor analysis)
+3. **Archive** — replay past puzzles (strong retention mechanic)
 4. **Feedback section** — lightweight player idea collection (Google Form or mailto link)
 5. **Buy Me a Coffee** — Ko-fi or similar donation link
 6. **Custom analytics events** — track puzzle completion + share rate
 7. **Polish:** help/rules screen (? button), skip option, real streak on home card
-8. **Unify visual language** — photo header vs illustrated cards (deferred)
 
 ## Dev Tips
 - Reset puzzle: console `localStorage.clear()` + refresh. On phone: incognito tab.
 - New terminal opens in `~` — always `cd ~/pitchiq` first.
+- Test locally with `npx expo start --web` before pushing to Vercel.
 
 ## Document System
-Three files maintained across Claude Project + VS Code repo:
 - `pitchiq-context.md` — this file: app-wide tech + design system
 - `Game 1 - Locker Room.md` — Locker Room design decisions + roadmap
 - Future: `Game 2 - The Grid.md` etc. as each game launches
