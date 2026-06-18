@@ -78,8 +78,16 @@
       },
       {
         "name": "Gianluigi Buffon",
-        "club": "Parma",
-        "years": "1995-2001"
+        "club": [
+          {
+            "club": "Parma",
+            "years": "1995-2001"
+          },
+          {
+            "club": "Juventus",
+            "years": "2004-2006"
+          }
+        ]
       },
       {
         "name": "Hernán Crespo",
@@ -115,8 +123,20 @@
       },
       {
         "name": "Juan Sebastián Verón",
-        "club": "Parma",
-        "years": "1996-1999"
+        "club": [
+          {
+            "club": "Parma",
+            "years": "1998-1999"
+          },
+          {
+            "club": "Lazio",
+            "years": "2000-2001"
+          },
+          {
+            "club": "Chelsea",
+            "years": "2003-2004"
+          }
+        ]
       },
       {
         "name": "Andriy Shevchenko",
@@ -137,8 +157,16 @@
       },
       {
         "name": "Sergio Busquets",
-        "club": "Inter Miami",
-        "years": "2023-2024"
+        "club": [
+          {
+            "club": "Inter Miami",
+            "years": "2023-2024"
+          },
+          {
+            "club": "Barcelona",
+            "years": "2008-2021"
+          }
+        ]
       },
       {
         "name": "Yaya Touré",
@@ -339,8 +367,16 @@
       },
       {
         "name": "Dani Alves",
-        "club": "Barcelona",
-        "years": "2013-2016"
+        "club": [
+          {
+            "club": "Barcelona",
+            "years": "2013-2016"
+          },
+          {
+            "club": "PSG",
+            "years": "2017-2019"
+          }
+        ]
       },
       {
         "name": "Edinson Cavani",
@@ -531,8 +567,16 @@
       },
       {
         "name": "Gareth Bale",
-        "club": "Tottenham",
-        "years": "2008-2012"
+        "club": [
+          {
+            "club": "Tottenham",
+            "years": "2008-2012"
+          },
+          {
+            "club": "Real Madrid",
+            "years": "2013-2022"
+          }
+        ]
       },
       {
         "name": "Karim Benzema",
@@ -814,8 +858,16 @@
       },
       {
         "name": "Luís Figo",
-        "club": "Barcelona",
-        "years": "1996-1997"
+        "club": [
+          {
+            "club": "Barcelona",
+            "years": "1996-1997"
+          },
+          {
+            "club": "Real Madrid",
+            "years": "2002-2005"
+          }
+        ]
       },
       {
         "name": "Roberto Carlos",
@@ -841,8 +893,24 @@
       },
       {
         "name": "Maxwell",
-        "club": "Inter Milan",
-        "years": "2006-2009"
+        "club": [
+          {
+            "club": "Inter Milan",
+            "years": "2006-2009"
+          },
+          {
+            "club": "Ajax",
+            "years": "2001-2004"
+          },
+          {
+            "club": "Barcelona",
+            "years": "2009-2010"
+          },
+          {
+            "club": "PSG",
+            "years": "2012-2016"
+          }
+        ]
       },
       {
         "name": "Marco Verratti",
@@ -851,8 +919,16 @@
       },
       {
         "name": "Thiago Silva",
-        "club": "AC Milan",
-        "years": "2010-2012"
+        "club": [
+          {
+            "club": "AC Milan",
+            "years": "2010-2012"
+          },
+          {
+            "club": "PSG",
+            "years": "2012-2016"
+          }
+        ]
       },
       {
         "name": "Paul Pogba",
@@ -920,8 +996,16 @@
       },
       {
         "name": "Lionel Messi",
-        "club": "Barcelona",
-        "years": "2014-2020"
+        "club": [
+          {
+            "club": "Barcelona",
+            "years": "2014-2020"
+          },
+          {
+            "club": "Inter Miami",
+            "years": "2024-2025"
+          }
+        ]
       }
     ],
     "nationality": "🇺🇾",
@@ -942,8 +1026,16 @@
       },
       {
         "name": "Thibaut Courtois",
-        "club": "Chelsea",
-        "years": "2014-2018"
+        "club": [
+          {
+            "club": "Chelsea",
+            "years": "2014-2018"
+          },
+          {
+            "club": "Real Madrid",
+            "years": "2019-2023"
+          }
+        ]
       },
       {
         "name": "Mathieu Debuchy",
@@ -964,8 +1056,16 @@
     "teammates": [
       {
         "name": "Fraser Forster",
-        "club": "Celtic",
-        "years": "2013-2014"
+        "club": [
+          {
+            "club": "Celtic",
+            "years": "2013-2014"
+          },
+          {
+            "club": "Southampton",
+            "years": "2015-2018"
+          }
+        ]
       },
       {
         "name": "Mohamed Salah",
@@ -979,8 +1079,16 @@
       },
       {
         "name": "Sadio Mané",
-        "club": "Southampton",
-        "years": "2015-2016"
+        "club": [
+          {
+            "club": "Southampton",
+            "years": "2015-2016"
+          },
+          {
+            "club": "Liverpool",
+            "years": "2018-2022"
+          }
+        ]
       },
       {
         "name": "Dejan Lovren",
@@ -1092,8 +1200,16 @@
     "teammates": [
       {
         "name": "Naby Keïta",
-        "club": "RB Salzburg",
-        "years": "2013-2014"
+        "club": [
+          {
+            "club": "RB Salzburg",
+            "years": "2014"
+          },
+          {
+            "club": "Liverpool",
+            "years": "2018-2022"
+          }
+        ]
       },
       {
         "name": "Dusan Tadić",
@@ -1171,8 +1287,16 @@
       },
       {
         "name": "Luka Modrić",
-        "club": "Tottenham",
-        "years": "2008-2012"
+        "club": [
+          {
+            "club": "Tottenham",
+            "years": "2008-2012"
+          },
+          {
+            "club": "Real Madrid",
+            "years": "2013-2022"
+          }
+        ]
       },
       {
         "name": "Carlos Vela",
@@ -1267,8 +1391,16 @@
       },
       {
         "name": "Fabio Cannavaro",
-        "club": "Parma",
-        "years": "1995-2001"
+        "club": [
+          {
+            "club": "Parma",
+            "years": "1995-2001"
+          },
+          {
+            "club": "Juventus",
+            "years": "2004-2006"
+          }
+        ]
       },
       {
         "name": "Alessandro Del Piero",
@@ -1417,8 +1549,16 @@
       },
       {
         "name": "Neymar",
-        "club": "Barcelona",
-        "years": "2013-2016"
+        "club": [
+          {
+            "club": "Barcelona",
+            "years": "2013-2016"
+          },
+          {
+            "club": "PSG",
+            "years": "2017-2019"
+          }
+        ]
       },
       {
         "name": "Jesús Navas",
@@ -1550,8 +1690,16 @@
       },
       {
         "name": "Yossi Benayoun",
-        "club": "Liverpool",
-        "years": "2007-2010"
+        "club": [
+          {
+            "club": "Liverpool",
+            "years": "2007-2010"
+          },
+          {
+            "club": "Chelsea",
+            "years": "2011-2013"
+          }
+        ]
       },
       {
         "name": "Koke",
@@ -1636,8 +1784,16 @@
     "teammates": [
       {
         "name": "Zlatan Ibrahimović",
-        "club": "Inter Milan",
-        "years": "2006-2009"
+        "club": [
+          {
+            "club": "Inter Milan",
+            "years": "2006-2009"
+          },
+          {
+            "club": "Juventus",
+            "years": "2005-2006"
+          }
+        ]
       },
       {
         "name": "Yaya Touré",
@@ -1816,8 +1972,16 @@
       },
       {
         "name": "Zlatan Ibrahimović",
-        "club": "PSG",
-        "years": "2012-2016"
+        "club": [
+          {
+            "club": "PSG",
+            "years": "2012-2016"
+          },
+          {
+            "club": "AC Milan",
+            "years": "2010-2012"
+          }
+        ]
       }
     ],
     "nationality": "🇧🇷",
@@ -1929,8 +2093,16 @@
       },
       {
         "name": "Eden Hazard",
-        "club": "Chelsea",
-        "years": "2014-2018"
+        "club": [
+          {
+            "club": "Chelsea",
+            "years": "2014-2018"
+          },
+          {
+            "club": "Real Madrid",
+            "years": "2019-2023"
+          }
+        ]
       },
       {
         "name": "Diego Costa",
@@ -1976,8 +2148,16 @@
       },
       {
         "name": "Ezequiel Lavezzi",
-        "club": "Napoli",
-        "years": "2010-2012"
+        "club": [
+          {
+            "club": "Napoli",
+            "years": "2010-2012"
+          },
+          {
+            "club": "PSG",
+            "years": "2013-2016"
+          }
+        ]
       }
     ],
     "nationality": "🇺🇾",
@@ -2099,8 +2279,16 @@
       },
       {
         "name": "Javier Mascherano",
-        "club": "West Ham",
-        "years": "2006-2007"
+        "club": [
+          {
+            "club": "West Ham",
+            "years": "2006-2007"
+          },
+          {
+            "club": "Corinthians",
+            "years": "2005-2006"
+          }
+        ]
       },
       {
         "name": "Álvaro Morata",
@@ -2291,8 +2479,16 @@
       },
       {
         "name": "Luis Suárez",
-        "club": "Liverpool",
-        "years": "2013-2014"
+        "club": [
+          {
+            "club": "Liverpool",
+            "years": "2013-2014"
+          },
+          {
+            "club": "Barcelona",
+            "years": "2018-2019"
+          }
+        ]
       },
       {
         "name": "Daniel Sturridge",
@@ -2436,8 +2632,16 @@
     "teammates": [
       {
         "name": "Carlos Tevez",
-        "club": "West Ham",
-        "years": "2006-2007"
+        "club": [
+          {
+            "club": "West Ham",
+            "years": "2006-2007"
+          },
+          {
+            "club": "Corinthians",
+            "years": "2005-2006"
+          }
+        ]
       },
       {
         "name": "Steven Gerrard",
