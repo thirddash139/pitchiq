@@ -29,7 +29,7 @@
       }
     ],
     "nationality": "🇫🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Edin Džeko",
@@ -61,7 +61,7 @@
       }
     ],
     "nationality": "🇧🇦",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Fabio Cannavaro",
@@ -78,8 +78,16 @@
       },
       {
         "name": "Gianluigi Buffon",
-        "club": "Parma",
-        "years": "1995-2001"
+        "club": [
+          {
+            "club": "Parma",
+            "years": "1995-2001"
+          },
+          {
+            "club": "Juventus",
+            "years": "2004-2006"
+          }
+        ]
       },
       {
         "name": "Hernán Crespo",
@@ -93,7 +101,7 @@
       }
     ],
     "nationality": "🇮🇹",
-    "position": "DEF"	
+    "position": "DEF"
   },
   {
     "name": "Hernán Crespo",
@@ -115,8 +123,20 @@
       },
       {
         "name": "Juan Sebastián Verón",
-        "club": "Parma",
-        "years": "1996-1999"
+        "club": [
+          {
+            "club": "Parma",
+            "years": "1998-1999"
+          },
+          {
+            "club": "Lazio",
+            "years": "2000-2001"
+          },
+          {
+            "club": "Chelsea",
+            "years": "2003-2004"
+          }
+        ]
       },
       {
         "name": "Andriy Shevchenko",
@@ -125,7 +145,7 @@
       }
     ],
     "nationality": "🇦🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Lionel Messi",
@@ -137,8 +157,16 @@
       },
       {
         "name": "Sergio Busquets",
-        "club": "Inter Miami",
-        "years": "2023-2024"
+        "club": [
+          {
+            "club": "Inter Miami",
+            "years": "2023-2024"
+          },
+          {
+            "club": "Barcelona",
+            "years": "2008-2021"
+          }
+        ]
       },
       {
         "name": "Yaya Touré",
@@ -157,7 +185,7 @@
       }
     ],
     "nationality": "🇦🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Cristiano Ronaldo",
@@ -189,7 +217,7 @@
       }
     ],
     "nationality": "🇵🇹",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Zinedine Zidane",
@@ -221,7 +249,7 @@
       }
     ],
     "nationality": "🇫🇷",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Ronaldinho",
@@ -253,7 +281,7 @@
       }
     ],
     "nationality": "🇧🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Thierry Henry",
@@ -285,7 +313,7 @@
       }
     ],
     "nationality": "🇫🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "David Beckham",
@@ -317,7 +345,7 @@
       }
     ],
     "nationality": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Neymar",
@@ -339,8 +367,16 @@
       },
       {
         "name": "Dani Alves",
-        "club": "Barcelona",
-        "years": "2013-2016"
+        "club": [
+          {
+            "club": "Barcelona",
+            "years": "2013-2016"
+          },
+          {
+            "club": "PSG",
+            "years": "2017-2019"
+          }
+        ]
       },
       {
         "name": "Edinson Cavani",
@@ -349,7 +385,7 @@
       }
     ],
     "nationality": "🇧🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Kylian Mbappé",
@@ -381,7 +417,7 @@
       }
     ],
     "nationality": "🇫🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Erling Haaland",
@@ -413,7 +449,7 @@
       }
     ],
     "nationality": "🇳🇴",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Kevin De Bruyne",
@@ -445,7 +481,7 @@
       }
     ],
     "nationality": "🇧🇪",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Robert Lewandowski",
@@ -477,7 +513,7 @@
       }
     ],
     "nationality": "🇵🇱",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Mohamed Salah",
@@ -509,7 +545,7 @@
       }
     ],
     "nationality": "🇪🇬",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Luka Modrić",
@@ -531,8 +567,16 @@
       },
       {
         "name": "Gareth Bale",
-        "club": "Tottenham",
-        "years": "2008-2012"
+        "club": [
+          {
+            "club": "Tottenham",
+            "years": "2008-2012"
+          },
+          {
+            "club": "Real Madrid",
+            "years": "2013-2022"
+          }
+        ]
       },
       {
         "name": "Karim Benzema",
@@ -541,7 +585,7 @@
       }
     ],
     "nationality": "🇭🇷",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Sergio Ramos",
@@ -573,7 +617,7 @@
       }
     ],
     "nationality": "🇪🇸",
-    "position": "DEF"	
+    "position": "DEF"
   },
   {
     "name": "Xavi",
@@ -605,7 +649,7 @@
       }
     ],
     "nationality": "🇪🇸",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Andrea Pirlo",
@@ -637,7 +681,7 @@
       }
     ],
     "nationality": "🇮🇹",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Paolo Maldini",
@@ -669,7 +713,7 @@
       }
     ],
     "nationality": "🇮🇹",
-    "position": "DEF"	
+    "position": "DEF"
   },
   {
     "name": "Kaká",
@@ -701,7 +745,7 @@
       }
     ],
     "nationality": "🇧🇷",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Wayne Rooney",
@@ -733,7 +777,7 @@
       }
     ],
     "nationality": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Frank Lampard",
@@ -765,7 +809,7 @@
       }
     ],
     "nationality": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Steven Gerrard",
@@ -797,7 +841,7 @@
       }
     ],
     "nationality": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Ronaldo Nazário",
@@ -814,8 +858,16 @@
       },
       {
         "name": "Luís Figo",
-        "club": "Barcelona",
-        "years": "1996-1997"
+        "club": [
+          {
+            "club": "Barcelona",
+            "years": "1996-1997"
+          },
+          {
+            "club": "Real Madrid",
+            "years": "2002-2005"
+          }
+        ]
       },
       {
         "name": "Roberto Carlos",
@@ -829,7 +881,7 @@
       }
     ],
     "nationality": "🇧🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Zlatan Ibrahimović",
@@ -841,8 +893,24 @@
       },
       {
         "name": "Maxwell",
-        "club": "Inter Milan",
-        "years": "2006-2009"
+        "club": [
+          {
+            "club": "Inter Milan",
+            "years": "2006-2009"
+          },
+          {
+            "club": "Ajax",
+            "years": "2001-2004"
+          },
+          {
+            "club": "Barcelona",
+            "years": "2009-2010"
+          },
+          {
+            "club": "PSG",
+            "years": "2012-2016"
+          }
+        ]
       },
       {
         "name": "Marco Verratti",
@@ -851,8 +919,16 @@
       },
       {
         "name": "Thiago Silva",
-        "club": "AC Milan",
-        "years": "2010-2012"
+        "club": [
+          {
+            "club": "AC Milan",
+            "years": "2010-2012"
+          },
+          {
+            "club": "PSG",
+            "years": "2012-2016"
+          }
+        ]
       },
       {
         "name": "Paul Pogba",
@@ -861,7 +937,7 @@
       }
     ],
     "nationality": "🇸🇪",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Sergio Agüero",
@@ -893,7 +969,7 @@
       }
     ],
     "nationality": "🇦🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Luis Suárez",
@@ -920,12 +996,20 @@
       },
       {
         "name": "Lionel Messi",
-        "club": "Barcelona",
-        "years": "2014-2020"
+        "club": [
+          {
+            "club": "Barcelona",
+            "years": "2014-2020"
+          },
+          {
+            "club": "Inter Miami",
+            "years": "2024-2025"
+          }
+        ]
       }
     ],
     "nationality": "🇺🇾",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Eden Hazard",
@@ -942,8 +1026,16 @@
       },
       {
         "name": "Thibaut Courtois",
-        "club": "Chelsea",
-        "years": "2014-2018"
+        "club": [
+          {
+            "club": "Chelsea",
+            "years": "2014-2018"
+          },
+          {
+            "club": "Real Madrid",
+            "years": "2019-2023"
+          }
+        ]
       },
       {
         "name": "Mathieu Debuchy",
@@ -957,15 +1049,23 @@
       }
     ],
     "nationality": "🇧🇪",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Virgil van Dijk",
     "teammates": [
       {
         "name": "Fraser Forster",
-        "club": "Celtic",
-        "years": "2013-2014"
+        "club": [
+          {
+            "club": "Celtic",
+            "years": "2013-2014"
+          },
+          {
+            "club": "Southampton",
+            "years": "2015-2018"
+          }
+        ]
       },
       {
         "name": "Mohamed Salah",
@@ -979,8 +1079,16 @@
       },
       {
         "name": "Sadio Mané",
-        "club": "Southampton",
-        "years": "2015-2016"
+        "club": [
+          {
+            "club": "Southampton",
+            "years": "2015-2016"
+          },
+          {
+            "club": "Liverpool",
+            "years": "2018-2022"
+          }
+        ]
       },
       {
         "name": "Dejan Lovren",
@@ -989,7 +1097,7 @@
       }
     ],
     "nationality": "🇳🇱",
-    "position": "DEF"	
+    "position": "DEF"
   },
   {
     "name": "Toni Kroos",
@@ -1021,7 +1129,7 @@
       }
     ],
     "nationality": "🇩🇪",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Harry Kane",
@@ -1053,7 +1161,7 @@
       }
     ],
     "nationality": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Son Heung-min",
@@ -1085,15 +1193,23 @@
       }
     ],
     "nationality": "🇰🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Sadio Mané",
     "teammates": [
       {
         "name": "Naby Keïta",
-        "club": "RB Salzburg",
-        "years": "2013-2014"
+        "club": [
+          {
+            "club": "RB Salzburg",
+            "years": "2014"
+          },
+          {
+            "club": "Liverpool",
+            "years": "2018-2022"
+          }
+        ]
       },
       {
         "name": "Dusan Tadić",
@@ -1117,7 +1233,7 @@
       }
     ],
     "nationality": "🇸🇳",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "N'Golo Kanté",
@@ -1149,7 +1265,7 @@
       }
     ],
     "nationality": "🇫🇷",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Gareth Bale",
@@ -1171,8 +1287,16 @@
       },
       {
         "name": "Luka Modrić",
-        "club": "Tottenham",
-        "years": "2008-2012"
+        "club": [
+          {
+            "club": "Tottenham",
+            "years": "2008-2012"
+          },
+          {
+            "club": "Real Madrid",
+            "years": "2013-2022"
+          }
+        ]
       },
       {
         "name": "Carlos Vela",
@@ -1181,7 +1305,7 @@
       }
     ],
     "nationality": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Antoine Griezmann",
@@ -1213,7 +1337,7 @@
       }
     ],
     "nationality": "🇫🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Thomas Müller",
@@ -1245,7 +1369,7 @@
       }
     ],
     "nationality": "🇩🇪",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Gianluigi Buffon",
@@ -1267,8 +1391,16 @@
       },
       {
         "name": "Fabio Cannavaro",
-        "club": "Parma",
-        "years": "1995-2001"
+        "club": [
+          {
+            "club": "Parma",
+            "years": "1995-2001"
+          },
+          {
+            "club": "Juventus",
+            "years": "2004-2006"
+          }
+        ]
       },
       {
         "name": "Alessandro Del Piero",
@@ -1277,7 +1409,7 @@
       }
     ],
     "nationality": "🇮🇹",
-    "position": "GK"	
+    "position": "GK"
   },
   {
     "name": "Pedri",
@@ -1309,7 +1441,7 @@
       }
     ],
     "nationality": "🇪🇸",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Raheem Sterling",
@@ -1341,7 +1473,7 @@
       }
     ],
     "nationality": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Bruno Fernandes",
@@ -1373,7 +1505,7 @@
       }
     ],
     "nationality": "🇵🇹",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Karim Benzema",
@@ -1405,7 +1537,7 @@
       }
     ],
     "nationality": "🇫🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Dani Alves",
@@ -1417,8 +1549,16 @@
       },
       {
         "name": "Neymar",
-        "club": "Barcelona",
-        "years": "2013-2016"
+        "club": [
+          {
+            "club": "Barcelona",
+            "years": "2013-2016"
+          },
+          {
+            "club": "PSG",
+            "years": "2017-2019"
+          }
+        ]
       },
       {
         "name": "Jesús Navas",
@@ -1437,7 +1577,7 @@
       }
     ],
     "nationality": "🇧🇷",
-    "position": "DEF"	
+    "position": "DEF"
   },
   {
     "name": "Arjen Robben",
@@ -1469,7 +1609,7 @@
       }
     ],
     "nationality": "🇳🇱",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Robin van Persie",
@@ -1501,7 +1641,7 @@
       }
     ],
     "nationality": "🇳🇱",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Samuel Eto'o",
@@ -1533,7 +1673,7 @@
       }
     ],
     "nationality": "🇨🇲",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Fernando Torres",
@@ -1550,8 +1690,16 @@
       },
       {
         "name": "Yossi Benayoun",
-        "club": "Liverpool",
-        "years": "2007-2010"
+        "club": [
+          {
+            "club": "Liverpool",
+            "years": "2007-2010"
+          },
+          {
+            "club": "Chelsea",
+            "years": "2011-2013"
+          }
+        ]
       },
       {
         "name": "Koke",
@@ -1565,7 +1713,7 @@
       }
     ],
     "nationality": "🇪🇸",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Alessandro Del Piero",
@@ -1597,7 +1745,7 @@
       }
     ],
     "nationality": "🇮🇹",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Iker Casillas",
@@ -1629,15 +1777,23 @@
       }
     ],
     "nationality": "🇪🇸",
-    "position": "GK"	
+    "position": "GK"
   },
   {
     "name": "Patrick Vieira",
     "teammates": [
       {
         "name": "Zlatan Ibrahimović",
-        "club": "Inter Milan",
-        "years": "2006-2009"
+        "club": [
+          {
+            "club": "Inter Milan",
+            "years": "2006-2009"
+          },
+          {
+            "club": "Juventus",
+            "years": "2005-2006"
+          }
+        ]
       },
       {
         "name": "Yaya Touré",
@@ -1661,7 +1817,7 @@
       }
     ],
     "nationality": "🇫🇷",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Pierre-Emerick Aubameyang",
@@ -1693,7 +1849,7 @@
       }
     ],
     "nationality": "🇬🇦",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Mesut Özil",
@@ -1725,7 +1881,7 @@
       }
     ],
     "nationality": "🇩🇪",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Casemiro",
@@ -1757,7 +1913,7 @@
       }
     ],
     "nationality": "🇧🇷",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "David Silva",
@@ -1789,7 +1945,7 @@
       }
     ],
     "nationality": "🇪🇸",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Thiago Silva",
@@ -1816,12 +1972,20 @@
       },
       {
         "name": "Zlatan Ibrahimović",
-        "club": "PSG",
-        "years": "2012-2016"
+        "club": [
+          {
+            "club": "PSG",
+            "years": "2012-2016"
+          },
+          {
+            "club": "AC Milan",
+            "years": "2010-2012"
+          }
+        ]
       }
     ],
     "nationality": "🇧🇷",
-    "position": "DEF"	
+    "position": "DEF"
   },
   {
     "name": "David Villa",
@@ -1853,7 +2017,7 @@
       }
     ],
     "nationality": "🇪🇸",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "James Rodríguez",
@@ -1885,7 +2049,7 @@
       }
     ],
     "nationality": "🇨🇴",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Wesley Sneijder",
@@ -1917,7 +2081,7 @@
       }
     ],
     "nationality": "🇳🇱",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Thibaut Courtois",
@@ -1929,8 +2093,16 @@
       },
       {
         "name": "Eden Hazard",
-        "club": "Chelsea",
-        "years": "2014-2018"
+        "club": [
+          {
+            "club": "Chelsea",
+            "years": "2014-2018"
+          },
+          {
+            "club": "Real Madrid",
+            "years": "2019-2023"
+          }
+        ]
       },
       {
         "name": "Diego Costa",
@@ -1949,7 +2121,7 @@
       }
     ],
     "nationality": "🇧🇪",
-    "position": "GK"	
+    "position": "GK"
   },
   {
     "name": "Edinson Cavani",
@@ -1976,12 +2148,20 @@
       },
       {
         "name": "Ezequiel Lavezzi",
-        "club": "Napoli",
-        "years": "2010-2012"
+        "club": [
+          {
+            "club": "Napoli",
+            "years": "2010-2012"
+          },
+          {
+            "club": "PSG",
+            "years": "2013-2016"
+          }
+        ]
       }
     ],
     "nationality": "🇺🇾",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Cesc Fàbregas",
@@ -2013,7 +2193,7 @@
       }
     ],
     "nationality": "🇪🇸",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Alexis Sánchez",
@@ -2045,7 +2225,7 @@
       }
     ],
     "nationality": "🇨🇱",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Yaya Touré",
@@ -2077,7 +2257,7 @@
       }
     ],
     "nationality": "🇨🇮",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Carlos Tevez",
@@ -2099,8 +2279,16 @@
       },
       {
         "name": "Javier Mascherano",
-        "club": "West Ham",
-        "years": "2006-2007"
+        "club": [
+          {
+            "club": "West Ham",
+            "years": "2006-2007"
+          },
+          {
+            "club": "Corinthians",
+            "years": "2005-2006"
+          }
+        ]
       },
       {
         "name": "Álvaro Morata",
@@ -2109,7 +2297,7 @@
       }
     ],
     "nationality": "🇦🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Ivan Rakitić",
@@ -2141,7 +2329,7 @@
       }
     ],
     "nationality": "🇭🇷",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Radamel Falcao",
@@ -2173,7 +2361,7 @@
       }
     ],
     "nationality": "🇨🇴",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Mats Hummels",
@@ -2205,7 +2393,7 @@
       }
     ],
     "nationality": "🇩🇪",
-    "position": "DEF"	
+    "position": "DEF"
   },
   {
     "name": "Ousmane Dembélé",
@@ -2237,7 +2425,7 @@
       }
     ],
     "nationality": "🇫🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Arturo Vidal",
@@ -2269,7 +2457,7 @@
       }
     ],
     "nationality": "🇨🇱",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Philippe Coutinho",
@@ -2291,8 +2479,16 @@
       },
       {
         "name": "Luis Suárez",
-        "club": "Liverpool",
-        "years": "2013-2014"
+        "club": [
+          {
+            "club": "Liverpool",
+            "years": "2013-2014"
+          },
+          {
+            "club": "Barcelona",
+            "years": "2018-2019"
+          }
+        ]
       },
       {
         "name": "Daniel Sturridge",
@@ -2301,7 +2497,7 @@
       }
     ],
     "nationality": "🇧🇷",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Gonzalo Higuaín",
@@ -2333,7 +2529,7 @@
       }
     ],
     "nationality": "🇦🇷",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Romelu Lukaku",
@@ -2365,7 +2561,7 @@
       }
     ],
     "nationality": "🇧🇪",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Javier Zanetti",
@@ -2397,7 +2593,7 @@
       }
     ],
     "nationality": "🇮🇹",
-    "position": "DEF"	
+    "position": "DEF"
   },
   {
     "name": "Xabi Alonso",
@@ -2429,15 +2625,23 @@
       }
     ],
     "nationality": "🇪🇸",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Javier Mascherano",
     "teammates": [
       {
         "name": "Carlos Tevez",
-        "club": "West Ham",
-        "years": "2006-2007"
+        "club": [
+          {
+            "club": "West Ham",
+            "years": "2006-2007"
+          },
+          {
+            "club": "Corinthians",
+            "years": "2005-2006"
+          }
+        ]
       },
       {
         "name": "Steven Gerrard",
@@ -2461,7 +2665,7 @@
       }
     ],
     "nationality": "🇦🇷",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Mario Balotelli",
@@ -2493,7 +2697,7 @@
       }
     ],
     "nationality": "🇮🇹",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Juan Mata",
@@ -2525,7 +2729,7 @@
       }
     ],
     "nationality": "🇪🇸",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Leroy Sané",
@@ -2557,7 +2761,7 @@
       }
     ],
     "nationality": "🇩🇪",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Clarence Seedorf",
@@ -2589,7 +2793,7 @@
       }
     ],
     "nationality": "🇳🇱",
-    "position": "MID"	
+    "position": "MID"
   },
   {
     "name": "Juan Cuadrado",
@@ -2621,7 +2825,7 @@
       }
     ],
     "nationality": "🇨🇴",
-    "position": "FWD"	
+    "position": "FWD"
   },
   {
     "name": "Mario Götze",
@@ -2653,6 +2857,6 @@
       }
     ],
     "nationality": "🇩🇪",
-    "position": "MID"	
+    "position": "MID"
   }
 ]

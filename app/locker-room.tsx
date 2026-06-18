@@ -76,9 +76,15 @@ function TeammateCard({ tm, index, isRevealed, livesUsed, styles }: any) {
         <View>
           <Text style={styles.tmName}>{tm.name}</Text>
           {livesUsed >= 1 && (
-            <Text style={styles.tmMeta}>
-              {tm.club}{livesUsed >= 2 ? ` · ${tm.years}` : ""}
-            </Text>
+            Array.isArray(tm.club)
+              ? tm.club.map((c: any, ci: number) => (
+                  <Text key={ci} style={styles.tmMeta}>
+                    {c.club}{livesUsed >= 2 ? ` · ${c.years}` : ""}
+                  </Text>
+                ))
+              : <Text style={styles.tmMeta}>
+                  {tm.club}{livesUsed >= 2 ? ` · ${tm.years}` : ""}
+                </Text>
           )}
         </View>  
       ) : (
@@ -344,7 +350,12 @@ export default function LockerRoom() {
             {puzzle.teammates.map((tm: any, i: number) => (
               <View key={i} style={styles.connectCardNew}>
                 <Text style={styles.connectNameNew}>{tm.name}</Text>
-                <Text style={styles.connectMetaNew}>{tm.club} · {tm.years}</Text>
+                {Array.isArray(tm.club)
+                  ? tm.club.map((c: any, ci: number) => (
+                      <Text key={ci} style={styles.connectMetaNew}>{c.club} · {c.years}</Text>
+                    ))
+                  : <Text style={styles.connectMetaNew}>{tm.club} · {tm.years}</Text>
+                }
               </View>
             ))}
             <View style={{ height: 40 }} />
