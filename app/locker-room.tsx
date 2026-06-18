@@ -1,7 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRouter } from "expo-router";
 import { useEffect, useMemo, useState } from "react";
-import { Animated, Dimensions, Pressable, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Animated, Dimensions, Modal, Pressable, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { Circle, Line, Rect, Svg } from "react-native-svg";
 import dataset from "./data/teammates.json";
 
@@ -104,6 +104,69 @@ function computeStreak(history: Record<string, boolean>) {
   return streak;
 }
 
+function HelpModal({ visible, onClose, styles }: any) {
+  return (
+    <Modal visible={visible} transparent animationType="fade">
+      <Pressable style={styles.helpOverlay} onPress={onClose}>
+        <Pressable style={styles.helpModal} onPress={(e) => e.stopPropagation()}>
+          <View style={styles.helpHeader}>
+            <Text style={styles.helpTitle}>HOW TO PLAY</Text>
+            <TouchableOpacity onPress={onClose}>
+              <Text style={styles.helpClose}>✕</Text>
+            </TouchableOpacity>
+          </View>
+          <ScrollView style={styles.helpContent} showsVerticalScrollIndicator={false}>
+            <Text style={styles.helpSection}>OBJECTIVE</Text>
+            <Text style={styles.helpText}>Guess the mystery footballer from their club teammates.</Text>
+            
+            <Text style={styles.helpSection}>THE CLUE</Text>
+            <Text style={styles.helpText}>You start with 3 teammates. Here's the twist — they're from <Text style={styles.helpBold}>different clubs</Text> across the mystery player's career. That's what makes it tricky and fun.</Text>
+            
+            <Text style={styles.helpSection}>THE LIVES</Text>
+            <Text style={styles.helpText}>You have <Text style={styles.helpBold}>5 lives ⚽</Text>. Each wrong guess costs one. But the more you guess, the more clues unlock.</Text>
+            
+            <Text style={styles.helpSection}>PROGRESSIVE REVEALS</Text>
+            <View style={styles.helpRevealBox}>
+              <View style={styles.revealRow}>
+                <Text style={styles.revealNum}>0 wrong</Text>
+                <Text style={styles.revealText}>3 teammates (names only)</Text>
+              </View>
+              <View style={styles.revealRow}>
+                <Text style={styles.revealNum}>1 wrong</Text>
+                <Text style={styles.revealText}>Club name appears</Text>
+              </View>
+              <View style={styles.revealRow}>
+                <Text style={styles.revealNum}>2 wrong</Text>
+                <Text style={styles.revealText}>Years added + 4th teammate</Text>
+              </View>
+              <View style={styles.revealRow}>
+                <Text style={styles.revealNum}>3 wrong</Text>
+                <Text style={styles.revealText}>Position hint (FWD/MID/DEF/GK)</Text>
+              </View>
+              <View style={styles.revealRow}>
+                <Text style={styles.revealNum}>4 wrong</Text>
+                <Text style={styles.revealText}>Nationality 🇫🇷 + 5th teammate</Text>
+              </View>
+              <View style={styles.revealRow}>
+                <Text style={styles.revealNum}>5 wrong</Text>
+                <Text style={styles.revealText}>Game over</Text>
+              </View>
+            </View>
+            
+            <Text style={styles.helpSection}>HOW TO GUESS</Text>
+            <Text style={styles.helpText}>Type any player's name. The autocomplete has <Text style={styles.helpBold}>953 players</Text> to choose from — past and present, all leagues.</Text>
+            
+            <Text style={styles.helpSection}>STREAK</Text>
+            <Text style={styles.helpText}>Play every day to build your streak. One puzzle a day. Same for everyone. No spoilers — your shared result is just emoji.</Text>
+            
+            <View style={{ height: 24 }} />
+          </ScrollView>
+        </Pressable>
+      </Pressable>
+    </Modal>
+  );
+}
+
 export default function LockerRoom() {
   const router = useRouter();
 
@@ -138,6 +201,7 @@ export default function LockerRoom() {
   const [status, setStatus] = useState<"loading" | "playing" | "won" | "lost">("loading");
   const [history, setHistory] = useState<Record<string, boolean>>({});
   const [copied, setCopied] = useState(false);
+  const [helpVisible, setHelpVisible] = useState(false);
   const shakeX = useState(new Animated.Value(0))[0];
 
   function triggerShake() {
@@ -216,6 +280,8 @@ export default function LockerRoom() {
 
   return (
     <View style={styles.shell}>
+      <HelpModal visible={helpVisible} onClose={() => setHelpVisible(false)} styles={styles} />
+      
       <View style={styles.topbar}>
         <Svg style={styles.topbarMotif} width={90} height={90} viewBox="0 0 90 90">
           <Rect x={12} y={16} width={18} height={58} rx={2} fill="#fff" opacity={0.06} />
@@ -227,7 +293,7 @@ export default function LockerRoom() {
             <Text style={styles.back}>←</Text>
           </TouchableOpacity>
           <Text style={styles.title}>LOCKER <Text style={styles.titleAccent}>ROOM</Text></Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => setHelpVisible(true)}>
             <Text style={styles.help}>?</Text>
           </TouchableOpacity>
         </View>
@@ -457,7 +523,7 @@ const styles = StyleSheet.create({
   connectCardNew: { backgroundColor: "rgba(255,255,255,0.06)", borderWidth: 1, borderColor: "rgba(255,255,255,0.08)", borderRadius: 12, padding: 12, marginBottom: 8, width: "100%" },
   connectNameNew: { fontSize: 13, fontWeight: "600", color: "#fff" },
   connectMetaNew: { fontSize: 11, color: "rgba(255,255,255,0.5)", marginTop: 2 },
-  inputZone: { position: "absolute", bottom: 0, left: 0, right: 0, backgroundColor: "#F2EBD9", borderTopWidth: 1, borderTopColor: "#D9CEB5", paddingHorizontal: 24, paddingTop: 16, paddingBottom: 24 },
+  inputZone: { position: "absolute", bottom: 0, left: 0, right: 0, backgroundColor: "#F2EBD9", borderTopWidth: 1, borderTopColor: "#D9CEB1", paddingHorizontal: 24, paddingTop: 16, paddingBottom: 24 },
   suggestions: { backgroundColor: "#fff", borderRadius: 12, borderWidth: 1, borderColor: "#D9CEB5", marginBottom: 8, overflow: "hidden" },
   suggestionRow: { paddingVertical: 12, paddingHorizontal: 16, borderBottomWidth: 1, borderBottomColor: "#f0ebdd" },
   suggestionText: { fontSize: 14, color: "#1A1208", fontWeight: "500" },
@@ -465,4 +531,19 @@ const styles = StyleSheet.create({
   input: { flex: 1, fontSize: 14, color: "#1A1208", paddingVertical: 8 },
   submitBtn: { backgroundColor: "#2D6A32", width: 36, height: 36, borderRadius: 12, alignItems: "center", justifyContent: "center" },
   submitArrow: { color: "#fff", fontSize: 16 },
+  
+  // Help modal styles
+  helpOverlay: { flex: 1, backgroundColor: "rgba(0,0,0,0.5)", justifyContent: "flex-end" },
+  helpModal: { backgroundColor: "#F2EBD9", borderTopLeftRadius: 24, borderTopRightRadius: 24, maxHeight: "90%", paddingTop: 16 },
+  helpHeader: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 24, paddingBottom: 16, borderBottomWidth: 1, borderBottomColor: "#D9CEB5" },
+  helpTitle: { fontFamily: "BebasNeue", fontSize: 22, color: "#1E4D24", letterSpacing: 1 },
+  helpClose: { fontSize: 20, color: "#9C8E6E", fontWeight: "600" },
+  helpContent: { paddingHorizontal: 24, paddingTop: 16 },
+  helpSection: { fontSize: 10, color: "#1E4D24", textTransform: "uppercase", letterSpacing: 1.5, fontWeight: "700", marginTop: 20, marginBottom: 8 },
+  helpText: { fontSize: 14, color: "#3A3228", lineHeight: 21, marginBottom: 12 },
+  helpBold: { fontWeight: "700" },
+  helpRevealBox: { backgroundColor: "#fff", borderRadius: 12, padding: 12, borderWidth: 1, borderColor: "#D9CEB5", marginTop: 8 },
+  revealRow: { paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: "#f0ebdd", flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
+  revealNum: { fontSize: 12, fontWeight: "700", color: "#1E4D24", width: 70 },
+  revealText: { fontSize: 12, color: "#3A3228", flex: 1, marginLeft: 8 },
 });
