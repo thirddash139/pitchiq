@@ -115,52 +115,24 @@ function HelpModal({ visible, onClose, styles }: any) {
               <Text style={styles.helpClose}>✕</Text>
             </TouchableOpacity>
           </View>
-          <ScrollView style={styles.helpContent} showsVerticalScrollIndicator={false}>
-            <Text style={styles.helpSection}>OBJECTIVE</Text>
-            <Text style={styles.helpText}>Guess the mystery footballer from their club teammates.</Text>
-            
-            <Text style={styles.helpSection}>THE CLUE</Text>
-            <Text style={styles.helpText}>You start with 3 teammates. Here's the twist — they're from <Text style={styles.helpBold}>different clubs</Text> across the mystery player's career. That's what makes it tricky and fun.</Text>
-            
-            <Text style={styles.helpSection}>THE LIVES</Text>
-            <Text style={styles.helpText}>You have <Text style={styles.helpBold}>5 lives ⚽</Text>. Each wrong guess costs one. But the more you guess, the more clues unlock.</Text>
-            
-            <Text style={styles.helpSection}>PROGRESSIVE REVEALS</Text>
+          <View style={styles.helpContent}>
+            <Text style={styles.helpText}>Guess the mystery footballer from their <Text style={styles.helpBold}>club teammates</Text>. Teammates span different clubs across their career — that's the twist.</Text>
+            <Text style={styles.helpText}>You have <Text style={styles.helpBold}>5 lives ⚽</Text>. Wrong guesses unlock more clues.</Text>
             <View style={styles.helpRevealBox}>
-              <View style={styles.revealRow}>
-                <Text style={styles.revealNum}>0 wrong</Text>
-                <Text style={styles.revealText}>3 teammates (names only)</Text>
-              </View>
-              <View style={styles.revealRow}>
-                <Text style={styles.revealNum}>1 wrong</Text>
-                <Text style={styles.revealText}>Club name appears</Text>
-              </View>
-              <View style={styles.revealRow}>
-                <Text style={styles.revealNum}>2 wrong</Text>
-                <Text style={styles.revealText}>Years added + 4th teammate</Text>
-              </View>
-              <View style={styles.revealRow}>
-                <Text style={styles.revealNum}>3 wrong</Text>
-                <Text style={styles.revealText}>Position hint (FWD/MID/DEF/GK)</Text>
-              </View>
-              <View style={styles.revealRow}>
-                <Text style={styles.revealNum}>4 wrong</Text>
-                <Text style={styles.revealText}>Nationality 🇫🇷 + 5th teammate</Text>
-              </View>
-              <View style={styles.revealRow}>
-                <Text style={styles.revealNum}>5 wrong</Text>
-                <Text style={styles.revealText}>Game over</Text>
-              </View>
+              {[
+                ["1 wrong", "Club names appear"],
+                ["2 wrong", "Years + 4th teammate"],
+                ["3 wrong", "Position hint"],
+                ["4 wrong", "Nationality + 5th teammate"],
+              ].map(([trigger, result]) => (
+                <View key={trigger} style={styles.revealRow}>
+                  <Text style={styles.revealNum}>{trigger}</Text>
+                  <Text style={styles.revealText}>{result}</Text>
+                </View>
+              ))}
             </View>
-            
-            <Text style={styles.helpSection}>HOW TO GUESS</Text>
-            <Text style={styles.helpText}>Type any player's name. The autocomplete has <Text style={styles.helpBold}>953 players</Text> to choose from — past and present, all leagues.</Text>
-            
-            <Text style={styles.helpSection}>STREAK</Text>
-            <Text style={styles.helpText}>Play every day to build your streak. One puzzle a day. Same for everyone. No spoilers — your shared result is just emoji.</Text>
-            
-            <View style={{ height: 24 }} />
-          </ScrollView>
+            <Text style={styles.helpFooter}>One puzzle a day. Same for everyone.</Text>
+          </View>
         </Pressable>
       </Pressable>
     </Modal>
@@ -538,10 +510,11 @@ const styles = StyleSheet.create({
   helpHeader: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 24, paddingBottom: 16, borderBottomWidth: 1, borderBottomColor: "#D9CEB5" },
   helpTitle: { fontFamily: "BebasNeue", fontSize: 22, color: "#1E4D24", letterSpacing: 1 },
   helpClose: { fontSize: 20, color: "#9C8E6E", fontWeight: "600" },
-  helpContent: { paddingHorizontal: 24, paddingTop: 16 },
+  helpContent: { paddingHorizontal: 24, paddingTop: 16, paddingBottom: 32, gap: 12 },
   helpSection: { fontSize: 10, color: "#1E4D24", textTransform: "uppercase", letterSpacing: 1.5, fontWeight: "700", marginTop: 20, marginBottom: 8 },
   helpText: { fontSize: 14, color: "#3A3228", lineHeight: 21, marginBottom: 12 },
   helpBold: { fontWeight: "700" },
+  helpFooter: { fontSize: 12, color: "#9C8E6E", textAlign: "center", marginTop: 4 },
   helpRevealBox: { backgroundColor: "#fff", borderRadius: 12, padding: 12, borderWidth: 1, borderColor: "#D9CEB5", marginTop: 8 },
   revealRow: { paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: "#f0ebdd", flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
   revealNum: { fontSize: 12, fontWeight: "700", color: "#1E4D24", width: 70 },
