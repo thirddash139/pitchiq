@@ -1,5 +1,5 @@
 # Pitch IQ — Project Context
-*Last updated: Session — progressive reveal overhaul, hint pills, expanded autocomplete*
+*Last updated: Session — reordered progressive reveals (position → years → club → nationality), help modal added*
 
 ## Overview
 Football trivia web app, 5 games. Expo/React Native → static web export. Web-first, no App Store.
@@ -87,9 +87,9 @@ Removing `if (!fontsLoaded) return <blank view>` gate from `_layout.tsx` fixed b
 | Wrong guesses | What reveals |
 |---|---|
 | 0 | 3 teammates (name only) |
-| 1 | Club added to existing 3 cards |
-| 2 | Years added + 4th teammate revealed (full) |
-| 3 | Position hint pill appears (FWD/MID/DEF/GK) |
+| 1 | Position hint pill appears (FWD/MID/DEF/GK) |
+| 2 | Years added to cards + 4th teammate revealed (full) |
+| 3 | Club added to cards |
 | 4 | Nationality hint pill appears (🇫🇷) + 5th teammate revealed (full) |
 | 5 | Game over |
 
@@ -134,7 +134,7 @@ Think before coding. Simplicity first. Surgical changes. Goal-driven (verifiable
 4. **Feedback section** — lightweight player idea collection (Google Form or mailto link)
 5. **Buy Me a Coffee** — Ko-fi or similar donation link
 6. **Custom analytics events** — track puzzle completion + share rate
-7. **Polish:** help/rules screen (? button), skip option, real streak on home card
+7. **Polish:** skip option, real streak on home card
 
 ## Dev Tips
 - Reset puzzle: console `localStorage.clear()` + refresh. On phone: incognito tab.

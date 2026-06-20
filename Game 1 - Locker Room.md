@@ -20,14 +20,16 @@ Wordle-style daily football quiz. Players guess a mystery footballer from their 
 | Wrong guesses | What reveals |
 |---|---|
 | 0 | 3 teammates shown (name only) |
-| 1 | Club added to all revealed cards |
-| 2 | Years added to all revealed cards + 4th teammate appears (full) |
-| 3 | Position hint pill appears (FWD/MID/DEF/GK) |
+| 1 | Position hint pill appears (FWD/MID/DEF/GK) |
+| 2 | Years added to cards + 4th teammate appears (full) |
+| 3 | Club added to all revealed cards |
 | 4 | Nationality hint pill appears (🇫🇷) + 5th teammate appears (full) |
 | 5 | Game over |
 
 Wrong guesses shown as red pills ABOVE the hints section and teammate cards.
 Hint pills: cream bg, dark green border, centered text. Flag emoji size 24.
+
+**Card meta format:** years render before club — `2001–2003 · Real Madrid`. Multi-club overlaps stack one line per stint. Years (step 2) appear before club is attached (step 3), so a card briefly shows years alone.
 
 ## Key Design Decisions (the "why")
 
@@ -98,7 +100,6 @@ Some obscure teammates swapped for recognisable names while keeping "aha" qualit
 
 ## 🔥 Now (this week)
 - [ ] Real streak on home card (wire to `lockerRoomHistory` storage)
-- [ ] Help / rules screen (the "?" button currently does nothing)
 
 ## 🔜 Next (this month)
 - [ ] Stats screen — total played, win rate, current + best streak, history
@@ -132,7 +133,8 @@ Some obscure teammates swapped for recognisable names while keeping "aha" qualit
 - [x] Open Graph image + meta tags
 - [x] Guess count bug fixed (`totalGuesses` state)
 - [x] Expanded autocomplete to 953 players (`players.json` merged with puzzle pool)
-- [x] Progressive reveal system (name → club → years → position → nationality → 5th teammate)
+- [x] Progressive reveal system (name → position → years → club → nationality → 5th teammate)
+- [x] Help modal (? button) — rules + progressive reveal table
 - [x] Wrong guesses moved above teammates section
 - [x] Hint pills (position + nationality) — cream bg, green border, centered, flag emoji size 24
 - [x] `nationality` + `position` fields added to all 83 players in `teammates.json`
