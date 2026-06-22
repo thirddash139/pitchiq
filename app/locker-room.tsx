@@ -6,6 +6,10 @@ import { Circle, Line, Rect, Svg } from "react-native-svg";
 import dataset from "./data/teammates.json";
 
 const STORAGE_KEY = "lockerRoomHistory";
+const WHATS_NEW = {
+  id: "rating-v1",
+  text: "New: Rate today's puzzle after you play — Easy, Just Right, or Tricky.",
+};
 const { width } = Dimensions.get("window");
 
 // --- date helpers ---
@@ -174,7 +178,26 @@ export default function LockerRoom() {
   const [history, setHistory] = useState<Record<string, boolean>>({});
   const [copied, setCopied] = useState(false);
   const [helpVisible, setHelpVisible] = useState(false);
+  const [rating, setRating] = useState<string | null>(null);
   const shakeX = useState(new Animated.Value(0))[0];
+  const [whatsNew, setWhatsNew] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!WHATS_NEW) return;
+    (async () => {
+      try {
+        const seen = await AsyncStorage.getItem("whatsNewSeen");
+        if (seen !== WHATS_NEW.id) setWhatsNew(WHATS_NEW.text);
+      } catch {}
+    })();
+  }, []);
+
+  async function dismissWhatsNew() {
+    setWhatsNew(null);
+    if (WHATS_NEW) {
+      try { await AsyncStorage.setItem("whatsNewSeen", WHATS_NEW.id); } catch {}
+    }
+  }
 
   function triggerShake() {
     Animated.sequence([
@@ -291,6 +314,15 @@ export default function LockerRoom() {
               <Text style={styles.promptText}>These players were all club teammates of one footballer.</Text>
             </View>
 
+            {whatsNew && (
+              <View style={styles.whatsNewBox}>
+                <Text style={styles.whatsNewText}>{whatsNew}</Text>
+                <TouchableOpacity onPress={dismissWhatsNew}>
+                  <Text style={styles.whatsNewClose}>✕</Text>
+                </TouchableOpacity>
+              </View>
+            )}
+
             {wrongGuesses.length > 0 && (
               <View style={styles.guessPills}>
                 {wrongGuesses.map((g) => (
@@ -382,6 +414,38 @@ export default function LockerRoom() {
             <TouchableOpacity onPress={() => router.replace("/")}>
               <Text style={styles.homeBtnNew}>Back to Games</Text>
             </TouchableOpacity>
+
+            {/* Difficulty rating */}
+            <Text style={styles.ratingLabel}>How hard was today's puzzle?</Text>
+            <View style={styles.ratingRow}>
+              {[
+                { key: "easy", label: "Easy", color: "#4ade80" },
+                { key: "just_right", label: "Just Right", color: "#fbbf24" },
+                { key: "tricky", label: "Tricky", color: "#f87171" },
+              ].map((r) => (
+                <TouchableOpacity
+                  key={r.key}
+                  style={[
+                    styles.ratingPill,
+                    rating === r.key && { backgroundColor: r.color, borderColor: r.color },
+                    rating && rating !== r.key && styles.ratingPillDimmed,
+                  ]}
+                  onPress={() => {
+                    if (!rating) {
+                      setRating(r.key);
+                      try { (window as any).va?.track("puzzle_rated", { day: dayNumber, rating: r.key }); } catch {}
+                    }
+                  }}
+                  activeOpacity={rating ? 1 : 0.7}
+                >
+                  <Text style={[
+                    styles.ratingPillText,
+                    rating === r.key && { color: "#1A1208" },
+                    rating && rating !== r.key && styles.ratingPillTextDimmed,
+                  ]}>{r.label}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
 
             {/* How they connect — below the fold */}
             <Text style={styles.connectLabel}>How They Connect</Text>
@@ -503,7 +567,15 @@ const styles = StyleSheet.create({
   input: { flex: 1, fontSize: 14, color: "#1A1208", paddingVertical: 8 },
   submitBtn: { backgroundColor: "#2D6A32", width: 36, height: 36, borderRadius: 12, alignItems: "center", justifyContent: "center" },
   submitArrow: { color: "#fff", fontSize: 16 },
-  
+  ratingLabel: { fontSize: 9, color: "rgba(255,255,255,0.5)", textTransform: "uppercase", letterSpacing: 2, fontWeight: "700", marginTop: 32, marginBottom: 12 },
+  ratingRow: { flexDirection: "row", gap: 8, marginBottom: 8, width: "100%" },
+  ratingPill: { flex: 1, paddingVertical: 12, borderRadius: 12, alignItems: "center", borderWidth: 1.5, borderColor: "rgba(255,255,255,0.2)", backgroundColor: "transparent" },
+  ratingPillDimmed: { opacity: 0.3 },
+  ratingPillText: { fontSize: 12, fontWeight: "700", color: "rgba(255,255,255,0.7)" },
+  ratingPillTextDimmed: { color: "rgba(255,255,255,0.4)" },
+  whatsNewBox: { marginHorizontal: 24, marginTop: 12, marginBottom: 4, backgroundColor: "#DCEFD8", borderRadius: 12, padding: 12, flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderWidth: 1, borderColor: "#b8ddb3" },
+  whatsNewText: { fontSize: 12, color: "#1E4D24", flex: 1, lineHeight: 17 },
+  whatsNewClose: { fontSize: 16, color: "#1E4D24", opacity: 0.5, paddingLeft: 12 },
   // Help modal styles
   helpOverlay: { flex: 1, backgroundColor: "rgba(0,0,0,0.5)", justifyContent: "flex-end" },
   helpModal: { backgroundColor: "#F2EBD9", borderTopLeftRadius: 24, borderTopRightRadius: 24, maxHeight: "90%", paddingTop: 16 },
