@@ -120,9 +120,9 @@ function HelpModal({ visible, onClose, styles }: any) {
             <Text style={styles.helpText}>You have <Text style={styles.helpBold}>5 lives ⚽</Text>. Wrong guesses unlock more clues.</Text>
             <View style={styles.helpRevealBox}>
               {[
-                ["1 wrong", "Club names appear"],
+                ["1 wrong", "Position hint"],
                 ["2 wrong", "Years + 4th teammate"],
-                ["3 wrong", "Position hint"],
+                ["3 wrong", "Club names appear"],
                 ["4 wrong", "Nationality + 5th teammate"],
               ].map(([trigger, result]) => (
                 <View key={trigger} style={styles.revealRow}>
