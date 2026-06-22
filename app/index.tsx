@@ -1,4 +1,6 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRouter } from "expo-router";
+import { useEffect, useState } from "react";
 import { Dimensions, ImageBackground, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Circle, Path, Rect, Svg, Text as SvgText } from "react-native-svg";
 
@@ -6,6 +8,55 @@ const { width } = Dimensions.get("window");
 
 export default function Index() {
   const router = useRouter();
+  const [streak, setStreak] = useState(0);
+  const [streakPaused, setStreakPaused] = useState(false);
+  const [playedToday, setPlayedToday] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const raw = await AsyncStorage.getItem("lockerRoomHistory");
+        const hist: Record<string, boolean> = raw ? JSON.parse(raw) : {};
+
+        const getKey = (offsetDays: number) => {
+          const d = new Date();
+          d.setDate(d.getDate() - offsetDays);
+          return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+        };
+
+        const todayKey = getKey(0);
+        const yesterdayKey = getKey(1);
+
+        setPlayedToday(hist[todayKey] !== undefined);
+
+        // if missed 2+ days in a row, streak is 0
+        if (hist[todayKey] === undefined && hist[yesterdayKey] === undefined) {
+          setStreak(0);
+          setStreakPaused(false);
+          return;
+        }
+
+        // compute streak — skip today if not played, skip yesterday if paused
+        let s = 0;
+        for (let i = 0; i < 3650; i++) {
+          const key = getKey(i);
+          if (hist[key] !== undefined) {
+            s++;
+          } else if (i === 0 && hist[yesterdayKey] !== undefined) {
+            // haven't played today yet — don't break, just skip today
+            continue;
+          } else if (i === 1 && hist[todayKey] === undefined) {
+            // missed yesterday — grace day, mark as paused
+            setStreakPaused(true);
+            continue;
+          } else {
+            break;
+          }
+        }
+        setStreak(s);
+      } catch {}
+    })();
+  }, []);
   return (
     <View style={styles.shell}>
       <ScrollView style={styles.scroll} contentContainerStyle={{ justifyContent: "flex-start" }} showsVerticalScrollIndicator={false} bounces={false}>
@@ -49,6 +100,15 @@ export default function Index() {
                 <Text style={styles.cardDesc}>Guess the footballer from their club teammates.</Text>
               </View>
               <View style={styles.cardFooter}>
+                {streak > 0 && (
+                  <Text style={streakPaused ? styles.cardStreakPaused : styles.cardStreak}>
+                    {streakPaused
+                      ? `🛡️ ${streak} — streak paused`
+                      : playedToday
+                      ? `🔥 ${streak}`
+                      : `🔥 ${streak} — play to keep it`}
+                  </Text>
+                )}
                 <View style={styles.playBtnGreen}>
                   <Text style={styles.playArrow}>→</Text>
                 </View>
@@ -140,6 +200,8 @@ const styles = StyleSheet.create({
   cardFooter: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
   cardStat: { fontSize: 10, fontWeight: "600", color: "#2D6A32" },
   cardStatMuted: { fontSize: 10, fontWeight: "600", color: "#C4B89A" },
+  cardStreak: { fontSize: 11, fontWeight: "700", color: "#2D6A32" },
+  cardStreakPaused: { fontSize: 11, fontWeight: "700", color: "#9C8E6E" },
   playBtnGreen: { width: 32, height: 32, borderRadius: 16, backgroundColor: "#2D6A32", alignItems: "center", justifyContent: "center" },
   playArrow: { color: "#fff", fontSize: 16 },
   playBtnMuted: { width: 32, height: 32, borderRadius: 16, backgroundColor: "#EDE8DD", alignItems: "center", justifyContent: "center" },
