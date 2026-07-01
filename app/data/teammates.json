@@ -620,38 +620,6 @@
     "position": "DEF"
   },
   {
-    "name": "Xavi",
-    "teammates": [
-      {
-        "name": "Deco",
-        "club": "Barcelona",
-        "years": "2004-2008"
-      },
-      {
-        "name": "Ronaldinho",
-        "club": "Barcelona",
-        "years": "2003-2008"
-      },
-      {
-        "name": "David Villa",
-        "club": "Barcelona",
-        "years": "2010-2013"
-      },
-      {
-        "name": "Samuel Eto'o",
-        "club": "Barcelona",
-        "years": "2004-2009"
-      },
-      {
-        "name": "Lionel Messi",
-        "club": "Barcelona",
-        "years": "2004-2015"
-      }
-    ],
-    "nationality": "🇪🇸",
-    "position": "MID"
-  },
-  {
     "name": "Andrea Pirlo",
     "teammates": [
       {
@@ -682,38 +650,6 @@
     ],
     "nationality": "🇮🇹",
     "position": "MID"
-  },
-  {
-    "name": "Paolo Maldini",
-    "teammates": [
-      {
-        "name": "Ruud Gullit",
-        "club": "AC Milan",
-        "years": "1987-1993"
-      },
-      {
-        "name": "Ronaldinho",
-        "club": "AC Milan",
-        "years": "2008-2009"
-      },
-      {
-        "name": "David Beckham",
-        "club": "AC Milan",
-        "years": "2009"
-      },
-      {
-        "name": "Andriy Shevchenko",
-        "club": "AC Milan",
-        "years": "1999-2006"
-      },
-      {
-        "name": "Andrea Pirlo",
-        "club": "AC Milan",
-        "years": "2001-2009"
-      }
-    ],
-    "nationality": "🇮🇹",
-    "position": "DEF"
   },
   {
     "name": "Kaká",
@@ -1340,38 +1276,6 @@
     "position": "FWD"
   },
   {
-    "name": "Thomas Müller",
-    "teammates": [
-      {
-        "name": "Luca Toni",
-        "club": "Bayern Munich",
-        "years": "2008-2010"
-      },
-      {
-        "name": "James Rodríguez",
-        "club": "Bayern Munich",
-        "years": "2017-2019"
-      },
-      {
-        "name": "Harry Kane",
-        "club": "Bayern Munich",
-        "years": "2023-present"
-      },
-      {
-        "name": "Xabi Alonso",
-        "club": "Bayern Munich",
-        "years": "2014-2017"
-      },
-      {
-        "name": "Manuel Neuer",
-        "club": "Bayern Munich",
-        "years": "2011-present"
-      }
-    ],
-    "nationality": "🇩🇪",
-    "position": "FWD"
-  },
-  {
     "name": "Gianluigi Buffon",
     "teammates": [
       {
@@ -1714,38 +1618,6 @@
     ],
     "nationality": "🇪🇸",
     "position": "FWD"
-  },
-  {
-    "name": "Alessandro Del Piero",
-    "teammates": [
-      {
-        "name": "Thierry Henry",
-        "club": "Juventus",
-        "years": "1999"
-      },
-      {
-        "name": "Zinedine Zidane",
-        "club": "Juventus",
-        "years": "1996-2001"
-      },
-      {
-        "name": "Gianluigi Buffon",
-        "club": "Juventus",
-        "years": "2001-2012"
-      },
-      {
-        "name": "Giorgio Chiellini",
-        "club": "Juventus",
-        "years": "2005-2012"
-      },
-      {
-        "name": "David Trezeguet",
-        "club": "Juventus",
-        "years": "2000-2010"
-      }
-    ],
-    "nationality": "🇮🇹",
-    "position": "MID"
   },
   {
     "name": "Iker Casillas",
@@ -2562,38 +2434,6 @@
     ],
     "nationality": "🇧🇪",
     "position": "FWD"
-  },
-  {
-    "name": "Javier Zanetti",
-    "teammates": [
-      {
-        "name": "Ronaldo Nazário",
-        "club": "Inter Milan",
-        "years": "1997-2002"
-      },
-      {
-        "name": "Wesley Sneijder",
-        "club": "Inter Milan",
-        "years": "2009-2013"
-      },
-      {
-        "name": "Samuel Eto'o",
-        "club": "Inter Milan",
-        "years": "2009-2011"
-      },
-      {
-        "name": "Zlatan Ibrahimović",
-        "club": "Inter Milan",
-        "years": "2006-2009"
-      },
-      {
-        "name": "Roberto Baggio",
-        "club": "Inter Milan",
-        "years": "1998-2000"
-      }
-    ],
-    "nationality": "🇮🇹",
-    "position": "DEF"
   },
   {
     "name": "Xabi Alonso",
