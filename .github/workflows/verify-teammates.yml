@@ -19,14 +19,12 @@ jobs:
         with:
           node-version: "20"
 
-      # Run the open-source Transfermarkt API locally inside the job
       - name: Start transfermarkt-api
         run: |
           git clone --depth 1 https://github.com/felipeall/transfermarkt-api.git /tmp/tm-api
           cd /tmp/tm-api
           docker build -t tm-api .
           docker run -d -p 8000:8000 --name tm-api tm-api
-          # wait until it responds
           for i in $(seq 1 30); do
             curl -sf http://localhost:8000/ > /dev/null && break
             sleep 2
@@ -49,6 +47,14 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
             cp teammates.corrected.json app/data/teammates.json
           fi
+
+      - name: Commit cache back to repo
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Teammates Verifier"
+          git add scripts/career-cache.json || true
+          git diff --staged --quiet || git commit -m "chore: update career cache [skip ci]"
+          git push || true
 
       - name: Open PR with corrections + report
         if: steps.diff.outputs.changed == 'true' || steps.verify.outputs.clean == 'false'
