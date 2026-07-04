@@ -25,8 +25,9 @@ const CORRECTED_PATH = "./teammates.corrected.json";
 // Names where Transfermarkt search is ambiguous — pin the exact TM player ID here.
 // Find IDs at transfermarkt.com (the number in the profile URL).
 const ID_OVERRIDES = {
-  // "Ronaldo Nazário": 3140,
-  // "Danilo": 145707,
+  "Vinícius Jr.": 371998,
+  "Juan Mata": 44068,
+  "Son Heung-min": 91845,
 };
 
 // Club name aliases: dataset name → substrings that match Transfermarkt's naming
