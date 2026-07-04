@@ -1,0 +1,65 @@
+name: Verify teammates data
+
+on:
+  schedule:
+    - cron: "0 3 * * 1" # Mondays 3 AM UTC
+  workflow_dispatch: {} # manual trigger from Actions tab
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Run the open-source Transfermarkt API locally inside the job
+      - name: Start transfermarkt-api
+        run: |
+          git clone --depth 1 https://github.com/felipeall/transfermarkt-api.git /tmp/tm-api
+          cd /tmp/tm-api
+          docker build -t tm-api .
+          docker run -d -p 8000:8000 --name tm-api tm-api
+          # wait until it responds
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:8000/ > /dev/null && break
+            sleep 2
+          done
+
+      - name: Run verification
+        id: verify
+        env:
+          TM_API: http://localhost:8000
+        run: |
+          node scripts/verify-teammates.mjs && echo "clean=true" >> $GITHUB_OUTPUT || echo "clean=false" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if cmp -s app/data/teammates.json teammates.corrected.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            cp teammates.corrected.json app/data/teammates.json
+          fi
+
+      - name: Open PR with corrections + report
+        if: steps.diff.outputs.changed == 'true' || steps.verify.outputs.clean == 'false'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/teammates-verification
+          delete-branch: true
+          commit-message: "chore: teammates verification — auto year corrections"
+          title: "🔍 Teammates verification report"
+          body-path: verification-report.md
+          add-paths: |
+            app/data/teammates.json
+            scripts/career-cache.json
+          labels: data-quality
