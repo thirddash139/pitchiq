@@ -269,7 +269,10 @@ async function checkUniqueness(cache, player) {
 
 // ---------- pass 1: connection accuracy (unchanged) ----------
 
-function computeOverlap(answerStints, mateStints, club) {
+// Returns ALL distinct overlap windows (one per pair of co-occurring stints).
+// Multi-stint players (e.g. two spells at the same club) produce multiple windows —
+// these are NEVER merged, because merging spans absences and fabricates years.
+function computeOverlapWindows(answerStints, mateStints, club) {
   const a = answerStints.filter((s) => clubMatches(club, s.club));
   const b = mateStints.filter((s) => clubMatches(club, s.club));
   const windows = [];
@@ -279,11 +282,26 @@ function computeOverlap(answerStints, mateStints, club) {
       const end = Math.min(s1.end, s2.end);
       if (start <= end) windows.push({ start, end });
     }
-  if (!windows.length) return null;
-  return {
-    start: Math.min(...windows.map((w) => w.start)),
-    end: Math.max(...windows.map((w) => w.end)),
-  };
+  return windows;
+}
+
+function windowMatchesListed(listed, w) {
+  const startOk = Math.abs(listed.start - w.start) <= 1;
+  const endOk =
+    (listed.end === 9999 && w.end === 9999) ||
+    (listed.end !== 9999 && w.end !== 9999 && Math.abs(listed.end - w.end) <= 1) ||
+    // listed as a closed range but window still open (active players): accept if start fits and listed end ≥ window start
+    (listed.end !== 9999 && w.end === 9999 && listed.end >= w.start);
+  return startOk && endOk;
+}
+
+// Listed years can also be a SUBSET of a longer real window — e.g. a clue that
+// deliberately shows only "2013" of a 2013-2016 overlap. Subset = contained inside
+// one window. That's accurate, not an error, so treat as OK.
+function windowContainsListed(listed, w) {
+  const endCap = w.end === 9999 ? Infinity : w.end + 1;
+  const listedEnd = listed.end === 9999 ? Infinity : listed.end;
+  return listed.start >= w.start - 1 && listedEnd <= endCap;
 }
 
 function checkConnection(answer, mate, club, yearsStr, cache) {
@@ -292,23 +310,36 @@ function checkConnection(answer, mate, club, yearsStr, cache) {
   if (!A?.id) return { status: "UNRESOLVED", msg: `Could not resolve "${answer}" on Transfermarkt` };
   if (!B?.id) return { status: "UNRESOLVED", msg: `Could not resolve "${mate}" on Transfermarkt` };
 
-  const overlap = computeOverlap(A.stints, B.stints, club);
-  if (!overlap)
+  const windows = computeOverlapWindows(A.stints, B.stints, club);
+  if (!windows.length)
     return { status: "NO_OVERLAP", msg: `${mate} + ${answer} — no shared window found at ${club}` };
 
   const listed = parseYears(yearsStr);
-  if (!listed) return { status: "YEARS_MISMATCH", overlap, msg: `Unparseable years "${yearsStr}"` };
+  if (!listed) {
+    return {
+      status: "YEARS_MISMATCH",
+      overlap: windows[0],
+      msg: `Unparseable years "${yearsStr}" (windows: ${windows.map(fmtYears).join(", ")})`,
+    };
+  }
 
-  const startOk = Math.abs(listed.start - overlap.start) <= 1;
-  const endOk =
-    (listed.end === 9999 && overlap.end === 9999) ||
-    (listed.end !== 9999 && overlap.end !== 9999 && Math.abs(listed.end - overlap.end) <= 1);
+  // OK if listed years match ANY single window, or sit inside one
+  for (const w of windows) {
+    if (windowMatchesListed(listed, w) || windowContainsListed(listed, w)) {
+      return { status: "OK", overlap: w };
+    }
+  }
 
-  if (startOk && endOk) return { status: "OK", overlap };
+  // Mismatch: suggest the window closest to the listed start year — never a merged span
+  const best = windows.reduce((p, c) =>
+    Math.abs(c.start - listed.start) < Math.abs(p.start - listed.start) ? c : p
+  );
   return {
     status: "YEARS_MISMATCH",
-    overlap,
-    msg: `${mate} at ${club}: listed "${yearsStr}", computed "${fmtYears(overlap)}"`,
+    overlap: best,
+    msg: `${mate} at ${club}: listed "${yearsStr}", nearest real window "${fmtYears(best)}"${
+      windows.length > 1 ? ` (all windows: ${windows.map(fmtYears).join(", ")})` : ""
+    }`,
   };
 }
 
