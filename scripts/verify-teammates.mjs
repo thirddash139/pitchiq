@@ -35,6 +35,7 @@ const ID_OVERRIDES = {
 // Club-name → Transfermarkt club ID pins for ambiguous search results.
 // Find IDs at transfermarkt.com club URL: /verein/{id}
 const CLUB_ID_OVERRIDES = {
+  "NY Red Bulls": 626,
   // "Inter Milan": 46,
   // "Man City": 281,
 };
@@ -192,11 +193,12 @@ async function ensureClub(cache, clubName) {
 
 async function ensureRoster(cache, clubId, season) {
   const key = `${clubId}:${season}`;
-  if (cache.rosters[key]) return cache.rosters[key];
+  // ignore previously cached EMPTY rosters — they're poison from transient failures
+  if (cache.rosters[key]?.length) return cache.rosters[key];
   const data = await get(`/clubs/${clubId}/players?season_id=${season}`).catch(() => null);
   await sleep(600);
   const players = (data?.players || []).map((p) => ({ id: p.id, name: p.name }));
-  cache.rosters[key] = players;
+  if (players.length) cache.rosters[key] = players; // only cache non-empty
   return players;
 }
 
@@ -269,20 +271,35 @@ async function checkUniqueness(cache, player) {
 
 // ---------- pass 1: connection accuracy (unchanged) ----------
 
-// Returns ALL distinct overlap windows (one per pair of co-occurring stints).
-// Multi-stint players (e.g. two spells at the same club) produce multiple windows —
-// these are NEVER merged, because merging spans absences and fabricates years.
+// Returns ALL distinct overlap windows (one per pair of co-occurring stints),
+// then coalesces CONTIGUOUS windows (gap ≤ 1 year). Transfermarkt splits
+// continuous tenures on internal records (youth→first team, contract events);
+// coalescing repairs that WITHOUT bridging real absences — a genuine gap
+// (e.g. Ronaldo's 2009→2021 Man Utd return) stays split.
 function computeOverlapWindows(answerStints, mateStints, club) {
   const a = answerStints.filter((s) => clubMatches(club, s.club));
   const b = mateStints.filter((s) => clubMatches(club, s.club));
-  const windows = [];
+  let windows = [];
   for (const s1 of a)
     for (const s2 of b) {
       const start = Math.max(s1.start, s2.start);
       const end = Math.min(s1.end, s2.end);
       if (start <= end) windows.push({ start, end });
     }
-  return windows;
+  if (windows.length < 2) return windows;
+  windows.sort((x, y) => x.start - y.start || x.end - y.end);
+  const merged = [windows[0]];
+  for (const w of windows.slice(1)) {
+    const last = merged[merged.length - 1];
+    const lastEnd = last.end === 9999 ? Infinity : last.end;
+    if (w.start <= lastEnd + 1) {
+      // contiguous or overlapping → extend
+      if (w.end === 9999 || (last.end !== 9999 && w.end > last.end)) last.end = w.end;
+    } else {
+      merged.push({ ...w });
+    }
+  }
+  return merged;
 }
 
 function windowMatchesListed(listed, w) {
