@@ -29,7 +29,7 @@ const ID_OVERRIDES = {
   "Vinícius Jr.": 371998,
   "Juan Mata": 44068,
   "Son Heung-min": 91845,
-  "Sergei Rebrov": 4470,
+  "Sergei Rebrov": 3122,
 };
 
 // Club-name → Transfermarkt club ID pins for ambiguous search results.
@@ -203,19 +203,23 @@ async function ensureRoster(cache, clubId, season) {
 }
 
 // Union of roster player-IDs for a club across a year window.
+// Returns { union, diag } — diag explains exactly what was fetched, for debugging empties.
 async function rosterUnion(cache, clubName, years) {
   const club = await ensureClub(cache, clubName);
-  if (!club.id) return null; // unresolved club
+  if (!club.id) return { union: null, diag: `club "${clubName}" did not resolve` };
   const start = years.start;
   const end = Math.min(years.end === 9999 ? CURRENT_YEAR : years.end, CURRENT_YEAR);
   const seasons = [];
   for (let y = start; y <= end && seasons.length < MAX_SEASONS_PER_CLUE; y++) seasons.push(y);
   const union = new Map(); // id → name
+  const sizes = [];
   for (const season of seasons) {
     const roster = await ensureRoster(cache, club.id, season);
+    sizes.push(`${season}:${roster.length}`);
     for (const p of roster) union.set(String(p.id), p.name);
   }
-  return union;
+  const diag = `${clubName}→TM#${club.id} "${club.tmName}" seasons[${sizes.join(", ")}]`;
+  return { union, diag };
 }
 
 // First-3 uniqueness check for one puzzle answer.
@@ -230,14 +234,16 @@ async function checkUniqueness(cache, player) {
       : [{ club: tm.club, years: parseYears(tm.years) }];
 
     let clueUnion = new Map();
+    const diags = [];
     for (const e of entries) {
       if (!e.years) continue;
-      const u = await rosterUnion(cache, e.club, e.years);
+      const { union: u, diag } = await rosterUnion(cache, e.club, e.years);
+      diags.push(diag);
       if (u === null) return { status: "UNRESOLVED", msg: `Could not resolve club "${e.club}" (clue: ${tm.name})` };
       for (const [id, name] of u) clueUnion.set(id, name);
     }
     if (clueUnion.size === 0)
-      return { status: "UNRESOLVED", msg: `Empty roster union for clue ${tm.name}` };
+      return { status: "UNRESOLVED", msg: `Empty roster union for clue ${tm.name} — ${diags.join(" | ") || "no parseable years"}` };
 
     // the clue teammate can't be the mystery player of their own clue
     const tmSelf = cache.players[tm.name];
@@ -306,6 +312,9 @@ function windowMatchesListed(listed, w) {
   const startOk = Math.abs(listed.start - w.start) <= 1;
   const endOk =
     (listed.end === 9999 && w.end === 9999) ||
+    // listed "present" vs a window reaching the current season = same thing;
+    // Transfermarkt data simply ends at the latest season for active players
+    (listed.end === 9999 && w.end !== 9999 && w.end >= CURRENT_YEAR - 1) ||
     (listed.end !== 9999 && w.end !== 9999 && Math.abs(listed.end - w.end) <= 1) ||
     // listed as a closed range but window still open (active players): accept if start fits and listed end ≥ window start
     (listed.end !== 9999 && w.end === 9999 && listed.end >= w.start);
