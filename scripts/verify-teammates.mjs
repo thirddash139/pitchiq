@@ -1,17 +1,17 @@
 /**
- * Pitch IQ — teammates.json verification pipeline
- * Stage 1: fetch + cache career histories (self-hosted transfermarkt-api)
- * Stage 2: compute club+year overlaps, diff against teammates.json
- * Stage 3 (stub): Claude escalation for flagged connections
+ * Pitch IQ — teammates.json verification pipeline  (v2: + uniqueness check)
  *
- * Usage:  node scripts/verify-teammates.mjs
- * Env:    TM_API=http://localhost:8000   (transfermarkt-api base URL)
+ * Pass 1 (existing): connection accuracy — did X and Y overlap at club Z in the listed years?
+ * Pass 2 (new): uniqueness — do the FIRST 3 clues point to exactly one footballer?
+ *   Method: for each of the first 3 teammates' club+years, pull full squad rosters
+ *   for every season in the window, union per clue, intersect across the 3 clues.
+ *   Anyone left besides the intended answer = provable alternate answer → COLLISION.
  *
- * Outputs:
- *   career-cache.json          — cached player IDs + career stints (commit this)
- *   verification-report.md     — human-readable report
- *   teammates.corrected.json   — teammates.json with YEAR fixes applied (never touches NO_OVERLAP entries)
- *   exit code 1 if any NO_OVERLAP / UNRESOLVED found (so CI can flag it)
+ * SAFETY: reads app/data/teammates.json but NEVER writes to it.
+ * Outputs: teammates.corrected.json, verification-report.md, scripts/career-cache.json.
+ * COLLISION results are report-only — no auto-correction, human decides the swap.
+ *
+ * Usage:  TM_API=http://localhost:8000 node scripts/verify-teammates.mjs
  */
 
 import fs from "fs";
@@ -21,16 +21,24 @@ const DATASET_PATH = "./app/data/teammates.json";
 const CACHE_PATH = "./scripts/career-cache.json";
 const REPORT_PATH = "./verification-report.md";
 const CORRECTED_PATH = "./teammates.corrected.json";
+const CURRENT_YEAR = new Date().getFullYear();
+const MAX_SEASONS_PER_CLUE = 12; // guard against runaway windows
 
-// Names where Transfermarkt search is ambiguous — pin the exact TM player ID here.
-// Find IDs at transfermarkt.com (the number in the profile URL).
+// Names where Transfermarkt search is ambiguous — pin exact TM player IDs.
 const ID_OVERRIDES = {
   "Vinícius Jr.": 371998,
   "Juan Mata": 44068,
   "Son Heung-min": 91845,
+  "Sergei Rebrov": 4470,
 };
 
-// Club name aliases: dataset name → substrings that match Transfermarkt's naming
+// Club-name → Transfermarkt club ID pins for ambiguous search results.
+// Find IDs at transfermarkt.com club URL: /verein/{id}
+const CLUB_ID_OVERRIDES = {
+  // "Inter Milan": 46,
+  // "Man City": 281,
+};
+
 const CLUB_ALIASES = {
   "man united": ["manchester united", "man utd"],
   "man city": ["manchester city"],
@@ -57,14 +65,13 @@ const norm = (s) =>
   s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
 
 function clubMatches(datasetClub, tmClub) {
-  const d = norm(datasetClub);
+  const d = norm(datasetClub.replace(/\s*\(loan\)\s*/i, ""));
   const t = norm(tmClub);
   if (t.includes(d) || d.includes(t)) return true;
   const aliases = CLUB_ALIASES[d] || [];
   return aliases.some((a) => t.includes(norm(a)));
 }
 
-// "2001-2003" | "2013" | "2018-present" → {start, end}  (end=9999 for present)
 function parseYears(str) {
   if (!str) return null;
   const s = String(str).replace(/–|—/g, "-").trim();
@@ -88,28 +95,35 @@ async function get(path) {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-// ---------- stage 1: fetch + cache ----------
+// ---------- cache ----------
 
 function loadCache() {
   try {
-    return JSON.parse(fs.readFileSync(CACHE_PATH, "utf-8"));
+    const c = JSON.parse(fs.readFileSync(CACHE_PATH, "utf-8"));
+    c.players = c.players || {};
+    c.clubs = c.clubs || {};     // clubName → { id, tmName }
+    c.rosters = c.rosters || {}; // `${clubId}:${season}` → [{id, name}]
+    return c;
   } catch {
-    return { players: {} }; // name → { id, tmName, stints: [{club, start, end}], fetchedAt }
+    return { players: {}, clubs: {}, rosters: {} };
   }
 }
+
+function saveCache(cache) {
+  fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
+}
+
+// ---------- player career fetch (pass 1, unchanged behaviour) ----------
 
 async function resolveId(name) {
   if (ID_OVERRIDES[name]) return ID_OVERRIDES[name];
   const data = await get(`/players/search/${encodeURIComponent(name)}`);
   const results = data.results || [];
   if (!results.length) return null;
-  // exact (normalized) name match first, else top result
   const exact = results.find((r) => norm(r.name) === norm(name));
   return (exact || results[0]).id;
 }
 
-// Build stints from transfer history: each transfer's clubTo starts a stint,
-// closed by the date of the next transfer.
 async function fetchStints(id) {
   const data = await get(`/players/${id}/transfers`);
   const transfers = (data.transfers || [])
@@ -129,29 +143,132 @@ async function fetchStints(id) {
   return stints;
 }
 
-async function ensurePlayer(cache, name, { refresh = false } = {}) {
+async function ensurePlayer(cache, name) {
   const cached = cache.players[name];
   const stale =
     cached &&
-    cached.stints.some((s) => s.end === 9999) && // active player
+    cached.id &&
+    cached.stints.some((s) => s.end === 9999) &&
     Date.now() - new Date(cached.fetchedAt).getTime() > 7 * 864e5;
-  if (cached && !refresh && !stale) return cached;
+  if (cached && cached.id && !stale) return cached;
 
-  const id = await resolveId(name);
+  const id = await resolveId(name).catch(() => null);
   if (!id) {
-    cache.players[name] = { id: null, stints: [], fetchedAt: new Date().toISOString() };
+    cache.players[name] = cache.players[name] || {
+      id: null, stints: [], fetchedAt: new Date().toISOString(),
+    };
     return cache.players[name];
   }
-  await sleep(600); // be polite
-  const stints = await fetchStints(id);
+  await sleep(600);
+  const stints = await fetchStints(id).catch(() => null);
+  if (!stints) return cache.players[name] || { id, stints: [], fetchedAt: new Date().toISOString() };
   cache.players[name] = { id, stints, fetchedAt: new Date().toISOString() };
   await sleep(600);
   return cache.players[name];
 }
 
-// ---------- stage 2: overlap computation + diff ----------
+// ---------- club + roster fetch (pass 2, new) ----------
 
-// Given two players' stints, find overlap window(s) at a named club.
+async function ensureClub(cache, clubName) {
+  const key = norm(clubName.replace(/\s*\(loan\)\s*/i, ""));
+  if (CLUB_ID_OVERRIDES[clubName]) {
+    cache.clubs[key] = { id: CLUB_ID_OVERRIDES[clubName], tmName: clubName };
+    return cache.clubs[key];
+  }
+  if (cache.clubs[key]?.id) return cache.clubs[key];
+
+  const data = await get(`/clubs/search/${encodeURIComponent(key)}`).catch(() => null);
+  await sleep(600);
+  const results = data?.results || [];
+  if (!results.length) {
+    cache.clubs[key] = { id: null, tmName: null };
+    return cache.clubs[key];
+  }
+  const exact = results.find((r) => clubMatches(clubName, r.name));
+  const pick = exact || results[0];
+  cache.clubs[key] = { id: pick.id, tmName: pick.name };
+  return cache.clubs[key];
+}
+
+async function ensureRoster(cache, clubId, season) {
+  const key = `${clubId}:${season}`;
+  if (cache.rosters[key]) return cache.rosters[key];
+  const data = await get(`/clubs/${clubId}/players?season_id=${season}`).catch(() => null);
+  await sleep(600);
+  const players = (data?.players || []).map((p) => ({ id: p.id, name: p.name }));
+  cache.rosters[key] = players;
+  return players;
+}
+
+// Union of roster player-IDs for a club across a year window.
+async function rosterUnion(cache, clubName, years) {
+  const club = await ensureClub(cache, clubName);
+  if (!club.id) return null; // unresolved club
+  const start = years.start;
+  const end = Math.min(years.end === 9999 ? CURRENT_YEAR : years.end, CURRENT_YEAR);
+  const seasons = [];
+  for (let y = start; y <= end && seasons.length < MAX_SEASONS_PER_CLUE; y++) seasons.push(y);
+  const union = new Map(); // id → name
+  for (const season of seasons) {
+    const roster = await ensureRoster(cache, club.id, season);
+    for (const p of roster) union.set(String(p.id), p.name);
+  }
+  return union;
+}
+
+// First-3 uniqueness check for one puzzle answer.
+async function checkUniqueness(cache, player) {
+  const firstThree = player.teammates.slice(0, 3);
+  const unions = [];
+
+  for (const tm of firstThree) {
+    // multi-club schema: a clue card can carry several stints; candidate matches ANY of them
+    const entries = Array.isArray(tm.club)
+      ? tm.club.map((c) => ({ club: c.club, years: parseYears(c.years) }))
+      : [{ club: tm.club, years: parseYears(tm.years) }];
+
+    let clueUnion = new Map();
+    for (const e of entries) {
+      if (!e.years) continue;
+      const u = await rosterUnion(cache, e.club, e.years);
+      if (u === null) return { status: "UNRESOLVED", msg: `Could not resolve club "${e.club}" (clue: ${tm.name})` };
+      for (const [id, name] of u) clueUnion.set(id, name);
+    }
+    if (clueUnion.size === 0)
+      return { status: "UNRESOLVED", msg: `Empty roster union for clue ${tm.name}` };
+
+    // the clue teammate can't be the mystery player of their own clue
+    const tmSelf = cache.players[tm.name];
+    if (tmSelf?.id) clueUnion.delete(String(tmSelf.id));
+
+    unions.push(clueUnion);
+  }
+
+  if (unions.length < 3)
+    return { status: "UNRESOLVED", msg: "Fewer than 3 parseable clues" };
+
+  // intersect the three sets
+  let intersection = unions[0];
+  for (const u of unions.slice(1)) {
+    const next = new Map();
+    for (const [id, name] of intersection) if (u.has(id)) next.set(id, name);
+    intersection = next;
+  }
+
+  // remove the intended answer
+  const answerSelf = cache.players[player.name];
+  if (answerSelf?.id) intersection.delete(String(answerSelf.id));
+
+  if (intersection.size === 0) return { status: "OK" };
+  const names = [...intersection.values()].slice(0, 10);
+  return {
+    status: "COLLISION",
+    msg: `first-3 clues also match: ${names.join(", ")}${intersection.size > 10 ? ` (+${intersection.size - 10} more)` : ""}`,
+  };
+}
+
+// ---------- pass 1: connection accuracy (unchanged) ----------
+
 function computeOverlap(answerStints, mateStints, club) {
   const a = answerStints.filter((s) => clubMatches(club, s.club));
   const b = mateStints.filter((s) => clubMatches(club, s.club));
@@ -163,7 +280,6 @@ function computeOverlap(answerStints, mateStints, club) {
       if (start <= end) windows.push({ start, end });
     }
   if (!windows.length) return null;
-  // merge into the widest single window (good enough for our year strings)
   return {
     start: Math.min(...windows.map((w) => w.start)),
     end: Math.max(...windows.map((w) => w.end)),
@@ -183,20 +299,12 @@ function checkConnection(answer, mate, club, yearsStr, cache) {
   const listed = parseYears(yearsStr);
   if (!listed) return { status: "YEARS_MISMATCH", overlap, msg: `Unparseable years "${yearsStr}"` };
 
-  // ±1 year tolerance: transfer dates vs season labels legitimately differ by one
   const startOk = Math.abs(listed.start - overlap.start) <= 1;
-  const endOk = overlap.end === 9999
-    ? listed.end === 9999 || listed.end >= overlap.start
-    : Math.abs(listed.end - Math.min(overlap.end, listed.end === 9999 ? overlap.end : overlap.end)) <= 1 && listed.end !== 9999
-      ? Math.abs(listed.end - overlap.end) <= 1
-      : listed.end === 9999 && overlap.end === 9999;
-
-  const startExact = Math.abs(listed.start - overlap.start) <= 1;
-  const endExact =
+  const endOk =
     (listed.end === 9999 && overlap.end === 9999) ||
     (listed.end !== 9999 && overlap.end !== 9999 && Math.abs(listed.end - overlap.end) <= 1);
 
-  if (startExact && endExact) return { status: "OK", overlap };
+  if (startOk && endOk) return { status: "OK", overlap };
   return {
     status: "YEARS_MISMATCH",
     overlap,
@@ -210,7 +318,6 @@ function checkConnection(answer, mate, club, yearsStr, cache) {
   const dataset = JSON.parse(fs.readFileSync(DATASET_PATH, "utf-8"));
   const cache = loadCache();
 
-  // Collect every unique player name
   const names = new Set();
   for (const p of dataset) {
     names.add(p.name);
@@ -218,50 +325,59 @@ function checkConnection(answer, mate, club, yearsStr, cache) {
   }
   console.log(`Dataset: ${dataset.length} answers, ${names.size} unique players\n`);
 
-  // Stage 1 — fetch/cache
+  // ---- Pass 1 fetch ----
   let fetched = 0;
   for (const name of names) {
-    const before = cache.players[name];
-    await ensurePlayer(cache, name).catch((e) => {
-      console.error(`fetch failed for ${name}: ${e.message}`);
-    });
-    if (cache.players[name] !== before) fetched++;
+    const before = JSON.stringify(cache.players[name] || null);
+    await ensurePlayer(cache, name).catch((e) => console.error(`fetch failed for ${name}: ${e.message}`));
+    if (JSON.stringify(cache.players[name] || null) !== before) fetched++;
     if (fetched && fetched % 25 === 0) {
-      fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2)); // checkpoint
-      console.log(`  ...${fetched} fetched (checkpoint saved)`);
+      saveCache(cache);
+      console.log(`  ...${fetched} player fetches (checkpoint)`);
     }
   }
-  fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
-  console.log(`Cache updated (${fetched} fetches this run)\n`);
+  saveCache(cache);
+  console.log(`Player cache updated (${fetched} fetches)\n`);
 
-  // Stage 2 — verify every connection
-  const results = { OK: [], YEARS_MISMATCH: [], NO_OVERLAP: [], UNRESOLVED: [] };
+  // ---- Pass 1 verify ----
+  const results = { OK: [], YEARS_MISMATCH: [], NO_OVERLAP: [], UNRESOLVED: [], COLLISION: [] };
   const corrected = JSON.parse(JSON.stringify(dataset));
 
   for (const player of corrected) {
     for (const tm of player.teammates) {
-      // handle both schemas: club as string, or club as [{club, years}] array
       const entries = Array.isArray(tm.club)
         ? tm.club.map((c) => ({ club: c.club, years: c.years, ref: c }))
         : [{ club: tm.club, years: tm.years, ref: tm }];
-
       for (const e of entries) {
         const r = checkConnection(player.name, tm.name, e.club, e.years, cache);
         const line = `${player.name} ← ${tm.name} @ ${e.club} (${e.years})`;
         results[r.status].push(r.msg ? `${line} — ${r.msg}` : line);
-
-        if (r.status === "YEARS_MISMATCH" && r.overlap) {
-          e.ref.years = fmtYears(r.overlap); // auto-correct in the corrected copy only
-        }
-        // NO_OVERLAP / UNRESOLVED: never modified — flagged for human review
+        if (r.status === "YEARS_MISMATCH" && r.overlap) e.ref.years = fmtYears(r.overlap);
       }
     }
   }
 
-  // Stage 3 stub — escalate flagged connections to Claude for web-search verification
-  // for (const flagged of [...results.NO_OVERLAP, ...results.UNRESOLVED]) {
-  //   await claudeVerify(flagged); // POST to Anthropic API with web_search tool
-  // }
+  // ---- Pass 2: uniqueness (first 3 clues), report-only ----
+  console.log(`\nPass 2 — uniqueness check on first-3 clues...\n`);
+  let done = 0;
+  for (const player of dataset) {
+    const r = await checkUniqueness(cache, player).catch((e) => ({
+      status: "UNRESOLVED",
+      msg: `uniqueness check error: ${e.message}`,
+    }));
+    done++;
+    if (r.status === "COLLISION") {
+      results.COLLISION.push(`${player.name} — ${r.msg}`);
+      console.log(`  ✗ COLLISION: ${player.name} — ${r.msg}`);
+    } else if (r.status === "UNRESOLVED") {
+      results.UNRESOLVED.push(`${player.name} (uniqueness) — ${r.msg}`);
+    }
+    if (done % 10 === 0) {
+      saveCache(cache);
+      console.log(`  ...${done}/${dataset.length} answers checked (checkpoint)`);
+    }
+  }
+  saveCache(cache);
 
   fs.writeFileSync(CORRECTED_PATH, JSON.stringify(corrected, null, 2));
 
@@ -270,18 +386,29 @@ function checkConnection(answer, mate, club, yearsStr, cache) {
     ``,
     `| Status | Count |`,
     `|---|---|`,
-    `| ✅ OK | ${results.OK.length} |`,
+    `| ✅ OK (connections) | ${results.OK.length} |`,
     `| 🔧 Years mismatch (auto-corrected in teammates.corrected.json) | ${results.YEARS_MISMATCH.length} |`,
     `| ❌ No overlap found (DATASET ERROR — review manually) | ${results.NO_OVERLAP.length} |`,
-    `| ❓ Unresolved name | ${results.UNRESOLVED.length} |`,
+    `| 💥 Uniqueness collision (first-3 clues match >1 player) | ${results.COLLISION.length} |`,
+    `| ❓ Unresolved | ${results.UNRESOLVED.length} |`,
     ``,
-    results.NO_OVERLAP.length ? `## ❌ No overlap (fix these)\n${results.NO_OVERLAP.map((l) => `- ${l}`).join("\n")}\n` : ``,
-    results.YEARS_MISMATCH.length ? `## 🔧 Year corrections applied\n${results.YEARS_MISMATCH.map((l) => `- ${l}`).join("\n")}\n` : ``,
-    results.UNRESOLVED.length ? `## ❓ Unresolved (add to ID_OVERRIDES)\n${results.UNRESOLVED.map((l) => `- ${l}`).join("\n")}\n` : ``,
+    results.COLLISION.length
+      ? `## 💥 Uniqueness collisions (swap a teammate — NEVER auto-fixed)\n${results.COLLISION.map((l) => `- ${l}`).join("\n")}\n`
+      : ``,
+    results.NO_OVERLAP.length
+      ? `## ❌ No overlap (fix these)\n${results.NO_OVERLAP.map((l) => `- ${l}`).join("\n")}\n`
+      : ``,
+    results.YEARS_MISMATCH.length
+      ? `## 🔧 Year corrections applied\n${results.YEARS_MISMATCH.map((l) => `- ${l}`).join("\n")}\n`
+      : ``,
+    results.UNRESOLVED.length
+      ? `## ❓ Unresolved\n${results.UNRESOLVED.map((l) => `- ${l}`).join("\n")}\n`
+      : ``,
   ].join("\n");
 
   fs.writeFileSync(REPORT_PATH, report);
   console.log(report);
 
-  process.exit(results.NO_OVERLAP.length || results.UNRESOLVED.length ? 1 : 0);
+  const flags = results.NO_OVERLAP.length + results.UNRESOLVED.length + results.COLLISION.length;
+  process.exit(flags ? 1 : 0);
 })();
