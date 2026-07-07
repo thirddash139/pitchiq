@@ -294,7 +294,7 @@
       {
         "name": "Tim Cahill",
         "club": "NY Red Bulls",
-        "years": "2012-2014"
+        "years": "2012"
       },
       {
         "name": "Rafael Márquez",
@@ -408,7 +408,7 @@
       {
         "name": "Neymar",
         "club": "PSG",
-        "years": "2017-2023"
+        "years": "2017-2018"
       },
       {
         "name": "Vinícius Jr.",
@@ -953,7 +953,7 @@
       {
         "name": "Gervinho",
         "club": "Lille",
-        "years": "2007-2011"
+        "years": "2009-2011"
       },
       {
         "name": "Karim Benzema",
@@ -1259,7 +1259,7 @@
       {
         "name": "Fernando Torres",
         "club": "Atlético Madrid",
-        "years": "2015-2018"
+        "years": "2015-2016"
       },
       {
         "name": "Diego Costa",
@@ -1269,7 +1269,7 @@
       {
         "name": "Koke",
         "club": "Atlético Madrid",
-        "years": "2021-2026"
+        "years": "2021-2023"
       }
     ],
     "nationality": "🇫🇷",
@@ -1521,7 +1521,7 @@
       {
         "name": "Dirk Kuyt",
         "club": "Feyenoord",
-        "years": "2001-2004"
+        "years": "2003-2004"
       },
       {
         "name": "Thierry Henry",
@@ -1536,7 +1536,7 @@
       {
         "name": "Giovanni van Bronckhorst",
         "club": "Feyenoord",
-        "years": "2003-2004"
+        "years": "1996-1998"
       },
       {
         "name": "Cesc Fàbregas",
@@ -1585,7 +1585,7 @@
       {
         "name": "Antoine Griezmann",
         "club": "Atlético Madrid",
-        "years": "2015-2018"
+        "years": "2015-2016"
       },
       {
         "name": "Eden Hazard",
@@ -1608,7 +1608,7 @@
       {
         "name": "Koke",
         "club": "Atlético Madrid",
-        "years": "2015-2018"
+        "years": "2015-2016"
       },
       {
         "name": "Steven Gerrard",
@@ -1897,7 +1897,7 @@
       {
         "name": "Radamel Falcao",
         "club": "Porto",
-        "years": "2010-2013"
+        "years": "2010-2011"
       },
       {
         "name": "Thomas Müller",
@@ -2011,12 +2011,12 @@
       {
         "name": "Marek Hamšík",
         "club": "Napoli",
-        "years": "2010-2013"
+        "years": "2010-2011"
       },
       {
         "name": "Kylian Mbappé",
         "club": "PSG",
-        "years": "2017-2020"
+        "years": "2017-2018"
       },
       {
         "name": "Ezequiel Lavezzi",
@@ -2088,7 +2088,7 @@
       {
         "name": "Lautaro Martínez",
         "club": "Inter Milan",
-        "years": "2019-2022"
+        "years": "2019-2020"
       },
       {
         "name": "Arturo Vidal",
@@ -2224,7 +2224,7 @@
       {
         "name": "James Rodríguez",
         "club": "Porto",
-        "years": "2010-2013"
+        "years": "2010-2011"
       },
       {
         "name": "Cesc Fàbregas",
@@ -2486,7 +2486,7 @@
       {
         "name": "Steven Gerrard",
         "club": "Liverpool",
-        "years": "2007-2010"
+        "years": "2007-2008"
       },
       {
         "name": "Lionel Messi",
@@ -2656,12 +2656,12 @@
       {
         "name": "Giorgio Chiellini",
         "club": "Juventus",
-        "years": "2015-2022"
+        "years": "2015-2017"
       },
       {
         "name": "Paulo Dybala",
         "club": "Juventus",
-        "years": "2015-2022"
+        "years": "2015-2017"
       }
     ],
     "nationality": "🇨🇴",
@@ -2978,7 +2978,7 @@
       {
         "name": "Kylian Mbappé",
         "club": "PSG",
-        "years": "2018-2022"
+        "years": "2017-2018"
       },
       {
         "name": "Paulo Dybala",
@@ -3064,7 +3064,7 @@
       {
         "name": "Juan Román Riquelme",
         "club": "Villarreal",
-        "years": "2005-2007"
+        "years": "2004-2005"
       },
       {
         "name": "Sergio Agüero",
@@ -3192,7 +3192,7 @@
       {
         "name": "Frank Rijkaard",
         "club": "Ajax",
-        "years": "1990-1993"
+        "years": "1993"
       },
       {
         "name": "Wim Jonk",
