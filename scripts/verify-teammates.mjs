@@ -30,15 +30,15 @@ const ID_OVERRIDES = {
   "Juan Mata": 44068,
   "Son Heung-min": 91845,
   "Sergei Rebrov": 3122,
+  "Ronaldo Nazário": 3140,
 };
 
 // Club-name → Transfermarkt club ID pins for ambiguous search results.
 // Find IDs at transfermarkt.com club URL: /verein/{id}
 const CLUB_ID_OVERRIDES = {
   "NY Red Bulls": 626,
-  "Atlético Madrid": 13,
-  "LAFC": 51828,
-  "Anzhi": 2700,
+  // "Inter Milan": 46,
+  // "Man City": 281,
 };
 
 const CLUB_ALIASES = {
@@ -99,15 +99,22 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // ---------- cache ----------
 
+const CACHE_SCHEMA = 2; // bump when stint-building logic changes → forces player re-fetch
+
 function loadCache() {
   try {
     const c = JSON.parse(fs.readFileSync(CACHE_PATH, "utf-8"));
     c.players = c.players || {};
     c.clubs = c.clubs || {};     // clubName → { id, tmName }
     c.rosters = c.rosters || {}; // `${clubId}:${season}` → [{id, name}]
+    if (c.schema !== CACHE_SCHEMA) {
+      console.log(`Cache schema ${c.schema || 1} → ${CACHE_SCHEMA}: rebuilding player stints (rosters kept)`);
+      c.players = {};
+      c.schema = CACHE_SCHEMA;
+    }
     return c;
   } catch {
-    return { players: {}, clubs: {}, rosters: {} };
+    return { schema: CACHE_SCHEMA, players: {}, clubs: {}, rosters: {} };
   }
 }
 
@@ -126,17 +133,34 @@ async function resolveId(name) {
   return (exact || results[0]).id;
 }
 
+// Build stints from transfer history: each transfer's clubTo starts a stint,
+// closed by the date of the next transfer.
+// FIRST-CLUB FIX: a player's first club has no incoming transfer record, so it
+// would otherwise never become a stint (this broke Suárez@Nacional, Eduardo@Dinamo).
+// The earliest transfer's ORIGIN club is the first club — added as a stint ending
+// at that transfer, with a conservative 8-year lookback for the start.
 async function fetchStints(id) {
   const data = await get(`/players/${id}/transfers`);
   const transfers = (data.transfers || [])
     .filter((t) => t.date)
     .sort((a, b) => new Date(a.date) - new Date(b.date));
   const stints = [];
+  const junk = /retired|without club|career break|unknown|own youth/i;
+
+  if (transfers.length) {
+    const first = transfers[0];
+    const originClub = first.clubFrom?.name || first.from?.clubName;
+    if (originClub && !junk.test(originClub)) {
+      const end = new Date(first.date).getFullYear();
+      stints.push({ club: originClub, start: end - 8, end, firstClub: true });
+    }
+  }
+
   for (let i = 0; i < transfers.length; i++) {
     const t = transfers[i];
     const clubName = t.clubTo?.name || t.to?.clubName;
     if (!clubName) continue;
-    if (/retired|without club|career break|unknown/i.test(clubName)) continue;
+    if (junk.test(clubName)) continue;
     const start = new Date(t.date).getFullYear();
     const next = transfers[i + 1];
     const end = next ? new Date(next.date).getFullYear() : 9999;
