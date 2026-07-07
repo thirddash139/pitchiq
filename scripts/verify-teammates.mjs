@@ -36,8 +36,9 @@ const ID_OVERRIDES = {
 // Find IDs at transfermarkt.com club URL: /verein/{id}
 const CLUB_ID_OVERRIDES = {
   "NY Red Bulls": 626,
-  // "Inter Milan": 46,
-  // "Man City": 281,
+  "Atlético Madrid": 13,
+  "LAFC": 51828,
+  "Anzhi": 2700,
 };
 
 const CLUB_ALIASES = {
