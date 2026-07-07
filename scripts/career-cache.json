@@ -45,9 +45,19 @@
           "end": 2002
         },
         {
+          "club": "Man City",
+          "start": 2002,
+          "end": 2005
+        },
+        {
           "club": "PSG",
           "start": 2002,
           "end": 2005
+        },
+        {
+          "club": "PSG",
+          "start": 2002,
+          "end": 9999
         },
         {
           "club": "Fenerbahçe",
@@ -90,7 +100,7 @@
           "end": 2016
         }
       ],
-      "fetchedAt": "2026-07-07T01:14:38.928Z"
+      "fetchedAt": "2026-07-07T03:59:35.222Z"
     },
     "Thierry Henry": {
       "id": "3207",
@@ -145,9 +155,14 @@
           "club": "Arsenal",
           "start": 2012,
           "end": 2015
+        },
+        {
+          "club": "Arsenal",
+          "start": 2012,
+          "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:14:41.515Z"
+      "fetchedAt": "2026-07-07T03:59:37.931Z"
     },
     "Didier Drogba": {
       "id": "3924",
@@ -217,9 +232,14 @@
           "club": "Arizona United",
           "start": 2017,
           "end": 2018
+        },
+        {
+          "club": "Arizona United",
+          "start": 2017,
+          "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:14:44.135Z"
+      "fetchedAt": "2026-07-07T03:59:40.476Z"
     },
     "Fernando Torres": {
       "id": "7767",
@@ -286,12 +306,17 @@
           "end": 2018
         },
         {
+          "club": "AC Milan",
+          "start": 2016,
+          "end": 9999
+        },
+        {
           "club": "Sagan Tosu",
           "start": 2018,
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-07T01:14:47.649Z"
+      "fetchedAt": "2026-07-07T03:59:43.692Z"
     },
     "Ronaldinho": {
       "id": "3373",
@@ -343,12 +368,17 @@
           "end": 2018
         },
         {
+          "club": "Fluminense",
+          "start": 2015,
+          "end": 9999
+        },
+        {
           "club": "Ravenna",
           "start": 2026,
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:14:50.042Z"
+      "fetchedAt": "2026-07-07T03:59:46.381Z"
     },
     "Frank Lampard": {
       "id": "3163",
@@ -375,6 +405,11 @@
           "end": 2001
         },
         {
+          "club": "Swansea",
+          "start": 1995,
+          "end": 9999
+        },
+        {
           "club": "Chelsea",
           "start": 2001,
           "end": 2014
@@ -395,7 +430,7 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-07T01:14:53.254Z"
+      "fetchedAt": "2026-07-07T03:59:48.853Z"
     },
     "Edin Džeko": {
       "id": "28396",
@@ -452,6 +487,11 @@
           "end": 2021
         },
         {
+          "club": "Man City",
+          "start": 2016,
+          "end": 9999
+        },
+        {
           "club": "Inter",
           "start": 2021,
           "end": 2023
@@ -472,7 +512,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:14:55.933Z"
+      "fetchedAt": "2026-07-07T03:59:51.227Z"
     },
     "Mohamed Salah": {
       "id": "148455",
@@ -509,6 +549,11 @@
           "end": 2015
         },
         {
+          "club": "Roma",
+          "start": 2015,
+          "end": 2016
+        },
+        {
           "club": "Chelsea",
           "start": 2015,
           "end": 2016
@@ -524,12 +569,17 @@
           "end": 2017
         },
         {
+          "club": "Chelsea",
+          "start": 2016,
+          "end": 9999
+        },
+        {
           "club": "Liverpool",
           "start": 2017,
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:14:58.531Z"
+      "fetchedAt": "2026-07-07T03:59:53.904Z"
     },
     "Lautaro Martínez": {
       "id": "406625",
@@ -556,7 +606,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:01.030Z"
+      "fetchedAt": "2026-07-07T03:59:56.233Z"
     },
     "David Silva": {
       "id": "35518",
@@ -613,7 +663,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:03.578Z"
+      "fetchedAt": "2026-07-07T03:59:59.414Z"
     },
     "Francesco Totti": {
       "id": "5958",
@@ -630,7 +680,7 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:06.446Z"
+      "fetchedAt": "2026-07-07T04:00:01.765Z"
     },
     "Sergio Agüero": {
       "id": "26399",
@@ -667,7 +717,7 @@
           "end": 2021
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:08.900Z"
+      "fetchedAt": "2026-07-07T04:00:04.200Z"
     },
     "Fabio Cannavaro": {
       "id": "5775",
@@ -719,7 +769,7 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:11.483Z"
+      "fetchedAt": "2026-07-07T04:00:06.551Z"
     },
     "Alessandro Del Piero": {
       "id": "4289",
@@ -751,7 +801,7 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:13.995Z"
+      "fetchedAt": "2026-07-07T04:00:09.009Z"
     },
     "Raúl": {
       "id": "7349",
@@ -798,7 +848,7 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:16.963Z"
+      "fetchedAt": "2026-07-07T04:00:12.087Z"
     },
     "Gianluigi Buffon": {
       "id": "5023",
@@ -835,7 +885,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:19.653Z"
+      "fetchedAt": "2026-07-07T04:00:14.707Z"
     },
     "Hernán Crespo": {
       "id": "3410",
@@ -897,6 +947,11 @@
           "end": 2009
         },
         {
+          "club": "Chelsea",
+          "start": 2008,
+          "end": 9999
+        },
+        {
           "club": "Genoa",
           "start": 2009,
           "end": 2010
@@ -907,7 +962,7 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:22.570Z"
+      "fetchedAt": "2026-07-07T04:00:17.247Z"
     },
     "David Beckham": {
       "id": "3139",
@@ -974,7 +1029,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:25.335Z"
+      "fetchedAt": "2026-07-07T04:00:20.057Z"
     },
     "Javier Zanetti": {
       "id": "1161",
@@ -1001,7 +1056,7 @@
           "end": 2014
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:27.617Z"
+      "fetchedAt": "2026-07-07T04:00:22.370Z"
     },
     "Juan Sebastián Verón": {
       "id": "3143",
@@ -1023,9 +1078,19 @@
           "end": 1996
         },
         {
+          "club": "Sampdoria",
+          "start": 1996,
+          "end": 1998
+        },
+        {
           "club": "Boca Juniors",
           "start": 1996,
           "end": 1998
+        },
+        {
+          "club": "Boca Juniors",
+          "start": 1996,
+          "end": 9999
         },
         {
           "club": "AC Parma",
@@ -1058,9 +1123,19 @@
           "end": 2006
         },
         {
+          "club": "Estudiantes LP",
+          "start": 2006,
+          "end": 2012
+        },
+        {
           "club": "Chelsea",
           "start": 2006,
           "end": 2012
+        },
+        {
+          "club": "Chelsea",
+          "start": 2006,
+          "end": 9999
         },
         {
           "club": "Estudiantes LP",
@@ -1073,7 +1148,7 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:30.097Z"
+      "fetchedAt": "2026-07-07T04:00:25.111Z"
     },
     "Andriy Shevchenko": {
       "id": "3522",
@@ -1100,6 +1175,11 @@
           "end": 2006
         },
         {
+          "club": "Milan",
+          "start": 1999,
+          "end": 9999
+        },
+        {
           "club": "Chelsea",
           "start": 2006,
           "end": 2008
@@ -1120,7 +1200,7 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:32.304Z"
+      "fetchedAt": "2026-07-07T04:00:27.579Z"
     },
     "Lionel Messi": {
       "id": "28003",
@@ -1172,7 +1252,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:34.660Z"
+      "fetchedAt": "2026-07-07T04:00:30.028Z"
     },
     "Marco Verratti": {
       "id": "102558",
@@ -1209,7 +1289,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:39.437Z"
+      "fetchedAt": "2026-07-07T04:00:32.348Z"
     },
     "Sergio Busquets": {
       "id": "65230",
@@ -1231,6 +1311,11 @@
           "end": 2008
         },
         {
+          "club": "Barcelona B",
+          "start": 2007,
+          "end": 9999
+        },
+        {
           "club": "Barcelona",
           "start": 2008,
           "end": 2023
@@ -1241,7 +1326,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:42.098Z"
+      "fetchedAt": "2026-07-07T04:00:34.765Z"
     },
     "Yaya Touré": {
       "id": "13091",
@@ -1303,7 +1388,7 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:44.333Z"
+      "fetchedAt": "2026-07-07T04:00:37.092Z"
     },
     "Kylian Mbappé": {
       "id": "342229",
@@ -1350,12 +1435,17 @@
           "end": 2024
         },
         {
+          "club": "Monaco",
+          "start": 2018,
+          "end": 9999
+        },
+        {
           "club": "Real Madrid",
           "start": 2024,
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:46.288Z"
+      "fetchedAt": "2026-07-07T04:00:39.297Z"
     },
     "Zlatan Ibrahimović": {
       "id": "3455",
@@ -1422,6 +1512,11 @@
           "end": 2012
         },
         {
+          "club": "Barcelona",
+          "start": 2011,
+          "end": 9999
+        },
+        {
           "club": "PSG",
           "start": 2012,
           "end": 2016
@@ -1442,7 +1537,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:48.688Z"
+      "fetchedAt": "2026-07-07T04:00:41.657Z"
     },
     "Cristiano Ronaldo": {
       "id": "8198",
@@ -1509,7 +1604,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:50.867Z"
+      "fetchedAt": "2026-07-07T04:00:44.176Z"
     },
     "Paulo Dybala": {
       "id": "206050",
@@ -1541,7 +1636,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:53.131Z"
+      "fetchedAt": "2026-07-07T04:00:46.547Z"
     },
     "Sadio Mané": {
       "id": "200512",
@@ -1588,7 +1683,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:55.461Z"
+      "fetchedAt": "2026-07-07T04:00:48.981Z"
     },
     "Louis Saha": {
       "id": "4015",
@@ -1625,6 +1720,11 @@
           "end": 2000
         },
         {
+          "club": "Newcastle",
+          "start": 1999,
+          "end": 9999
+        },
+        {
           "club": "Fulham",
           "start": 2000,
           "end": 2004
@@ -1655,7 +1755,7 @@
           "end": 2013
         }
       ],
-      "fetchedAt": "2026-07-07T01:15:57.883Z"
+      "fetchedAt": "2026-07-07T04:00:51.521Z"
     },
     "Mesut Özil": {
       "id": "35664",
@@ -1722,7 +1822,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:00.283Z"
+      "fetchedAt": "2026-07-07T04:00:53.898Z"
     },
     "Nani": {
       "id": "33706",
@@ -1819,12 +1919,17 @@
           "end": 2024
         },
         {
+          "club": "Estrela Amadora",
+          "start": 2024,
+          "end": 2025
+        },
+        {
           "club": "Aktobe",
           "start": 2026,
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:03.109Z"
+      "fetchedAt": "2026-07-07T04:00:56.953Z"
     },
     "Zinedine Zidane": {
       "id": "3111",
@@ -1861,7 +1966,7 @@
           "end": 2006
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:05.452Z"
+      "fetchedAt": "2026-07-07T04:00:59.421Z"
     },
     "Roberto Carlos": {
       "id": "7518",
@@ -1923,7 +2028,7 @@
           "end": 2016
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:08.250Z"
+      "fetchedAt": "2026-07-07T04:01:02.272Z"
     },
     "Fabien Barthez": {
       "id": "3289",
@@ -1975,6 +2080,11 @@
           "end": 2005
         },
         {
+          "club": "Man Utd",
+          "start": 2004,
+          "end": 9999
+        },
+        {
           "club": "Ban",
           "start": 2005,
           "end": 2005
@@ -1990,7 +2100,7 @@
           "end": 2007
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:10.571Z"
+      "fetchedAt": "2026-07-07T04:01:04.363Z"
     },
     "Edgar Davids": {
       "id": "5758",
@@ -2052,7 +2162,7 @@
           "end": 2014
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:12.980Z"
+      "fetchedAt": "2026-07-07T04:01:06.692Z"
     },
     "David Trezeguet": {
       "id": "4146",
@@ -2109,7 +2219,7 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:16.337Z"
+      "fetchedAt": "2026-07-07T04:01:09.212Z"
     },
     "Samuel Eto'o": {
       "id": "4257",
@@ -2124,6 +2234,11 @@
           "club": "Real Madrid B",
           "start": 1996,
           "end": 1997
+        },
+        {
+          "club": "Real Madrid B",
+          "start": 1996,
+          "end": 9999
         },
         {
           "club": "CD Leganés",
@@ -2141,9 +2256,19 @@
           "end": 1998
         },
         {
+          "club": "Espanyol",
+          "start": 1998,
+          "end": 1999
+        },
+        {
           "club": "RM Castilla",
           "start": 1998,
           "end": 1999
+        },
+        {
+          "club": "RM Castilla",
+          "start": 1998,
+          "end": 9999
         },
         {
           "club": "Real Madrid",
@@ -2164,6 +2289,11 @@
           "club": "Real Madrid",
           "start": 2000,
           "end": 2004
+        },
+        {
+          "club": "Real Madrid",
+          "start": 2000,
+          "end": 9999
         },
         {
           "club": "Barcelona",
@@ -2196,9 +2326,19 @@
           "end": 2015
         },
         {
+          "club": "Antalyaspor",
+          "start": 2015,
+          "end": 2018
+        },
+        {
           "club": "Sampdoria",
           "start": 2015,
           "end": 2018
+        },
+        {
+          "club": "Sampdoria",
+          "start": 2015,
+          "end": 9999
         },
         {
           "club": "Konyaspor",
@@ -2211,7 +2351,7 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:18.789Z"
+      "fetchedAt": "2026-07-07T04:01:12.087Z"
     },
     "Jay-Jay Okocha": {
       "id": "3708",
@@ -2263,7 +2403,7 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:21.463Z"
+      "fetchedAt": "2026-07-07T04:01:14.521Z"
     },
     "Alexandre Pato": {
       "id": "37579",
@@ -2320,6 +2460,11 @@
           "end": 2019
         },
         {
+          "club": "TJ Quanjian",
+          "start": 2017,
+          "end": 9999
+        },
+        {
           "club": "São Paulo",
           "start": 2019,
           "end": 2020
@@ -2335,7 +2480,7 @@
           "end": 2024
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:24.032Z"
+      "fetchedAt": "2026-07-07T04:01:17.353Z"
     },
     "Robinho": {
       "id": "15511",
@@ -2412,7 +2557,7 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:26.349Z"
+      "fetchedAt": "2026-07-07T04:01:19.908Z"
     },
     "Thiago Silva": {
       "id": "29241",
@@ -2489,7 +2634,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:28.924Z"
+      "fetchedAt": "2026-07-07T04:01:22.550Z"
     },
     "Tim Cahill": {
       "id": "13556",
@@ -2546,58 +2691,54 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:31.313Z"
+      "fetchedAt": "2026-07-07T04:01:24.970Z"
     },
     "Rafael Márquez": {
-      "id": "310484",
+      "id": 2904,
       "stints": [
         {
-          "club": "RSD Alcalá",
-          "start": 1992,
-          "end": 1993
+          "club": "Atlas U20",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
         },
         {
-          "club": "Tomelloso",
-          "start": 1993,
-          "end": 1994
-        },
-        {
-          "club": "UD Sanse",
-          "start": 1994,
-          "end": 1995
-        },
-        {
-          "club": "Rayo B",
-          "start": 1995,
-          "end": 1996
-        },
-        {
-          "club": "Gimnástica",
+          "club": "Atlas",
           "start": 1996,
-          "end": 1997
-        },
-        {
-          "club": "Racing",
-          "start": 1997,
-          "end": 1998
-        },
-        {
-          "club": "CD Numancia",
-          "start": 1998,
           "end": 1999
         },
         {
-          "club": "Gimnástica",
+          "club": "Monaco",
           "start": 1999,
-          "end": 1999
+          "end": 2003
         },
         {
-          "club": "CD Toledo",
-          "start": 1999,
-          "end": 2000
+          "club": "Barcelona",
+          "start": 2003,
+          "end": 2010
+        },
+        {
+          "club": "New York",
+          "start": 2010,
+          "end": 2013
+        },
+        {
+          "club": "León",
+          "start": 2013,
+          "end": 2014
+        },
+        {
+          "club": "Hellas Verona",
+          "start": 2014,
+          "end": 2016
+        },
+        {
+          "club": "Atlas",
+          "start": 2016,
+          "end": 2018
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:33.762Z"
+      "fetchedAt": "2026-07-07T04:01:27.149Z"
     },
     "Dennis Bergkamp": {
       "id": "3187",
@@ -2629,7 +2770,7 @@
           "end": 2006
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:36.130Z"
+      "fetchedAt": "2026-07-07T04:01:30.889Z"
     },
     "Landon Donovan": {
       "id": "68",
@@ -2706,12 +2847,17 @@
           "end": 2019
         },
         {
+          "club": "León",
+          "start": 2018,
+          "end": 9999
+        },
+        {
           "club": "SD Sockers",
           "start": 2019,
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:38.560Z"
+      "fetchedAt": "2026-07-07T04:01:33.568Z"
     },
     "Ronaldo Nazário": {
       "id": 3140,
@@ -2758,7 +2904,7 @@
           "end": 2011
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:40.444Z"
+      "fetchedAt": "2026-07-07T04:01:35.549Z"
     },
     "Ryan Giggs": {
       "id": "3406",
@@ -2785,7 +2931,7 @@
           "end": 2014
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:42.616Z"
+      "fetchedAt": "2026-07-07T04:01:37.951Z"
     },
     "Neymar": {
       "id": "68290",
@@ -2822,7 +2968,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:45.083Z"
+      "fetchedAt": "2026-07-07T04:01:40.329Z"
     },
     "Luis Suárez": {
       "id": "44352",
@@ -2879,7 +3025,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:47.572Z"
+      "fetchedAt": "2026-07-07T04:01:43.185Z"
     },
     "Ganso": {
       "id": "67920",
@@ -2921,7 +3067,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:50.027Z"
+      "fetchedAt": "2026-07-07T04:01:45.650Z"
     },
     "Marquinhos": {
       "id": "181767",
@@ -2958,7 +3104,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:52.395Z"
+      "fetchedAt": "2026-07-07T04:01:48.609Z"
     },
     "Dani Alves": {
       "id": "15951",
@@ -3020,7 +3166,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:54.865Z"
+      "fetchedAt": "2026-07-07T04:01:51.235Z"
     },
     "Edinson Cavani": {
       "id": "48280",
@@ -3057,6 +3203,11 @@
           "end": 2013
         },
         {
+          "club": "US Palermo",
+          "start": 2011,
+          "end": 9999
+        },
+        {
           "club": "PSG",
           "start": 2013,
           "end": 2020
@@ -3077,7 +3228,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:57.184Z"
+      "fetchedAt": "2026-07-07T04:01:53.441Z"
     },
     "Radamel Falcao": {
       "id": "39152",
@@ -3124,9 +3275,19 @@
           "end": 2015
         },
         {
+          "club": "Chelsea",
+          "start": 2015,
+          "end": 2016
+        },
+        {
           "club": "Monaco",
           "start": 2015,
           "end": 2016
+        },
+        {
+          "club": "Monaco",
+          "start": 2015,
+          "end": 2019
         },
         {
           "club": "Monaco",
@@ -3154,7 +3315,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:16:59.389Z"
+      "fetchedAt": "2026-07-07T04:01:55.801Z"
     },
     "Mauro Icardi": {
       "id": "68863",
@@ -3191,9 +3352,19 @@
           "end": 2011
         },
         {
+          "club": "Sampdoria",
+          "start": 2011,
+          "end": 2013
+        },
+        {
           "club": "Sampdoria U19",
           "start": 2011,
           "end": 2013
+        },
+        {
+          "club": "Sampdoria U19",
+          "start": 2011,
+          "end": 9999
         },
         {
           "club": "Inter",
@@ -3216,6 +3387,11 @@
           "end": 2022
         },
         {
+          "club": "Inter",
+          "start": 2020,
+          "end": 9999
+        },
+        {
           "club": "Galatasaray",
           "start": 2022,
           "end": 2023
@@ -3231,7 +3407,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:02.221Z"
+      "fetchedAt": "2026-07-07T04:01:58.400Z"
     },
     "Jude Bellingham": {
       "id": "581678",
@@ -3258,7 +3434,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:04.319Z"
+      "fetchedAt": "2026-07-07T04:02:00.608Z"
     },
     "Vinícius Jr.": {
       "id": 371998,
@@ -3280,7 +3456,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:06.017Z"
+      "fetchedAt": "2026-07-07T04:02:02.211Z"
     },
     "Erling Haaland": {
       "id": "418560",
@@ -3317,7 +3493,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:08.363Z"
+      "fetchedAt": "2026-07-07T04:02:04.673Z"
     },
     "Takumi Minamino": {
       "id": "165793",
@@ -3359,7 +3535,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:12.107Z"
+      "fetchedAt": "2026-07-07T04:02:06.893Z"
     },
     "Kevin De Bruyne": {
       "id": "88755",
@@ -3406,9 +3582,19 @@
           "end": 2012
         },
         {
+          "club": "Werder Bremen",
+          "start": 2012,
+          "end": 2013
+        },
+        {
           "club": "Chelsea",
           "start": 2012,
           "end": 2013
+        },
+        {
+          "club": "Chelsea",
+          "start": 2012,
+          "end": 2014
         },
         {
           "club": "Chelsea",
@@ -3431,7 +3617,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:14.361Z"
+      "fetchedAt": "2026-07-07T04:02:09.361Z"
     },
     "Raphaël Guerreiro": {
       "id": "170986",
@@ -3463,9 +3649,19 @@
           "end": 2008
         },
         {
+          "club": "SM Caen U19",
+          "start": 2008,
+          "end": 2010
+        },
+        {
           "club": "Clairef. U17",
           "start": 2008,
           "end": 2010
+        },
+        {
+          "club": "Clairef. U17",
+          "start": 2008,
+          "end": 9999
         },
         {
           "club": "SM Caen B",
@@ -3493,7 +3689,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:16.779Z"
+      "fetchedAt": "2026-07-07T04:02:11.876Z"
     },
     "Marco Reus": {
       "id": "35207",
@@ -3518,6 +3714,11 @@
           "club": "LR Ahlen U17",
           "start": 2005,
           "end": 2006
+        },
+        {
+          "club": "LR Ahlen U17",
+          "start": 2005,
+          "end": 9999
         },
         {
           "club": "RW Ahlen U19",
@@ -3545,7 +3746,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:18.980Z"
+      "fetchedAt": "2026-07-07T04:02:14.278Z"
     },
     "Thibaut Courtois": {
       "id": "108390",
@@ -3592,7 +3793,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:21.252Z"
+      "fetchedAt": "2026-07-07T04:02:16.670Z"
     },
     "Juan Mata": {
       "id": 44068,
@@ -3654,7 +3855,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:23.461Z"
+      "fetchedAt": "2026-07-07T04:02:18.743Z"
     },
     "André Schürrle": {
       "id": "58205",
@@ -3726,7 +3927,7 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:26.001Z"
+      "fetchedAt": "2026-07-07T04:02:21.255Z"
     },
     "Eden Hazard": {
       "id": "50202",
@@ -3763,7 +3964,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:28.083Z"
+      "fetchedAt": "2026-07-07T04:02:23.486Z"
     },
     "Robert Lewandowski": {
       "id": "38253",
@@ -3807,15 +4008,10 @@
         {
           "club": "Barcelona",
           "start": 2022,
-          "end": 2026
-        },
-        {
-          "club": "Chicago",
-          "start": 2026,
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:30.686Z"
+      "fetchedAt": "2026-07-07T04:02:26.254Z"
     },
     "Jakub Błaszczykowski": {
       "id": "29835",
@@ -3857,9 +4053,19 @@
           "end": 2016
         },
         {
+          "club": "Wolfsburg",
+          "start": 2016,
+          "end": 2019
+        },
+        {
           "club": "Dortmund",
           "start": 2016,
           "end": 2019
+        },
+        {
+          "club": "Dortmund",
+          "start": 2016,
+          "end": 9999
         },
         {
           "club": "Wisla Kraków",
@@ -3867,7 +4073,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:33.187Z"
+      "fetchedAt": "2026-07-07T04:02:28.623Z"
     },
     "Pedri": {
       "id": "683840",
@@ -3904,7 +4110,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:35.940Z"
+      "fetchedAt": "2026-07-07T04:02:31.191Z"
     },
     "James Rodríguez": {
       "id": "88103",
@@ -3996,7 +4202,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:38.445Z"
+      "fetchedAt": "2026-07-07T04:02:34.132Z"
     },
     "Thomas Müller": {
       "id": "58358",
@@ -4038,7 +4244,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:40.998Z"
+      "fetchedAt": "2026-07-07T04:02:36.611Z"
     },
     "Mario Gómez": {
       "id": "6288",
@@ -4110,7 +4316,7 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:43.634Z"
+      "fetchedAt": "2026-07-07T04:02:39.374Z"
     },
     "Xherdan Shaqiri": {
       "id": "86792",
@@ -4182,7 +4388,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:46.252Z"
+      "fetchedAt": "2026-07-07T04:02:41.748Z"
     },
     "Virgil van Dijk": {
       "id": "139208",
@@ -4209,9 +4415,19 @@
           "end": 2010
         },
         {
+          "club": "Willem II U19",
+          "start": 2008,
+          "end": 9999
+        },
+        {
           "club": "FC Groningen U21",
           "start": 2010,
           "end": 2011
+        },
+        {
+          "club": "FC Groningen U21",
+          "start": 2010,
+          "end": 9999
         },
         {
           "club": "FC Groningen",
@@ -4234,7 +4450,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:48.644Z"
+      "fetchedAt": "2026-07-07T04:02:44.221Z"
     },
     "Luka Modrić": {
       "id": "27992",
@@ -4296,7 +4512,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:51.542Z"
+      "fetchedAt": "2026-07-07T04:02:46.654Z"
     },
     "Rafael van der Vaart": {
       "id": "4192",
@@ -4363,33 +4579,99 @@
           "end": 2018
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:54.474Z"
+      "fetchedAt": "2026-07-07T04:02:49.424Z"
     },
     "Eduardo da Silva": {
-      "id": "727134",
+      "id": 24633,
       "stints": [
         {
-          "club": "Peñarol",
-          "start": 1983,
-          "end": 1992
+          "club": "CBF Nova Kennedy",
+          "start": 1990,
+          "end": 1998,
+          "firstClub": true
         },
         {
-          "club": "CA Talleres",
-          "start": 1992,
-          "end": 1994
+          "club": "Din. Zagreb U17",
+          "start": 1998,
+          "end": 1999
         },
         {
-          "club": "Basáñez",
-          "start": 1994,
-          "end": 1996
+          "club": "Bangu-RJ",
+          "start": 1999,
+          "end": 2000
         },
         {
-          "club": "Atlético Torino",
-          "start": 1996,
-          "end": 1997
+          "club": "Din. Zagreb U19",
+          "start": 2000,
+          "end": 2001
+        },
+        {
+          "club": "Croatia Sesvete",
+          "start": 2001,
+          "end": 2001
+        },
+        {
+          "club": "Dinamo Zagreb",
+          "start": 2001,
+          "end": 2001
+        },
+        {
+          "club": "Dinamo Zagreb",
+          "start": 2001,
+          "end": 2002
+        },
+        {
+          "club": "Din. Zagreb U19",
+          "start": 2001,
+          "end": 2002
+        },
+        {
+          "club": "Din. Zagreb U19",
+          "start": 2001,
+          "end": 9999
+        },
+        {
+          "club": "Inter Zapresic",
+          "start": 2002,
+          "end": 2002
+        },
+        {
+          "club": "Dinamo Zagreb",
+          "start": 2002,
+          "end": 2007
+        },
+        {
+          "club": "Arsenal",
+          "start": 2007,
+          "end": 2010
+        },
+        {
+          "club": "Shakhtar D.",
+          "start": 2010,
+          "end": 2014
+        },
+        {
+          "club": "Flamengo",
+          "start": 2014,
+          "end": 2015
+        },
+        {
+          "club": "Shakhtar D.",
+          "start": 2015,
+          "end": 2017
+        },
+        {
+          "club": "Atlético-PR",
+          "start": 2017,
+          "end": 2018
+        },
+        {
+          "club": "Legia Warszawa",
+          "start": 2018,
+          "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:56.947Z"
+      "fetchedAt": "2026-07-07T04:02:51.467Z"
     },
     "Gareth Bale": {
       "id": "39381",
@@ -4431,7 +4713,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:17:59.240Z"
+      "fetchedAt": "2026-07-07T04:02:53.889Z"
     },
     "Karim Benzema": {
       "id": "18922",
@@ -4473,7 +4755,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:01.779Z"
+      "fetchedAt": "2026-07-07T04:02:56.125Z"
     },
     "Sergio Ramos": {
       "id": "25557",
@@ -4515,7 +4797,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:04.507Z"
+      "fetchedAt": "2026-07-07T04:02:58.666Z"
     },
     "Iker Casillas": {
       "id": "3979",
@@ -4562,7 +4844,7 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:07.138Z"
+      "fetchedAt": "2026-07-07T04:03:01.166Z"
     },
     "Jesús Navas": {
       "id": "15956",
@@ -4599,7 +4881,7 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:09.606Z"
+      "fetchedAt": "2026-07-07T04:03:03.718Z"
     },
     "Georginio Wijnaldum": {
       "id": "49499",
@@ -4661,12 +4943,22 @@
           "end": 2023
         },
         {
+          "club": "Al-Ettifaq",
+          "start": 2023,
+          "end": 2026
+        },
+        {
           "club": "PSG",
           "start": 2023,
           "end": 2026
+        },
+        {
+          "club": "PSG",
+          "start": 2023,
+          "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:12.083Z"
+      "fetchedAt": "2026-07-07T04:03:06.355Z"
     },
     "Andrea Pirlo": {
       "id": "5817",
@@ -4713,6 +5005,11 @@
           "end": 2001
         },
         {
+          "club": "Milan",
+          "start": 2001,
+          "end": 9999
+        },
+        {
           "club": "Brescia",
           "start": 2001,
           "end": 2001
@@ -4721,6 +5018,11 @@
           "club": "Inter",
           "start": 2001,
           "end": 2011
+        },
+        {
+          "club": "Inter",
+          "start": 2001,
+          "end": 9999
         },
         {
           "club": "Juventus",
@@ -4733,7 +5035,7 @@
           "end": 2018
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:14.571Z"
+      "fetchedAt": "2026-07-07T04:03:09.166Z"
     },
     "Paul Pogba": {
       "id": "122153",
@@ -4760,6 +5062,11 @@
           "end": 2012
         },
         {
+          "club": "Man Utd Res.",
+          "start": 2011,
+          "end": 9999
+        },
+        {
           "club": "Juventus",
           "start": 2012,
           "end": 2016
@@ -4780,7 +5087,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:16.945Z"
+      "fetchedAt": "2026-07-07T04:03:11.552Z"
     },
     "Clarence Seedorf": {
       "id": "4168",
@@ -4817,12 +5124,17 @@
           "end": 2012
         },
         {
+          "club": "Milan",
+          "start": 2002,
+          "end": 9999
+        },
+        {
           "club": "Botafogo",
           "start": 2012,
           "end": 2014
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:19.749Z"
+      "fetchedAt": "2026-07-07T04:03:14.243Z"
     },
     "David Villa": {
       "id": "7980",
@@ -4889,7 +5201,7 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:22.351Z"
+      "fetchedAt": "2026-07-07T04:03:17.181Z"
     },
     "Kaká": {
       "id": "3366",
@@ -4936,7 +5248,7 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:24.950Z"
+      "fetchedAt": "2026-07-07T04:03:21.270Z"
     },
     "Rogério Ceni": {
       "id": "13811",
@@ -4953,7 +5265,7 @@
           "end": 2016
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:27.187Z"
+      "fetchedAt": "2026-07-07T04:03:24.647Z"
     },
     "Paolo Maldini": {
       "id": "5803",
@@ -4968,9 +5280,14 @@
           "club": "Milan",
           "start": 1985,
           "end": 2009
+        },
+        {
+          "club": "Milan",
+          "start": 1985,
+          "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:30.068Z"
+      "fetchedAt": "2026-07-07T04:03:27.042Z"
     },
     "Wayne Rooney": {
       "id": "3332",
@@ -5012,7 +5329,7 @@
           "end": 2021
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:32.597Z"
+      "fetchedAt": "2026-07-07T04:03:30.432Z"
     },
     "Bastian Schweinsteiger": {
       "id": "2514",
@@ -5059,7 +5376,7 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:35.200Z"
+      "fetchedAt": "2026-07-07T04:03:33.003Z"
     },
     "Luciano Acosta": {
       "id": "315169",
@@ -5116,12 +5433,17 @@
           "end": 2025
         },
         {
+          "club": "Fluminense",
+          "start": 2025,
+          "end": 9999
+        },
+        {
           "club": "Dallas",
           "start": 2025,
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:37.454Z"
+      "fetchedAt": "2026-07-07T04:03:35.434Z"
     },
     "Thomas Gravesen": {
       "id": "301",
@@ -5168,7 +5490,7 @@
           "end": 2008
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:39.631Z"
+      "fetchedAt": "2026-07-07T04:03:37.903Z"
     },
     "Ángel Di María": {
       "id": "45320",
@@ -5220,7 +5542,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:41.962Z"
+      "fetchedAt": "2026-07-07T04:03:40.260Z"
     },
     "James Milner": {
       "id": "3333",
@@ -5250,6 +5572,11 @@
           "club": "Swindon Town",
           "start": 2003,
           "end": 2004
+        },
+        {
+          "club": "Swindon Town",
+          "start": 2003,
+          "end": 9999
         },
         {
           "club": "Newcastle",
@@ -5287,7 +5614,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:44.249Z"
+      "fetchedAt": "2026-07-07T04:03:43.283Z"
     },
     "John Terry": {
       "id": "3160",
@@ -5307,6 +5634,11 @@
           "club": "Chelsea U18",
           "start": 1997,
           "end": 1998
+        },
+        {
+          "club": "Chelsea U18",
+          "start": 1997,
+          "end": 9999
         },
         {
           "club": "Chelsea",
@@ -5329,7 +5661,7 @@
           "end": 2018
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:46.381Z"
+      "fetchedAt": "2026-07-07T04:03:45.723Z"
     },
     "Steven Gerrard": {
       "id": "3109",
@@ -5356,7 +5688,7 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:48.606Z"
+      "fetchedAt": "2026-07-07T04:03:48.273Z"
     },
     "Giovani dos Santos": {
       "id": "44674",
@@ -5408,6 +5740,11 @@
           "end": 2010
         },
         {
+          "club": "Ipswich",
+          "start": 2009,
+          "end": 9999
+        },
+        {
           "club": "Galatasaray",
           "start": 2010,
           "end": 2010
@@ -5448,7 +5785,7 @@
           "end": 2021
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:53.868Z"
+      "fetchedAt": "2026-07-07T04:03:54.007Z"
     },
     "Robbie Keane": {
       "id": "3144",
@@ -5545,7 +5882,7 @@
           "end": 2018
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:56.635Z"
+      "fetchedAt": "2026-07-07T04:03:56.466Z"
     },
     "Djibril Cissé": {
       "id": "3966",
@@ -5597,9 +5934,19 @@
           "end": 2009
         },
         {
+          "club": "Panathinaikos",
+          "start": 2009,
+          "end": 2011
+        },
+        {
           "club": "Marseille",
           "start": 2009,
           "end": 2011
+        },
+        {
+          "club": "Marseille",
+          "start": 2009,
+          "end": 9999
         },
         {
           "club": "Lazio",
@@ -5622,9 +5969,19 @@
           "end": 2013
         },
         {
+          "club": "Kuban Krasnodar",
+          "start": 2013,
+          "end": 2014
+        },
+        {
           "club": "QPR",
           "start": 2013,
           "end": 2014
+        },
+        {
+          "club": "QPR",
+          "start": 2013,
+          "end": 9999
         },
         {
           "club": "SC Bastia",
@@ -5647,7 +6004,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:18:59.088Z"
+      "fetchedAt": "2026-07-07T04:03:58.991Z"
     },
     "Mario Balotelli": {
       "id": "45146",
@@ -5744,7 +6101,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:01.770Z"
+      "fetchedAt": "2026-07-07T04:04:01.626Z"
     },
     "Jamie Carragher": {
       "id": "3597",
@@ -5761,7 +6118,7 @@
           "end": 2013
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:04.174Z"
+      "fetchedAt": "2026-07-07T04:04:04.039Z"
     },
     "Luís Figo": {
       "id": "3446",
@@ -5803,7 +6160,7 @@
           "end": 2009
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:06.623Z"
+      "fetchedAt": "2026-07-07T04:04:06.326Z"
     },
     "Maxwell": {
       "id": "4317",
@@ -5850,7 +6207,7 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:10.007Z"
+      "fetchedAt": "2026-07-07T04:04:09.101Z"
     },
     "Diego Forlán": {
       "id": "3408",
@@ -5915,9 +6272,14 @@
           "club": "Kitchee",
           "start": 2018,
           "end": 2019
+        },
+        {
+          "club": "Kitchee",
+          "start": 2018,
+          "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:12.855Z"
+      "fetchedAt": "2026-07-07T04:04:11.437Z"
     },
     "Jan Vertonghen": {
       "id": "43250",
@@ -5974,7 +6336,7 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:15.191Z"
+      "fetchedAt": "2026-07-07T04:04:14.178Z"
     },
     "Raheem Sterling": {
       "id": "134425",
@@ -6021,7 +6383,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:17.528Z"
+      "fetchedAt": "2026-07-07T04:04:17.348Z"
     },
     "Antoine Griezmann": {
       "id": "125781",
@@ -6070,15 +6432,10 @@
         {
           "club": "Barcelona",
           "start": 2023,
-          "end": 2026
-        },
-        {
-          "club": "Orlando",
-          "start": 2026,
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:19.791Z"
+      "fetchedAt": "2026-07-07T04:04:19.698Z"
     },
     "Gervinho": {
       "id": "33481",
@@ -6150,7 +6507,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:22.412Z"
+      "fetchedAt": "2026-07-07T04:04:22.165Z"
     },
     "Mathieu Debuchy": {
       "id": "27306",
@@ -6207,7 +6564,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:24.683Z"
+      "fetchedAt": "2026-07-07T04:04:24.952Z"
     },
     "N'Golo Kanté": {
       "id": "225083",
@@ -6254,7 +6611,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:27.031Z"
+      "fetchedAt": "2026-07-07T04:04:27.354Z"
     },
     "Fraser Forster": {
       "id": "52570",
@@ -6326,6 +6683,11 @@
           "end": 2014
         },
         {
+          "club": "Newcastle",
+          "start": 2012,
+          "end": 9999
+        },
+        {
           "club": "Southampton",
           "start": 2014,
           "end": 2019
@@ -6351,7 +6713,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:29.446Z"
+      "fetchedAt": "2026-07-07T04:04:29.753Z"
     },
     "Graziano Pellè": {
       "id": "29594",
@@ -6388,6 +6750,11 @@
           "end": 2006
         },
         {
+          "club": "Cesena",
+          "start": 2006,
+          "end": 2007
+        },
+        {
           "club": "Lecce",
           "start": 2006,
           "end": 2007
@@ -6398,9 +6765,19 @@
           "end": 2007
         },
         {
+          "club": "AZ Alkmaar",
+          "start": 2007,
+          "end": 2011
+        },
+        {
           "club": "Lecce",
           "start": 2007,
           "end": 2011
+        },
+        {
+          "club": "Lecce",
+          "start": 2007,
+          "end": 9999
         },
         {
           "club": "Parma",
@@ -6433,6 +6810,11 @@
           "end": 2014
         },
         {
+          "club": "Parma",
+          "start": 2013,
+          "end": 2021
+        },
+        {
           "club": "Southampton",
           "start": 2014,
           "end": 2016
@@ -6443,12 +6825,17 @@
           "end": 2021
         },
         {
+          "club": "SD Luneng",
+          "start": 2016,
+          "end": 9999
+        },
+        {
           "club": "Parma",
           "start": 2021,
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:31.787Z"
+      "fetchedAt": "2026-07-07T04:04:32.370Z"
     },
     "Dejan Lovren": {
       "id": "37838",
@@ -6505,7 +6892,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:33.962Z"
+      "fetchedAt": "2026-07-07T04:04:34.636Z"
     },
     "Toni Kroos": {
       "id": "31909",
@@ -6552,7 +6939,7 @@
           "end": 2024
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:36.294Z"
+      "fetchedAt": "2026-07-07T04:04:36.927Z"
     },
     "Arturo Vidal": {
       "id": "37666",
@@ -6609,7 +6996,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:38.523Z"
+      "fetchedAt": "2026-07-07T04:04:39.309Z"
     },
     "Mario Götze": {
       "id": "74842",
@@ -6666,7 +7053,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:41.124Z"
+      "fetchedAt": "2026-07-07T04:04:41.702Z"
     },
     "Harry Kane": {
       "id": "132098",
@@ -6718,6 +7105,11 @@
           "end": 2012
         },
         {
+          "club": "Leyton Orient",
+          "start": 2011,
+          "end": 9999
+        },
+        {
           "club": "Millwall",
           "start": 2012,
           "end": 2012
@@ -6753,7 +7145,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:43.332Z"
+      "fetchedAt": "2026-07-07T04:04:44.004Z"
     },
     "Jamal Musiala": {
       "id": "580195",
@@ -6790,7 +7182,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:45.297Z"
+      "fetchedAt": "2026-07-07T04:04:46.169Z"
     },
     "Jamie Vardy": {
       "id": "197838",
@@ -6827,7 +7219,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:47.462Z"
+      "fetchedAt": "2026-07-07T04:04:48.786Z"
     },
     "Emmanuel Adebayor": {
       "id": "8883",
@@ -6894,6 +7286,11 @@
           "end": 2017
         },
         {
+          "club": "Crystal Palace",
+          "start": 2016,
+          "end": 9999
+        },
+        {
           "club": "Basaksehir",
           "start": 2017,
           "end": 2019
@@ -6904,9 +7301,19 @@
           "end": 2020
         },
         {
+          "club": "Kayserispor",
+          "start": 2019,
+          "end": 9999
+        },
+        {
           "club": "Olimpia",
           "start": 2020,
           "end": 2021
+        },
+        {
+          "club": "Olimpia",
+          "start": 2020,
+          "end": 9999
         },
         {
           "club": "AC Semassi FC",
@@ -6914,7 +7321,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:51.563Z"
+      "fetchedAt": "2026-07-07T04:04:51.072Z"
     },
     "Son Heung-min": {
       "id": 91845,
@@ -6981,7 +7388,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:53.757Z"
+      "fetchedAt": "2026-07-07T04:04:53.086Z"
     },
     "Ruud van Nistelrooy": {
       "id": "3407",
@@ -7038,7 +7445,7 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:56.096Z"
+      "fetchedAt": "2026-07-07T04:04:55.610Z"
     },
     "Dele Alli": {
       "id": "207929",
@@ -7090,7 +7497,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:19:58.506Z"
+      "fetchedAt": "2026-07-07T04:04:58.220Z"
     },
     "Bernd Leno": {
       "id": "72476",
@@ -7152,7 +7559,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:00.812Z"
+      "fetchedAt": "2026-07-07T04:05:00.704Z"
     },
     "Naby Keïta": {
       "id": "302215",
@@ -7209,7 +7616,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:03.160Z"
+      "fetchedAt": "2026-07-07T04:05:03.112Z"
     },
     "Dusan Tadić": {
       "id": "36139",
@@ -7266,7 +7673,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:05.710Z"
+      "fetchedAt": "2026-07-07T04:05:05.482Z"
     },
     "Kai Havertz": {
       "id": "309400",
@@ -7308,7 +7715,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:07.806Z"
+      "fetchedAt": "2026-07-07T04:05:07.842Z"
     },
     "Riyad Mahrez": {
       "id": "171424",
@@ -7350,7 +7757,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:10.238Z"
+      "fetchedAt": "2026-07-07T04:05:10.246Z"
     },
     "Giorgio Chiellini": {
       "id": "29260",
@@ -7382,7 +7789,7 @@
           "end": 2024
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:12.528Z"
+      "fetchedAt": "2026-07-07T04:05:12.653Z"
     },
     "Jermain Defoe": {
       "id": "3875",
@@ -7454,12 +7861,17 @@
           "end": 2022
         },
         {
+          "club": "Bournemouth",
+          "start": 2020,
+          "end": 9999
+        },
+        {
           "club": "Sunderland",
           "start": 2022,
           "end": 2022
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:14.913Z"
+      "fetchedAt": "2026-07-07T04:05:15.090Z"
     },
     "Carlos Vela": {
       "id": "35773",
@@ -7486,6 +7898,11 @@
           "end": 2006
         },
         {
+          "club": "UD Salamanca",
+          "start": 2006,
+          "end": 2007
+        },
+        {
           "club": "Arsenal",
           "start": 2006,
           "end": 2007
@@ -7496,9 +7913,19 @@
           "end": 2007
         },
         {
+          "club": "CA Osasuna",
+          "start": 2007,
+          "end": 2008
+        },
+        {
           "club": "Arsenal",
           "start": 2007,
           "end": 2008
+        },
+        {
+          "club": "Arsenal",
+          "start": 2007,
+          "end": 2011
         },
         {
           "club": "Arsenal",
@@ -7541,7 +7968,7 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:17.641Z"
+      "fetchedAt": "2026-07-07T04:05:17.864Z"
     },
     "Diego Costa": {
       "id": "44779",
@@ -7608,9 +8035,19 @@
           "end": 2009
         },
         {
+          "club": "Real Valladolid",
+          "start": 2009,
+          "end": 2010
+        },
+        {
           "club": "Atlético",
           "start": 2009,
           "end": 2010
+        },
+        {
+          "club": "Atlético",
+          "start": 2009,
+          "end": 2012
         },
         {
           "club": "Atlético",
@@ -7658,7 +8095,7 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:20.172Z"
+      "fetchedAt": "2026-07-07T04:05:20.668Z"
     },
     "Koke": {
       "id": "74229",
@@ -7685,7 +8122,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:22.842Z"
+      "fetchedAt": "2026-07-07T04:05:23.248Z"
     },
     "Pierre-Emerick Aubameyang": {
       "id": "58864",
@@ -7732,6 +8169,11 @@
           "end": 2009
         },
         {
+          "club": "Lille",
+          "start": 2009,
+          "end": 2010
+        },
+        {
           "club": "AC Milan",
           "start": 2009,
           "end": 2010
@@ -7740,6 +8182,11 @@
           "club": "Monaco",
           "start": 2010,
           "end": 2010
+        },
+        {
+          "club": "Monaco",
+          "start": 2010,
+          "end": 2011
         },
         {
           "club": "AC Milan",
@@ -7782,9 +8229,19 @@
           "end": 2022
         },
         {
+          "club": "Chelsea",
+          "start": 2022,
+          "end": 2023
+        },
+        {
           "club": "Barcelona",
           "start": 2022,
           "end": 2023
+        },
+        {
+          "club": "Barcelona",
+          "start": 2022,
+          "end": 9999
         },
         {
           "club": "Marseille",
@@ -7802,7 +8259,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:26.069Z"
+      "fetchedAt": "2026-07-07T04:05:25.875Z"
     },
     "Pepe Reina": {
       "id": "7825",
@@ -7874,6 +8331,11 @@
           "end": 2020
         },
         {
+          "club": "Lazio",
+          "start": 2020,
+          "end": 2022
+        },
+        {
           "club": "Aston Villa",
           "start": 2020,
           "end": 2020
@@ -7882,6 +8344,11 @@
           "club": "AC Milan",
           "start": 2020,
           "end": 2022
+        },
+        {
+          "club": "AC Milan",
+          "start": 2020,
+          "end": 9999
         },
         {
           "club": "Villarreal",
@@ -7894,7 +8361,7 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:28.420Z"
+      "fetchedAt": "2026-07-07T04:05:28.348Z"
     },
     "Lamine Yamal": {
       "id": "937958",
@@ -7926,7 +8393,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:30.577Z"
+      "fetchedAt": "2026-07-07T04:05:30.497Z"
     },
     "Frenkie de Jong": {
       "id": "326330",
@@ -7941,6 +8408,11 @@
           "club": "Willem II/RKC-17",
           "start": 2013,
           "end": 2014
+        },
+        {
+          "club": "Willem II/RKC-17",
+          "start": 2013,
+          "end": 9999
         },
         {
           "club": "Willem II U19",
@@ -7983,7 +8455,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:33.115Z"
+      "fetchedAt": "2026-07-07T04:05:34.506Z"
     },
     "Phil Foden": {
       "id": "406635",
@@ -8005,7 +8477,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:35.245Z"
+      "fetchedAt": "2026-07-07T04:05:37.056Z"
     },
     "Bruno Fernandes": {
       "id": "240306",
@@ -8062,9 +8534,19 @@
           "end": 2017
         },
         {
+          "club": "Sporting",
+          "start": 2017,
+          "end": 2020
+        },
+        {
           "club": "Udinese",
           "start": 2017,
           "end": 2020
+        },
+        {
+          "club": "Udinese",
+          "start": 2017,
+          "end": 9999
         },
         {
           "club": "Man Utd",
@@ -8072,7 +8554,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:37.778Z"
+      "fetchedAt": "2026-07-07T04:05:39.420Z"
     },
     "Antonio Di Natale": {
       "id": "6031",
@@ -8114,99 +8596,54 @@
           "end": 2016
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:40.344Z"
+      "fetchedAt": "2026-07-07T04:05:42.013Z"
     },
     "Juninho": {
-      "id": "424676",
+      "id": 5354,
       "stints": [
         {
-          "club": "Atlético-PR B",
-          "start": 2008,
-          "end": 2016,
+          "club": "Recife U17",
+          "start": 1985,
+          "end": 1993,
           "firstClub": true
         },
         {
-          "club": "Portimonense",
-          "start": 2016,
-          "end": 2016
+          "club": "Sport Recife",
+          "start": 1993,
+          "end": 1995
         },
         {
-          "club": "Atlético-PR B",
-          "start": 2016,
-          "end": 2017
+          "club": "Vasco da Gama",
+          "start": 1995,
+          "end": 2001
         },
         {
-          "club": "Brasil Pelotas",
-          "start": 2017,
-          "end": 2017
+          "club": "Lyon",
+          "start": 2001,
+          "end": 2009
         },
         {
-          "club": "Atlético-PR B",
-          "start": 2017,
-          "end": 2018
+          "club": "Al-Gharafa",
+          "start": 2009,
+          "end": 2011
         },
         {
-          "club": "Novorizontino",
-          "start": 2018,
-          "end": 2018
+          "club": "Vasco da Gama",
+          "start": 2011,
+          "end": 2013
         },
         {
-          "club": "Atlético-PR B",
-          "start": 2018,
-          "end": 2018
+          "club": "New York",
+          "start": 2013,
+          "end": 2013
         },
         {
-          "club": "Figueirense FC",
-          "start": 2018,
-          "end": 2018
-        },
-        {
-          "club": "Athletico-PR B",
-          "start": 2018,
-          "end": 2019
-        },
-        {
-          "club": "Estoril",
-          "start": 2019,
-          "end": 2019
-        },
-        {
-          "club": "Vila Nova FC",
-          "start": 2019,
-          "end": 2019
-        },
-        {
-          "club": "Athletico-PR B",
-          "start": 2019,
-          "end": 2020
-        },
-        {
-          "club": "Athletico-PR B",
-          "start": 2020,
-          "end": 2020
-        },
-        {
-          "club": "Chaves",
-          "start": 2020,
-          "end": 2023
-        },
-        {
-          "club": "Qarabağ",
-          "start": 2023,
-          "end": 2025
-        },
-        {
-          "club": "Flamengo",
-          "start": 2025,
-          "end": 2026
-        },
-        {
-          "club": "UNAM Pumas",
-          "start": 2026,
-          "end": 9999
+          "club": "Vasco da Gama",
+          "start": 2013,
+          "end": 2014
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:42.759Z"
+      "fetchedAt": "2026-07-07T04:05:44.435Z"
     },
     "Xavi": {
       "id": "7607",
@@ -8243,7 +8680,7 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:45.446Z"
+      "fetchedAt": "2026-07-07T04:05:47.258Z"
     },
     "Arjen Robben": {
       "id": "4360",
@@ -8295,7 +8732,7 @@
           "end": 2021
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:47.901Z"
+      "fetchedAt": "2026-07-07T04:05:49.751Z"
     },
     "Philipp Lahm": {
       "id": "2219",
@@ -8342,7 +8779,7 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:50.311Z"
+      "fetchedAt": "2026-07-07T04:05:53.396Z"
     },
     "Wesley Sneijder": {
       "id": "4673",
@@ -8399,7 +8836,7 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:52.601Z"
+      "fetchedAt": "2026-07-07T04:05:55.788Z"
     },
     "Robin van Persie": {
       "id": "4380",
@@ -8451,7 +8888,7 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:55.108Z"
+      "fetchedAt": "2026-07-07T04:05:58.214Z"
     },
     "Dirk Kuyt": {
       "id": "4010",
@@ -8498,7 +8935,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:20:57.724Z"
+      "fetchedAt": "2026-07-07T04:06:00.695Z"
     },
     "Giovanni van Bronckhorst": {
       "id": "3191",
@@ -8550,12 +8987,17 @@
           "end": 2007
         },
         {
+          "club": "Arsenal",
+          "start": 2004,
+          "end": 9999
+        },
+        {
           "club": "Feyenoord",
           "start": 2007,
           "end": 2010
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:02.090Z"
+      "fetchedAt": "2026-07-07T04:06:03.027Z"
     },
     "Cesc Fàbregas": {
       "id": "8806",
@@ -8607,7 +9049,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:04.374Z"
+      "fetchedAt": "2026-07-07T04:06:07.103Z"
     },
     "Tim Howard": {
       "id": "4267",
@@ -8654,6 +9096,11 @@
           "end": 2016
         },
         {
+          "club": "Man Utd",
+          "start": 2007,
+          "end": 9999
+        },
+        {
           "club": "Colorado",
           "start": 2016,
           "end": 2020
@@ -8664,7 +9111,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:06.771Z"
+      "fetchedAt": "2026-07-07T04:06:09.617Z"
     },
     "Yossi Benayoun": {
       "id": "7858",
@@ -8766,7 +9213,7 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:09.203Z"
+      "fetchedAt": "2026-07-07T04:06:12.171Z"
     },
     "Hulk": {
       "id": "80562",
@@ -8781,6 +9228,11 @@
           "club": "Vitória U20",
           "start": 2003,
           "end": 2005
+        },
+        {
+          "club": "Vitória U20",
+          "start": 2003,
+          "end": 9999
         },
         {
           "club": "Kawasaki Front.",
@@ -8828,6 +9280,11 @@
           "end": 2021
         },
         {
+          "club": "SH SIPG",
+          "start": 2016,
+          "end": 9999
+        },
+        {
           "club": "Atlético-MG",
           "start": 2021,
           "end": 2026
@@ -8838,7 +9295,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:11.823Z"
+      "fetchedAt": "2026-07-07T04:06:14.695Z"
     },
     "Michael Owen": {
       "id": "1397",
@@ -8875,7 +9332,7 @@
           "end": 2013
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:14.359Z"
+      "fetchedAt": "2026-07-07T04:06:17.267Z"
     },
     "Marcelo": {
       "id": "44501",
@@ -8907,7 +9364,7 @@
           "end": 2024
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:17.145Z"
+      "fetchedAt": "2026-07-07T04:06:20.157Z"
     },
     "Patrick Vieira": {
       "id": "3183",
@@ -8954,7 +9411,7 @@
           "end": 2011
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:19.629Z"
+      "fetchedAt": "2026-07-07T04:06:22.655Z"
     },
     "Robert Pirès": {
       "id": "3185",
@@ -9011,7 +9468,7 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:22.217Z"
+      "fetchedAt": "2026-07-07T04:06:25.650Z"
     },
     "Kurt Zouma": {
       "id": "157509",
@@ -9041,6 +9498,11 @@
           "club": "Chelsea",
           "start": 2014,
           "end": 2014
+        },
+        {
+          "club": "Chelsea",
+          "start": 2014,
+          "end": 2017
         },
         {
           "club": "Chelsea",
@@ -9083,17 +9545,32 @@
           "end": 2025
         },
         {
+          "club": "CFR Cluj",
+          "start": 2025,
+          "end": 2026
+        },
+        {
           "club": "West Ham",
           "start": 2025,
           "end": 2026
         },
         {
+          "club": "West Ham",
+          "start": 2025,
+          "end": 9999
+        },
+        {
           "club": "Al-Wasl",
           "start": 2026,
           "end": 2026
+        },
+        {
+          "club": "Al-Wasl",
+          "start": 2026,
+          "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:24.480Z"
+      "fetchedAt": "2026-07-07T04:06:28.319Z"
     },
     "Claudio Pizarro": {
       "id": "532",
@@ -9165,7 +9642,7 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:27.169Z"
+      "fetchedAt": "2026-07-07T04:06:31.119Z"
     },
     "Lukas Podolski": {
       "id": "15185",
@@ -9242,7 +9719,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:29.479Z"
+      "fetchedAt": "2026-07-07T04:06:33.635Z"
     },
     "Alexis Sánchez": {
       "id": "40433",
@@ -9314,6 +9791,11 @@
           "end": 2022
         },
         {
+          "club": "Man Utd",
+          "start": 2020,
+          "end": 9999
+        },
+        {
           "club": "Marseille",
           "start": 2022,
           "end": 2023
@@ -9334,7 +9816,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:32.157Z"
+      "fetchedAt": "2026-07-07T04:06:36.344Z"
     },
     "Casemiro": {
       "id": "16306",
@@ -9356,6 +9838,11 @@
           "end": 2013
         },
         {
+          "club": "Real Madrid",
+          "start": 2013,
+          "end": 2014
+        },
+        {
           "club": "RM Castilla",
           "start": 2013,
           "end": 2013
@@ -9364,6 +9851,11 @@
           "club": "São Paulo",
           "start": 2013,
           "end": 2014
+        },
+        {
+          "club": "São Paulo",
+          "start": 2013,
+          "end": 9999
         },
         {
           "club": "Porto",
@@ -9386,12 +9878,17 @@
           "end": 2022
         },
         {
+          "club": "Real Madrid",
+          "start": 2015,
+          "end": 2022
+        },
+        {
           "club": "Man Utd",
           "start": 2022,
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:34.455Z"
+      "fetchedAt": "2026-07-07T04:06:39.366Z"
     },
     "Marcus Rashford": {
       "id": "258923",
@@ -9433,7 +9930,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:36.548Z"
+      "fetchedAt": "2026-07-07T04:06:41.699Z"
     },
     "Mikel Oyarzabal": {
       "id": "351478",
@@ -9460,9 +9957,19 @@
           "end": 2014
         },
         {
+          "club": "R. Sociedad U19",
+          "start": 2014,
+          "end": 2015
+        },
+        {
           "club": "Real Sociedad Y",
           "start": 2014,
           "end": 2015
+        },
+        {
+          "club": "Real Sociedad Y",
+          "start": 2014,
+          "end": 9999
         },
         {
           "club": "Real Sociedad B",
@@ -9475,7 +9982,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:38.833Z"
+      "fetchedAt": "2026-07-07T04:06:45.120Z"
     },
     "Mason Mount": {
       "id": "346483",
@@ -9517,9 +10024,19 @@
           "end": 2019
         },
         {
+          "club": "Chelsea",
+          "start": 2019,
+          "end": 2023
+        },
+        {
           "club": "Chelsea U23",
           "start": 2019,
           "end": 2023
+        },
+        {
+          "club": "Chelsea U23",
+          "start": 2019,
+          "end": 9999
         },
         {
           "club": "Man Utd",
@@ -9527,7 +10044,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:41.294Z"
+      "fetchedAt": "2026-07-07T04:06:47.388Z"
     },
     "Andrés Iniesta": {
       "id": "7600",
@@ -9574,7 +10091,7 @@
           "end": 2024
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:43.618Z"
+      "fetchedAt": "2026-07-07T04:06:50.160Z"
     },
     "Dominic Calvert-Lewin": {
       "id": "306024",
@@ -9621,7 +10138,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:45.932Z"
+      "fetchedAt": "2026-07-07T04:06:52.825Z"
     },
     "Marek Hamšík": {
       "id": "38593",
@@ -9663,9 +10180,19 @@
           "end": 2021
         },
         {
+          "club": "DL Yifang",
+          "start": 2019,
+          "end": 9999
+        },
+        {
           "club": "Trabzonspor",
           "start": 2021,
           "end": 2021
+        },
+        {
+          "club": "Trabzonspor",
+          "start": 2021,
+          "end": 2023
         },
         {
           "club": "IFK Göteborg",
@@ -9673,12 +10200,17 @@
           "end": 2023
         },
         {
+          "club": "IFK Göteborg",
+          "start": 2021,
+          "end": 9999
+        },
+        {
           "club": "Hamsik Academy",
           "start": 2025,
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:48.895Z"
+      "fetchedAt": "2026-07-07T04:06:55.381Z"
     },
     "Ezequiel Lavezzi": {
       "id": "50570",
@@ -9720,6 +10252,11 @@
           "end": 2007
         },
         {
+          "club": "Genoa",
+          "start": 2005,
+          "end": 9999
+        },
+        {
           "club": "Napoli",
           "start": 2007,
           "end": 2012
@@ -9735,7 +10272,7 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:51.178Z"
+      "fetchedAt": "2026-07-07T04:06:57.785Z"
     },
     "Romelu Lukaku": {
       "id": "96341",
@@ -9775,6 +10312,11 @@
           "club": "Everton",
           "start": 2013,
           "end": 2013
+        },
+        {
+          "club": "Everton",
+          "start": 2013,
+          "end": 2014
         },
         {
           "club": "Chelsea",
@@ -9832,7 +10374,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:53.616Z"
+      "fetchedAt": "2026-07-07T04:07:00.077Z"
     },
     "Rivaldo": {
       "id": "3372",
@@ -9884,9 +10426,19 @@
           "end": 2003
         },
         {
+          "club": "Milan",
+          "start": 2002,
+          "end": 9999
+        },
+        {
           "club": "Cruzeiro",
           "start": 2004,
           "end": 2004
+        },
+        {
+          "club": "Cruzeiro",
+          "start": 2004,
+          "end": 9999
         },
         {
           "club": "Olympiacos",
@@ -9939,7 +10491,7 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:56.279Z"
+      "fetchedAt": "2026-07-07T04:07:02.787Z"
     },
     "Carlos Tevez": {
       "id": "4276",
@@ -10006,7 +10558,7 @@
           "end": 2021
         }
       ],
-      "fetchedAt": "2026-07-07T01:21:58.935Z"
+      "fetchedAt": "2026-07-07T04:07:05.233Z"
     },
     "Javier Mascherano": {
       "id": "19981",
@@ -10048,6 +10600,11 @@
           "end": 2010
         },
         {
+          "club": "West Ham",
+          "start": 2008,
+          "end": 9999
+        },
+        {
           "club": "Barcelona",
           "start": 2010,
           "end": 2018
@@ -10063,7 +10620,7 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:01.308Z"
+      "fetchedAt": "2026-07-07T04:07:07.897Z"
     },
     "Álvaro Morata": {
       "id": "128223",
@@ -10130,6 +10687,11 @@
           "end": 2020
         },
         {
+          "club": "Chelsea",
+          "start": 2020,
+          "end": 9999
+        },
+        {
           "club": "Juventus",
           "start": 2020,
           "end": 2022
@@ -10170,7 +10732,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:03.584Z"
+      "fetchedAt": "2026-07-07T04:07:10.618Z"
     },
     "Ivan Rakitić": {
       "id": "32467",
@@ -10222,7 +10784,7 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:05.905Z"
+      "fetchedAt": "2026-07-07T04:07:13.163Z"
     },
     "Ever Banega": {
       "id": "12249",
@@ -10294,7 +10856,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:08.507Z"
+      "fetchedAt": "2026-07-07T04:07:15.633Z"
     },
     "Manuel Neuer": {
       "id": "17259",
@@ -10326,7 +10888,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:11.496Z"
+      "fetchedAt": "2026-07-07T04:07:18.282Z"
     },
     "Mats Hummels": {
       "id": "39728",
@@ -10374,6 +10936,11 @@
         },
         {
           "club": "Bayern Munich",
+          "start": 2009,
+          "end": 2019
+        },
+        {
+          "club": "Bayern Munich",
           "start": 2016,
           "end": 2019
         },
@@ -10388,7 +10955,7 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:13.842Z"
+      "fetchedAt": "2026-07-07T04:07:20.654Z"
     },
     "Ousmane Dembélé": {
       "id": "288230",
@@ -10435,7 +11002,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:16.098Z"
+      "fetchedAt": "2026-07-07T04:07:23.272Z"
     },
     "Philippe Coutinho": {
       "id": "80444",
@@ -10452,9 +11019,19 @@
           "end": 2008
         },
         {
+          "club": "Vasco da Gama",
+          "start": 2008,
+          "end": 2010
+        },
+        {
           "club": "Inter",
           "start": 2008,
           "end": 2010
+        },
+        {
+          "club": "Inter",
+          "start": 2008,
+          "end": 2012
         },
         {
           "club": "Inter",
@@ -10530,9 +11107,14 @@
           "club": "Aston Villa",
           "start": 2025,
           "end": 2026
+        },
+        {
+          "club": "Aston Villa",
+          "start": 2025,
+          "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:18.490Z"
+      "fetchedAt": "2026-07-07T04:07:26.930Z"
     },
     "Trent Alexander-Arnold": {
       "id": "314353",
@@ -10559,7 +11141,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:20.787Z"
+      "fetchedAt": "2026-07-07T04:07:29.079Z"
     },
     "Daniel Sturridge": {
       "id": "47082",
@@ -10621,7 +11203,7 @@
           "end": 2022
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:23.460Z"
+      "fetchedAt": "2026-07-07T04:07:31.450Z"
     },
     "Gonzalo Higuaín": {
       "id": "39153",
@@ -10678,12 +11260,17 @@
           "end": 2020
         },
         {
+          "club": "Juventus",
+          "start": 2019,
+          "end": 2020
+        },
+        {
           "club": "Miami",
           "start": 2020,
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:26.080Z"
+      "fetchedAt": "2026-07-07T04:07:34.000Z"
     },
     "Dries Mertens": {
       "id": "56416",
@@ -10715,6 +11302,11 @@
           "end": 2006
         },
         {
+          "club": "AGOVV",
+          "start": 2006,
+          "end": 2007
+        },
+        {
           "club": "KAA Gent U21",
           "start": 2006,
           "end": 2007
@@ -10728,6 +11320,11 @@
           "club": "KAA Gent U21",
           "start": 2007,
           "end": 2009
+        },
+        {
+          "club": "KAA Gent U21",
+          "start": 2007,
+          "end": 9999
         },
         {
           "club": "Utrecht",
@@ -10750,7 +11347,7 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:28.397Z"
+      "fetchedAt": "2026-07-07T04:07:36.447Z"
     },
     "Lorenzo Insigne": {
       "id": "133964",
@@ -10787,6 +11384,11 @@
           "end": 2010
         },
         {
+          "club": "Foggia",
+          "start": 2010,
+          "end": 2011
+        },
+        {
           "club": "Napoli",
           "start": 2010,
           "end": 2011
@@ -10797,9 +11399,19 @@
           "end": 2011
         },
         {
+          "club": "Pescara",
+          "start": 2011,
+          "end": 2012
+        },
+        {
           "club": "Napoli",
           "start": 2011,
           "end": 2012
+        },
+        {
+          "club": "Napoli",
+          "start": 2011,
+          "end": 2022
         },
         {
           "club": "Napoli",
@@ -10817,7 +11429,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:30.682Z"
+      "fetchedAt": "2026-07-07T04:07:39.115Z"
     },
     "Xabi Alonso": {
       "id": "7476",
@@ -10869,7 +11481,7 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:33.122Z"
+      "fetchedAt": "2026-07-07T04:07:42.506Z"
     },
     "Leroy Sané": {
       "id": "192565",
@@ -10921,7 +11533,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:35.724Z"
+      "fetchedAt": "2026-07-07T04:07:45.180Z"
     },
     "Klaas-Jan Huntelaar": {
       "id": "4357",
@@ -10963,6 +11575,11 @@
           "end": 2003
         },
         {
+          "club": "AGOVV",
+          "start": 2003,
+          "end": 2004
+        },
+        {
           "club": "PSV",
           "start": 2003,
           "end": 2004
@@ -10973,9 +11590,19 @@
           "end": 2004
         },
         {
+          "club": "Heerenveen",
+          "start": 2004,
+          "end": 2006
+        },
+        {
           "club": "PSV",
           "start": 2004,
           "end": 2006
+        },
+        {
+          "club": "PSV",
+          "start": 2004,
+          "end": 9999
         },
         {
           "club": "Ajax",
@@ -11008,7 +11635,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:38.308Z"
+      "fetchedAt": "2026-07-07T04:07:47.804Z"
     },
     "Patrick Kluivert": {
       "id": "4385",
@@ -11065,7 +11692,7 @@
           "end": 2008
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:40.444Z"
+      "fetchedAt": "2026-07-07T04:07:50.325Z"
     },
     "Juan Cuadrado": {
       "id": "91970",
@@ -11112,6 +11739,11 @@
           "end": 2015
         },
         {
+          "club": "Udinese",
+          "start": 2013,
+          "end": 9999
+        },
+        {
           "club": "Chelsea",
           "start": 2015,
           "end": 2015
@@ -11142,6 +11774,11 @@
           "end": 2023
         },
         {
+          "club": "Chelsea",
+          "start": 2017,
+          "end": 9999
+        },
+        {
           "club": "Inter",
           "start": 2023,
           "end": 2024
@@ -11157,7 +11794,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:42.681Z"
+      "fetchedAt": "2026-07-07T04:07:52.700Z"
     },
     "Cody Gakpo": {
       "id": "434675",
@@ -11189,7 +11826,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:44.941Z"
+      "fetchedAt": "2026-07-07T04:07:54.947Z"
     },
     "Lilian Thuram": {
       "id": "3521",
@@ -11204,6 +11841,11 @@
           "club": "Ent. Mel-Font",
           "start": 1988,
           "end": 1990
+        },
+        {
+          "club": "Ent. Mel-Font",
+          "start": 1988,
+          "end": 9999
         },
         {
           "club": "Monaco B",
@@ -11231,7 +11873,7 @@
           "end": 2008
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:47.148Z"
+      "fetchedAt": "2026-07-07T04:07:57.257Z"
     },
     "Gerard Piqué": {
       "id": "18944",
@@ -11273,7 +11915,7 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:49.744Z"
+      "fetchedAt": "2026-07-07T04:07:59.707Z"
     },
     "Gabriel Milito": {
       "id": "7968",
@@ -11305,7 +11947,7 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:52.303Z"
+      "fetchedAt": "2026-07-07T04:08:02.722Z"
     },
     "Edwin van der Sar": {
       "id": "3516",
@@ -11347,7 +11989,7 @@
           "end": 2011
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:55.304Z"
+      "fetchedAt": "2026-07-07T04:08:05.415Z"
     },
     "Lukas Jutkiewicz": {
       "id": "33507",
@@ -11439,7 +12081,7 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-07T01:22:58.116Z"
+      "fetchedAt": "2026-07-07T04:08:07.884Z"
     },
     "Mark van Bommel": {
       "id": "3515",
@@ -11481,7 +12123,7 @@
           "end": 2013
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:00.625Z"
+      "fetchedAt": "2026-07-07T04:08:10.498Z"
     },
     "Santi Cazorla": {
       "id": "15799",
@@ -11543,7 +12185,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:03.287Z"
+      "fetchedAt": "2026-07-07T04:08:12.860Z"
     },
     "Sergei Rebrov": {
       "id": 3122,
@@ -11600,7 +12242,7 @@
           "end": 2010
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:05.559Z"
+      "fetchedAt": "2026-07-07T04:08:14.908Z"
     },
     "Folarin Balogun": {
       "id": "503770",
@@ -11632,6 +12274,11 @@
           "end": 2022
         },
         {
+          "club": "Stade Reims",
+          "start": 2022,
+          "end": 2023
+        },
+        {
           "club": "Arsenal U23",
           "start": 2022,
           "end": 2022
@@ -11640,6 +12287,11 @@
           "club": "Middlesbrough",
           "start": 2022,
           "end": 2023
+        },
+        {
+          "club": "Middlesbrough",
+          "start": 2022,
+          "end": 9999
         },
         {
           "club": "Arsenal",
@@ -11652,7 +12304,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:07.890Z"
+      "fetchedAt": "2026-07-07T04:08:17.147Z"
     },
     "Pablo Aimar": {
       "id": "3411",
@@ -11694,7 +12346,7 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:10.299Z"
+      "fetchedAt": "2026-07-07T04:08:19.607Z"
     },
     "Pep Guardiola": {
       "id": "5950",
@@ -11726,6 +12378,11 @@
           "end": 1991
         },
         {
+          "club": "Barcelona Prom.",
+          "start": 1990,
+          "end": 9999
+        },
+        {
           "club": "Barcelona",
           "start": 1991,
           "end": 2001
@@ -11746,9 +12403,19 @@
           "end": 2003
         },
         {
+          "club": "Al-Ahli SC",
+          "start": 2003,
+          "end": 2005
+        },
+        {
           "club": "Brescia",
           "start": 2003,
           "end": 2005
+        },
+        {
+          "club": "Brescia",
+          "start": 2003,
+          "end": 9999
         },
         {
           "club": "Dorados Sinaloa",
@@ -11756,7 +12423,7 @@
           "end": 2006
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:12.912Z"
+      "fetchedAt": "2026-07-07T04:08:22.162Z"
     },
     "Juan Román Riquelme": {
       "id": "3854",
@@ -11798,6 +12465,11 @@
           "end": 2007
         },
         {
+          "club": "Barcelona",
+          "start": 2005,
+          "end": 9999
+        },
+        {
           "club": "Villarreal",
           "start": 2007,
           "end": 2007
@@ -11806,6 +12478,11 @@
           "club": "Boca Juniors",
           "start": 2007,
           "end": 2008
+        },
+        {
+          "club": "Boca Juniors",
+          "start": 2007,
+          "end": 2012
         },
         {
           "club": "Boca Juniors",
@@ -11823,7 +12500,7 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:15.155Z"
+      "fetchedAt": "2026-07-07T04:08:24.950Z"
     },
     "Roy Keane": {
       "id": "3396",
@@ -11854,7 +12531,7 @@
           "end": 2006
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:17.492Z"
+      "fetchedAt": "2026-07-07T04:08:27.328Z"
     },
     "Alan Shearer": {
       "id": "3110",
@@ -11881,7 +12558,7 @@
           "end": 2006
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:19.814Z"
+      "fetchedAt": "2026-07-07T04:08:29.823Z"
     },
     "Peter Crouch": {
       "id": "4072",
@@ -11983,7 +12660,7 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:22.238Z"
+      "fetchedAt": "2026-07-07T04:08:32.903Z"
     },
     "Marco Asensio": {
       "id": "296622",
@@ -12035,6 +12712,11 @@
           "end": 2025
         },
         {
+          "club": "Fenerbahçe",
+          "start": 2025,
+          "end": 9999
+        },
+        {
           "club": "Aston Villa",
           "start": 2025,
           "end": 2025
@@ -12045,7 +12727,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:24.507Z"
+      "fetchedAt": "2026-07-07T04:08:35.348Z"
     },
     "Jorginho": {
       "id": "102017",
@@ -12092,7 +12774,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:27.111Z"
+      "fetchedAt": "2026-07-07T04:08:38.294Z"
     },
     "Martin Ødegaard": {
       "id": "316264",
@@ -12144,9 +12826,19 @@
           "end": 2019
         },
         {
+          "club": "Real Sociedad",
+          "start": 2019,
+          "end": 2020
+        },
+        {
           "club": "Real Madrid",
           "start": 2019,
           "end": 2020
+        },
+        {
+          "club": "Real Madrid",
+          "start": 2019,
+          "end": 2021
         },
         {
           "club": "Real Madrid",
@@ -12169,7 +12861,7 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:29.438Z"
+      "fetchedAt": "2026-07-07T04:08:40.280Z"
     },
     "Marco van Basten": {
       "id": "74471",
@@ -12196,7 +12888,7 @@
           "end": 1995
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:31.882Z"
+      "fetchedAt": "2026-07-07T04:08:42.726Z"
     },
     "Frank Rijkaard": {
       "id": "70667",
@@ -12233,9 +12925,19 @@
           "end": 1988
         },
         {
+          "club": "Milan",
+          "start": 1988,
+          "end": 1993
+        },
+        {
           "club": "Sporting",
           "start": 1988,
           "end": 1993
+        },
+        {
+          "club": "Sporting",
+          "start": 1988,
+          "end": 9999
         },
         {
           "club": "Ajax",
@@ -12243,7 +12945,7 @@
           "end": 1995
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:34.116Z"
+      "fetchedAt": "2026-07-07T04:08:45.048Z"
     },
     "Wim Jonk": {
       "id": "101046",
@@ -12280,7 +12982,7 @@
           "end": 2001
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:36.397Z"
+      "fetchedAt": "2026-07-07T04:08:47.662Z"
     },
     "Jordi Alba": {
       "id": "69751",
@@ -12337,7 +13039,7 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:39.006Z"
+      "fetchedAt": "2026-07-07T04:08:50.148Z"
     },
     "Filippo Inzaghi": {
       "id": "5821",
@@ -12364,9 +13066,19 @@
           "end": 1993
         },
         {
+          "club": "Verona",
+          "start": 1993,
+          "end": 1994
+        },
+        {
           "club": "Piacenza",
           "start": 1993,
           "end": 1994
+        },
+        {
+          "club": "Piacenza",
+          "start": 1993,
+          "end": 1995
         },
         {
           "club": "Piacenza",
@@ -12392,9 +13104,14 @@
           "club": "Milan",
           "start": 2001,
           "end": 2012
+        },
+        {
+          "club": "Milan",
+          "start": 2001,
+          "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-07T01:23:41.813Z"
+      "fetchedAt": "2026-07-07T04:08:52.682Z"
     }
   },
   "clubs": {
@@ -89585,5 +90302,5 @@
       }
     ]
   },
-  "schema": 2
+  "schema": 3
 }
