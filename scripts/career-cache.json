@@ -4,6 +4,12 @@
       "id": "3226",
       "stints": [
         {
+          "club": "Clairef. U17",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
+        {
           "club": "Paris SG U19",
           "start": 1995,
           "end": 1996
@@ -84,11 +90,17 @@
           "end": 2016
         }
       ],
-      "fetchedAt": "2026-07-04T03:28:44.645Z"
+      "fetchedAt": "2026-07-07T01:14:38.928Z"
     },
     "Thierry Henry": {
       "id": "3207",
       "stints": [
+        {
+          "club": "Clairef. Yth.",
+          "start": 1984,
+          "end": 1992,
+          "firstClub": true
+        },
         {
           "club": "Versailles Yth.",
           "start": 1992,
@@ -135,11 +147,17 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-04T03:28:47.953Z"
+      "fetchedAt": "2026-07-07T01:14:41.515Z"
     },
     "Didier Drogba": {
       "id": "3924",
       "stints": [
+        {
+          "club": "Dunkerque Jgd.",
+          "start": 1983,
+          "end": 1991,
+          "firstClub": true
+        },
         {
           "club": "Vannes U17",
           "start": 1991,
@@ -201,11 +219,17 @@
           "end": 2018
         }
       ],
-      "fetchedAt": "2026-07-04T03:28:50.962Z"
+      "fetchedAt": "2026-07-07T01:14:44.135Z"
     },
     "Fernando Torres": {
       "id": "7767",
       "stints": [
+        {
+          "club": "Atlético Yth.",
+          "start": 1991,
+          "end": 1999,
+          "firstClub": true
+        },
         {
           "club": "Atl. Madrid U17",
           "start": 1999,
@@ -267,11 +291,17 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-04T03:28:53.906Z"
+      "fetchedAt": "2026-07-07T01:14:47.649Z"
     },
     "Ronaldinho": {
       "id": "3373",
       "stints": [
+        {
+          "club": "Grêmio U20",
+          "start": 1990,
+          "end": 1998,
+          "firstClub": true
+        },
         {
           "club": "Grêmio",
           "start": 1998,
@@ -318,11 +348,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:28:57.009Z"
+      "fetchedAt": "2026-07-07T01:14:50.042Z"
     },
     "Frank Lampard": {
       "id": "3163",
       "stints": [
+        {
+          "club": "West Ham U18",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
         {
           "club": "West Ham",
           "start": 1995,
@@ -359,11 +395,17 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-04T03:28:59.519Z"
+      "fetchedAt": "2026-07-07T01:14:53.254Z"
     },
     "Edin Džeko": {
       "id": "28396",
       "stints": [
+        {
+          "club": "Zeljeznicar U19",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "Zeljeznicar",
           "start": 2003,
@@ -430,11 +472,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:02.361Z"
+      "fetchedAt": "2026-07-07T01:14:55.933Z"
     },
     "Mohamed Salah": {
       "id": "148455",
       "stints": [
+        {
+          "club": "Mokawloon U23",
+          "start": 2002,
+          "end": 2010,
+          "firstClub": true
+        },
         {
           "club": "El Mokawloon",
           "start": 2010,
@@ -481,11 +529,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:05.010Z"
+      "fetchedAt": "2026-07-07T01:14:58.531Z"
     },
     "Lautaro Martínez": {
       "id": "406625",
       "stints": [
+        {
+          "club": "CA Liniers U20",
+          "start": 2006,
+          "end": 2014,
+          "firstClub": true
+        },
         {
           "club": "Racing Club U20",
           "start": 2014,
@@ -502,11 +556,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:07.768Z"
+      "fetchedAt": "2026-07-07T01:15:01.030Z"
     },
     "David Silva": {
       "id": "35518",
       "stints": [
+        {
+          "club": "Valencia CF You",
+          "start": 1994,
+          "end": 2002,
+          "firstClub": true
+        },
         {
           "club": "Valencia U19",
           "start": 2002,
@@ -553,22 +613,34 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:10.692Z"
+      "fetchedAt": "2026-07-07T01:15:03.578Z"
     },
     "Francesco Totti": {
       "id": "5958",
       "stints": [
+        {
+          "club": "Roma U19",
+          "start": 1985,
+          "end": 1993,
+          "firstClub": true
+        },
         {
           "club": "Roma",
           "start": 1993,
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:13.511Z"
+      "fetchedAt": "2026-07-07T01:15:06.446Z"
     },
     "Sergio Agüero": {
       "id": "26399",
       "stints": [
+        {
+          "club": "Indep'te U20",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "Indep'te II",
           "start": 2003,
@@ -595,11 +667,17 @@
           "end": 2021
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:16.107Z"
+      "fetchedAt": "2026-07-07T01:15:08.900Z"
     },
     "Fabio Cannavaro": {
       "id": "5775",
       "stints": [
+        {
+          "club": "Napoli U19",
+          "start": 1984,
+          "end": 1992,
+          "firstClub": true
+        },
         {
           "club": "Napoli",
           "start": 1992,
@@ -641,11 +719,17 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:18.686Z"
+      "fetchedAt": "2026-07-07T01:15:11.483Z"
     },
     "Alessandro Del Piero": {
       "id": "4289",
       "stints": [
+        {
+          "club": "Padova U19",
+          "start": 1983,
+          "end": 1991,
+          "firstClub": true
+        },
         {
           "club": "Padova",
           "start": 1991,
@@ -667,11 +751,17 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:22.060Z"
+      "fetchedAt": "2026-07-07T01:15:13.995Z"
     },
     "Raúl": {
       "id": "7349",
       "stints": [
+        {
+          "club": "Atlético Yth.",
+          "start": 1984,
+          "end": 1992,
+          "firstClub": true
+        },
         {
           "club": "Real Madrid U17",
           "start": 1992,
@@ -708,11 +798,17 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:26.243Z"
+      "fetchedAt": "2026-07-07T01:15:16.963Z"
     },
     "Gianluigi Buffon": {
       "id": "5023",
       "stints": [
+        {
+          "club": "Parma U19",
+          "start": 1986,
+          "end": 1994,
+          "firstClub": true
+        },
         {
           "club": "AC Parma",
           "start": 1994,
@@ -739,11 +835,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:32.173Z"
+      "fetchedAt": "2026-07-07T01:15:19.653Z"
     },
     "Hernán Crespo": {
       "id": "3410",
       "stints": [
+        {
+          "club": "River Plate U20",
+          "start": 1986,
+          "end": 1994,
+          "firstClub": true
+        },
         {
           "club": "River Plate",
           "start": 1994,
@@ -805,19 +907,25 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:35.012Z"
+      "fetchedAt": "2026-07-07T01:15:22.570Z"
     },
     "David Beckham": {
       "id": "3139",
       "stints": [
         {
+          "club": "Tottenham Yth.",
+          "start": 1983,
+          "end": 1991,
+          "firstClub": true
+        },
+        {
           "club": "Man Utd U18",
           "start": 1991,
-          "end": 1993
+          "end": 1994
         },
         {
           "club": "Man Utd",
-          "start": 1993,
+          "start": 1994,
           "end": 1995
         },
         {
@@ -866,11 +974,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:38.743Z"
+      "fetchedAt": "2026-07-07T01:15:25.335Z"
     },
     "Javier Zanetti": {
       "id": "1161",
       "stints": [
+        {
+          "club": "Talleres RE II",
+          "start": 1984,
+          "end": 1992,
+          "firstClub": true
+        },
         {
           "club": "Talleres RE",
           "start": 1992,
@@ -887,11 +1001,17 @@
           "end": 2014
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:41.406Z"
+      "fetchedAt": "2026-07-07T01:15:27.617Z"
     },
     "Juan Sebastián Verón": {
       "id": "3143",
       "stints": [
+        {
+          "club": "Estudiantes U20",
+          "start": 1986,
+          "end": 1994,
+          "firstClub": true
+        },
         {
           "club": "Estudiantes LP",
           "start": 1994,
@@ -953,11 +1073,17 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:43.958Z"
+      "fetchedAt": "2026-07-07T01:15:30.097Z"
     },
     "Andriy Shevchenko": {
       "id": "3522",
       "stints": [
+        {
+          "club": "Dynamo Kyiv U17",
+          "start": 1985,
+          "end": 1993,
+          "firstClub": true
+        },
         {
           "club": "Dynamo-2 Kyiv",
           "start": 1993,
@@ -994,11 +1120,17 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:46.482Z"
+      "fetchedAt": "2026-07-07T01:15:32.304Z"
     },
     "Lionel Messi": {
       "id": "28003",
       "stints": [
+        {
+          "club": "Newell's JV",
+          "start": 1992,
+          "end": 2000,
+          "firstClub": true
+        },
         {
           "club": "Barça Youth",
           "start": 2000,
@@ -1040,11 +1172,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:49.020Z"
+      "fetchedAt": "2026-07-07T01:15:34.660Z"
     },
     "Marco Verratti": {
       "id": "102558",
       "stints": [
+        {
+          "club": "Pescara Youth",
+          "start": 1999,
+          "end": 2007,
+          "firstClub": true
+        },
         {
           "club": "Pescara U19",
           "start": 2007,
@@ -1071,11 +1209,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:51.536Z"
+      "fetchedAt": "2026-07-07T01:15:39.437Z"
     },
     "Sergio Busquets": {
       "id": "65230",
       "stints": [
+        {
+          "club": "Jabac Yth.",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Barça U19",
           "start": 2005,
@@ -1097,11 +1241,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:54.234Z"
+      "fetchedAt": "2026-07-07T01:15:42.098Z"
     },
     "Yaya Touré": {
       "id": "13091",
       "stints": [
+        {
+          "club": "JMG Abidjan",
+          "start": 1990,
+          "end": 1998,
+          "firstClub": true
+        },
         {
           "club": "Mimosas U19",
           "start": 1998,
@@ -1153,11 +1303,17 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:56.801Z"
+      "fetchedAt": "2026-07-07T01:15:44.333Z"
     },
     "Kylian Mbappé": {
       "id": "342229",
       "stints": [
+        {
+          "club": "AS Bondy Yth.",
+          "start": 2003,
+          "end": 2011,
+          "firstClub": true
+        },
         {
           "club": "Clairef. Yth.",
           "start": 2011,
@@ -1199,11 +1355,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:29:59.362Z"
+      "fetchedAt": "2026-07-07T01:15:46.288Z"
     },
     "Zlatan Ibrahimović": {
       "id": "3455",
       "stints": [
+        {
+          "club": "Malmö ABI",
+          "start": 1983,
+          "end": 1991,
+          "firstClub": true
+        },
         {
           "club": "FBK Balkan",
           "start": 1991,
@@ -1280,11 +1442,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:02.577Z"
+      "fetchedAt": "2026-07-07T01:15:48.688Z"
     },
     "Cristiano Ronaldo": {
       "id": "8198",
       "stints": [
+        {
+          "club": "Andorinha Yth.",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
         {
           "club": "Nacional Yth.",
           "start": 1995,
@@ -1341,11 +1509,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:06.120Z"
+      "fetchedAt": "2026-07-07T01:15:50.867Z"
     },
     "Paulo Dybala": {
       "id": "206050",
       "stints": [
+        {
+          "club": "Instituto U19",
+          "start": 2003,
+          "end": 2011,
+          "firstClub": true
+        },
         {
           "club": "Instituto ACC",
           "start": 2011,
@@ -1367,11 +1541,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:08.849Z"
+      "fetchedAt": "2026-07-07T01:15:53.131Z"
     },
     "Sadio Mané": {
       "id": "200512",
       "stints": [
+        {
+          "club": "Génération Foot",
+          "start": 2003,
+          "end": 2011,
+          "firstClub": true
+        },
         {
           "club": "FC Metz B",
           "start": 2011,
@@ -1408,11 +1588,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:11.158Z"
+      "fetchedAt": "2026-07-07T01:15:55.461Z"
     },
     "Louis Saha": {
       "id": "4015",
       "stints": [
+        {
+          "club": "Clairef. Yth.",
+          "start": 1985,
+          "end": 1993,
+          "firstClub": true
+        },
         {
           "club": "Clairef. U17",
           "start": 1993,
@@ -1469,11 +1655,17 @@
           "end": 2013
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:13.689Z"
+      "fetchedAt": "2026-07-07T01:15:57.883Z"
     },
     "Mesut Özil": {
       "id": "35664",
       "stints": [
+        {
+          "club": "Westf. Ge. Yth.",
+          "start": 1990,
+          "end": 1998,
+          "firstClub": true
+        },
         {
           "club": "T. Schalke Yth.",
           "start": 1998,
@@ -1530,11 +1722,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:16.202Z"
+      "fetchedAt": "2026-07-07T01:16:00.283Z"
     },
     "Nani": {
       "id": "33706",
       "stints": [
+        {
+          "club": "Real Formação",
+          "start": 1991,
+          "end": 1999,
+          "firstClub": true
+        },
         {
           "club": "Real SC U155",
           "start": 1999,
@@ -1626,11 +1824,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:19.278Z"
+      "fetchedAt": "2026-07-07T01:16:03.109Z"
     },
     "Zinedine Zidane": {
       "id": "3111",
       "stints": [
+        {
+          "club": "AS Cannes Yth.",
+          "start": 1980,
+          "end": 1988,
+          "firstClub": true
+        },
         {
           "club": "AS Cannes U19",
           "start": 1988,
@@ -1657,11 +1861,17 @@
           "end": 2006
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:21.814Z"
+      "fetchedAt": "2026-07-07T01:16:05.452Z"
     },
     "Roberto Carlos": {
       "id": "7518",
       "stints": [
+        {
+          "club": "U. São João U20",
+          "start": 1983,
+          "end": 1991,
+          "firstClub": true
+        },
         {
           "club": "União São João",
           "start": 1991,
@@ -1713,11 +1923,17 @@
           "end": 2016
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:25.042Z"
+      "fetchedAt": "2026-07-07T01:16:08.250Z"
     },
     "Fabien Barthez": {
       "id": "3289",
       "stints": [
+        {
+          "club": "Toulouse U19",
+          "start": 1982,
+          "end": 1990,
+          "firstClub": true
+        },
         {
           "club": "Toulouse B",
           "start": 1990,
@@ -1774,11 +1990,17 @@
           "end": 2007
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:27.578Z"
+      "fetchedAt": "2026-07-07T01:16:10.571Z"
     },
     "Edgar Davids": {
       "id": "5758",
       "stints": [
+        {
+          "club": "Ajax U19",
+          "start": 1983,
+          "end": 1991,
+          "firstClub": true
+        },
         {
           "club": "Ajax",
           "start": 1991,
@@ -1830,11 +2052,17 @@
           "end": 2014
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:30.026Z"
+      "fetchedAt": "2026-07-07T01:16:12.980Z"
     },
     "David Trezeguet": {
       "id": "4146",
       "stints": [
+        {
+          "club": "Platense U20",
+          "start": 1986,
+          "end": 1994,
+          "firstClub": true
+        },
         {
           "club": "Platense",
           "start": 1994,
@@ -1881,11 +2109,17 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:32.647Z"
+      "fetchedAt": "2026-07-07T01:16:16.337Z"
     },
     "Samuel Eto'o": {
       "id": "4257",
       "stints": [
+        {
+          "club": "Kadji SA",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "Real Madrid B",
           "start": 1996,
@@ -1977,11 +2211,17 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:36.708Z"
+      "fetchedAt": "2026-07-07T01:16:18.789Z"
     },
     "Jay-Jay Okocha": {
       "id": "3708",
       "stints": [
+        {
+          "club": "Rangers",
+          "start": 1982,
+          "end": 1990,
+          "firstClub": true
+        },
         {
           "club": "B. Neunkirchen",
           "start": 1990,
@@ -2023,11 +2263,17 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:39.135Z"
+      "fetchedAt": "2026-07-07T01:16:21.463Z"
     },
     "Alexandre Pato": {
       "id": "37579",
       "stints": [
+        {
+          "club": "Inter U20",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Internacional",
           "start": 2006,
@@ -2089,11 +2335,17 @@
           "end": 2024
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:42.046Z"
+      "fetchedAt": "2026-07-07T01:16:24.032Z"
     },
     "Robinho": {
       "id": "15511",
       "stints": [
+        {
+          "club": "Santos U20",
+          "start": 1994,
+          "end": 2002,
+          "firstClub": true
+        },
         {
           "club": "Santos",
           "start": 2002,
@@ -2160,11 +2412,17 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:44.553Z"
+      "fetchedAt": "2026-07-07T01:16:26.349Z"
     },
     "Thiago Silva": {
       "id": "29241",
       "stints": [
+        {
+          "club": "Fluminense U20",
+          "start": 1994,
+          "end": 2002,
+          "firstClub": true
+        },
         {
           "club": "RS Futebol",
           "start": 2002,
@@ -2231,11 +2489,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:47.320Z"
+      "fetchedAt": "2026-07-07T01:16:28.924Z"
     },
     "Tim Cahill": {
       "id": "13556",
       "stints": [
+        {
+          "club": "Sydney Utd U19",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "Sydney United",
           "start": 1996,
@@ -2282,7 +2546,7 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:49.870Z"
+      "fetchedAt": "2026-07-07T01:16:31.313Z"
     },
     "Rafael Márquez": {
       "id": "310484",
@@ -2333,11 +2597,17 @@
           "end": 2000
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:52.538Z"
+      "fetchedAt": "2026-07-07T01:16:33.762Z"
     },
     "Dennis Bergkamp": {
       "id": "3187",
       "stints": [
+        {
+          "club": "Ajax U17",
+          "start": 1978,
+          "end": 1986,
+          "firstClub": true
+        },
         {
           "club": "Ajax U19",
           "start": 1986,
@@ -2359,11 +2629,17 @@
           "end": 2006
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:55.024Z"
+      "fetchedAt": "2026-07-07T01:16:36.130Z"
     },
     "Landon Donovan": {
       "id": "68",
       "stints": [
+        {
+          "club": "IMG Bradenton",
+          "start": 1991,
+          "end": 1999,
+          "firstClub": true
+        },
         {
           "club": "Leverkusen II",
           "start": 1999,
@@ -2435,77 +2711,64 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:30:57.529Z"
+      "fetchedAt": "2026-07-07T01:16:38.560Z"
     },
     "Ronaldo Nazário": {
-      "id": "421727",
+      "id": 3140,
       "stints": [
         {
-          "club": "Santa Gema",
-          "start": 2016,
-          "end": 2017
+          "club": "São Cristóvão",
+          "start": 1985,
+          "end": 1993,
+          "firstClub": true
         },
         {
-          "club": "Tauro FC",
-          "start": 2017,
-          "end": 2018
+          "club": "Cruzeiro",
+          "start": 1993,
+          "end": 1994
         },
         {
-          "club": "San Miguelito",
-          "start": 2018,
-          "end": 2018
+          "club": "PSV",
+          "start": 1994,
+          "end": 1996
         },
         {
-          "club": "Costa del Este",
-          "start": 2018,
-          "end": 2019
+          "club": "Barcelona",
+          "start": 1996,
+          "end": 1997
         },
         {
-          "club": "San Miguelito",
-          "start": 2019,
-          "end": 2019
+          "club": "Inter",
+          "start": 1997,
+          "end": 2002
         },
         {
-          "club": "FC Desamparados",
-          "start": 2020,
-          "end": 2022
+          "club": "Real Madrid",
+          "start": 2002,
+          "end": 2007
         },
         {
-          "club": "Tauro FC",
-          "start": 2022,
-          "end": 2022
+          "club": "AC Milan",
+          "start": 2007,
+          "end": 2008
         },
         {
-          "club": "Herrera FC",
-          "start": 2022,
-          "end": 2023
-        },
-        {
-          "club": "Herrera FC",
-          "start": 2023,
-          "end": 2023
-        },
-        {
-          "club": "AD 9 de Octubre",
-          "start": 2023,
-          "end": 2024
-        },
-        {
-          "club": "Herrera FC",
-          "start": 2024,
-          "end": 2024
-        },
-        {
-          "club": "Herrera FC",
-          "start": 2025,
-          "end": 2026
+          "club": "Corinthians",
+          "start": 2008,
+          "end": 2011
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:00.526Z"
+      "fetchedAt": "2026-07-07T01:16:40.444Z"
     },
     "Ryan Giggs": {
       "id": "3406",
       "stints": [
+        {
+          "club": "Man City Youth",
+          "start": 1979,
+          "end": 1987,
+          "firstClub": true
+        },
         {
           "club": "Man Utd Youth",
           "start": 1987,
@@ -2522,11 +2785,17 @@
           "end": 2014
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:02.966Z"
+      "fetchedAt": "2026-07-07T01:16:42.616Z"
     },
     "Neymar": {
       "id": "68290",
       "stints": [
+        {
+          "club": "Santos U20",
+          "start": 2001,
+          "end": 2009,
+          "firstClub": true
+        },
         {
           "club": "Santos",
           "start": 2009,
@@ -2553,11 +2822,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:05.629Z"
+      "fetchedAt": "2026-07-07T01:16:45.083Z"
     },
     "Luis Suárez": {
       "id": "44352",
       "stints": [
+        {
+          "club": "Nacional U19",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Nacional",
           "start": 2005,
@@ -2604,11 +2879,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:08.016Z"
+      "fetchedAt": "2026-07-07T01:16:47.572Z"
     },
     "Ganso": {
       "id": "67920",
       "stints": [
+        {
+          "club": "Santos U20",
+          "start": 2000,
+          "end": 2008,
+          "firstClub": true
+        },
         {
           "club": "Santos",
           "start": 2008,
@@ -2640,11 +2921,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:10.533Z"
+      "fetchedAt": "2026-07-07T01:16:50.027Z"
     },
     "Marquinhos": {
       "id": "181767",
       "stints": [
+        {
+          "club": "Corinthians U20",
+          "start": 2004,
+          "end": 2012,
+          "firstClub": true
+        },
         {
           "club": "Corinthians",
           "start": 2012,
@@ -2671,11 +2958,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:12.880Z"
+      "fetchedAt": "2026-07-07T01:16:52.395Z"
     },
     "Dani Alves": {
       "id": "15951",
       "stints": [
+        {
+          "club": "Bahia U20",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "EC Bahia",
           "start": 2001,
@@ -2727,11 +3020,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:15.326Z"
+      "fetchedAt": "2026-07-07T01:16:54.865Z"
     },
     "Edinson Cavani": {
       "id": "48280",
       "stints": [
+        {
+          "club": "Danubio U19",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Danubio FC",
           "start": 2006,
@@ -2778,11 +3077,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:17.844Z"
+      "fetchedAt": "2026-07-07T01:16:57.184Z"
     },
     "Radamel Falcao": {
       "id": "39152",
       "stints": [
+        {
+          "club": "River Plate U20",
+          "start": 1996,
+          "end": 2004,
+          "firstClub": true
+        },
         {
           "club": "River Plate II",
           "start": 2004,
@@ -2849,11 +3154,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:20.339Z"
+      "fetchedAt": "2026-07-07T01:16:59.389Z"
     },
     "Mauro Icardi": {
       "id": "68863",
       "stints": [
+        {
+          "club": "Vecindario You.",
+          "start": 2000,
+          "end": 2008,
+          "firstClub": true
+        },
         {
           "club": "Barça U16",
           "start": 2008,
@@ -2920,11 +3231,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:23.056Z"
+      "fetchedAt": "2026-07-07T01:17:02.221Z"
     },
     "Jude Bellingham": {
       "id": "581678",
       "stints": [
+        {
+          "club": "Birmingham U18",
+          "start": 2011,
+          "end": 2019,
+          "firstClub": true
+        },
         {
           "club": "Birmingham",
           "start": 2019,
@@ -2941,11 +3258,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:26.216Z"
+      "fetchedAt": "2026-07-07T01:17:04.319Z"
     },
     "Vinícius Jr.": {
       "id": 371998,
       "stints": [
+        {
+          "club": "Flamengo U20",
+          "start": 2009,
+          "end": 2017,
+          "firstClub": true
+        },
         {
           "club": "Flamengo",
           "start": 2017,
@@ -2957,11 +3280,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:28.308Z"
+      "fetchedAt": "2026-07-07T01:17:06.017Z"
     },
     "Erling Haaland": {
       "id": "418560",
       "stints": [
+        {
+          "club": "Bryne FK Yth.",
+          "start": 2007,
+          "end": 2015,
+          "firstClub": true
+        },
         {
           "club": "Bryne",
           "start": 2015,
@@ -2988,11 +3317,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:30.960Z"
+      "fetchedAt": "2026-07-07T01:17:08.363Z"
     },
     "Takumi Minamino": {
       "id": "165793",
       "stints": [
+        {
+          "club": "Cerezo U18",
+          "start": 2005,
+          "end": 2013,
+          "firstClub": true
+        },
         {
           "club": "Cerezo Osaka",
           "start": 2013,
@@ -3024,11 +3359,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:33.344Z"
+      "fetchedAt": "2026-07-07T01:17:12.107Z"
     },
     "Kevin De Bruyne": {
       "id": "88755",
       "stints": [
+        {
+          "club": "KAA Gent Youth",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "KRC Genk Youth",
           "start": 2005,
@@ -3090,11 +3431,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:35.958Z"
+      "fetchedAt": "2026-07-07T01:17:14.361Z"
     },
     "Raphaël Guerreiro": {
       "id": "170986",
       "stints": [
+        {
+          "club": "BMSF Jugend",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Clairef. Yth.",
           "start": 2005,
@@ -3146,11 +3493,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:38.525Z"
+      "fetchedAt": "2026-07-07T01:17:16.779Z"
     },
     "Marco Reus": {
       "id": "35207",
       "stints": [
+        {
+          "club": "PTSV Dort. Yth.",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
         {
           "club": "Dortmund Yth.",
           "start": 1995,
@@ -3192,11 +3545,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:41.111Z"
+      "fetchedAt": "2026-07-07T01:17:18.980Z"
     },
     "Thibaut Courtois": {
       "id": "108390",
       "stints": [
+        {
+          "club": "KRC Genk Youth",
+          "start": 1999,
+          "end": 2007,
+          "firstClub": true
+        },
         {
           "club": "KRC Genk U17",
           "start": 2007,
@@ -3233,11 +3592,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:43.725Z"
+      "fetchedAt": "2026-07-07T01:17:21.252Z"
     },
     "Juan Mata": {
       "id": 44068,
       "stints": [
+        {
+          "club": "Real Oviedo You",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "Real Madrid U17",
           "start": 2003,
@@ -3289,11 +3654,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:46.081Z"
+      "fetchedAt": "2026-07-07T01:17:23.461Z"
     },
     "André Schürrle": {
       "id": "58205",
       "stints": [
+        {
+          "club": "Ludw. SC Yth.",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Ludwigs. SC U17",
           "start": 2005,
@@ -3355,11 +3726,17 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:48.734Z"
+      "fetchedAt": "2026-07-07T01:17:26.001Z"
     },
     "Eden Hazard": {
       "id": "50202",
       "stints": [
+        {
+          "club": "Tubize Yth.",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "LOSC Lille Yth.",
           "start": 2005,
@@ -3386,11 +3763,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:51.634Z"
+      "fetchedAt": "2026-07-07T01:17:28.083Z"
     },
     "Robert Lewandowski": {
       "id": "38253",
       "stints": [
+        {
+          "club": "Varsovia Yth.",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Delta Warszawa",
           "start": 2005,
@@ -3432,11 +3815,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:54.376Z"
+      "fetchedAt": "2026-07-07T01:17:30.686Z"
     },
     "Jakub Błaszczykowski": {
       "id": "29835",
       "stints": [
+        {
+          "club": "Rakow U19",
+          "start": 1994,
+          "end": 2002,
+          "firstClub": true
+        },
         {
           "club": "Gornik U19",
           "start": 2002,
@@ -3478,11 +3867,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:31:57.347Z"
+      "fetchedAt": "2026-07-07T01:17:33.187Z"
     },
     "Pedri": {
       "id": "683840",
       "stints": [
+        {
+          "club": "J.Laguna Yth.",
+          "start": 2010,
+          "end": 2018,
+          "firstClub": true
+        },
         {
           "club": "Las Palmas U19",
           "start": 2018,
@@ -3509,11 +3904,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:00.394Z"
+      "fetchedAt": "2026-07-07T01:17:35.940Z"
     },
     "James Rodríguez": {
       "id": "88103",
       "stints": [
+        {
+          "club": "Acad. Tolimense",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Envigado U20",
           "start": 2005,
@@ -3595,11 +3996,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:03.101Z"
+      "fetchedAt": "2026-07-07T01:17:38.445Z"
     },
     "Thomas Müller": {
       "id": "58358",
       "stints": [
+        {
+          "club": "TSV Pähl Yth.",
+          "start": 1992,
+          "end": 2000,
+          "firstClub": true
+        },
         {
           "club": "B. München Yth.",
           "start": 2000,
@@ -3631,11 +4038,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:05.918Z"
+      "fetchedAt": "2026-07-07T01:17:40.998Z"
     },
     "Mario Gómez": {
       "id": "6288",
       "stints": [
+        {
+          "club": "Unlingen Yth.",
+          "start": 1990,
+          "end": 1998,
+          "firstClub": true
+        },
         {
           "club": "B. Saulgau Yth.",
           "start": 1998,
@@ -3697,11 +4110,17 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:08.809Z"
+      "fetchedAt": "2026-07-07T01:17:43.634Z"
     },
     "Xherdan Shaqiri": {
       "id": "86792",
       "stints": [
+        {
+          "club": "FC Basel U16",
+          "start": 1999,
+          "end": 2007,
+          "firstClub": true
+        },
         {
           "club": "FC Basel U18",
           "start": 2007,
@@ -3763,11 +4182,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:11.408Z"
+      "fetchedAt": "2026-07-07T01:17:46.252Z"
     },
     "Virgil van Dijk": {
       "id": "139208",
       "stints": [
+        {
+          "club": "WDS '19 Jeugd",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "Willem II Youth",
           "start": 2001,
@@ -3809,11 +4234,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:14.118Z"
+      "fetchedAt": "2026-07-07T01:17:48.644Z"
     },
     "Luka Modrić": {
       "id": "27992",
       "stints": [
+        {
+          "club": "NK Zadar Jgd",
+          "start": 1992,
+          "end": 2000,
+          "firstClub": true
+        },
         {
           "club": "NK Zadar U17",
           "start": 2000,
@@ -3865,11 +4296,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:16.493Z"
+      "fetchedAt": "2026-07-07T01:17:51.542Z"
     },
     "Rafael van der Vaart": {
       "id": "4192",
       "stints": [
+        {
+          "club": "Kennemers Yth",
+          "start": 1985,
+          "end": 1993,
+          "firstClub": true
+        },
         {
           "club": "Ajax Youth ",
           "start": 1993,
@@ -3926,7 +4363,7 @@
           "end": 2018
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:19.574Z"
+      "fetchedAt": "2026-07-07T01:17:54.474Z"
     },
     "Eduardo da Silva": {
       "id": "727134",
@@ -3952,11 +4389,17 @@
           "end": 1997
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:22.422Z"
+      "fetchedAt": "2026-07-07T01:17:56.947Z"
     },
     "Gareth Bale": {
       "id": "39381",
       "stints": [
+        {
+          "club": "Southampton U18",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Southampton",
           "start": 2006,
@@ -3988,11 +4431,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:25.247Z"
+      "fetchedAt": "2026-07-07T01:17:59.240Z"
     },
     "Karim Benzema": {
       "id": "18922",
       "stints": [
+        {
+          "club": "Ol. Lyon Yth.",
+          "start": 1994,
+          "end": 2002,
+          "firstClub": true
+        },
         {
           "club": "Olymp. Lyon U17",
           "start": 2002,
@@ -4024,11 +4473,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:27.693Z"
+      "fetchedAt": "2026-07-07T01:18:01.779Z"
     },
     "Sergio Ramos": {
       "id": "25557",
       "stints": [
+        {
+          "club": "Sevilla FC U19",
+          "start": 1994,
+          "end": 2002,
+          "firstClub": true
+        },
         {
           "club": "Sevilla B",
           "start": 2002,
@@ -4060,11 +4515,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:30.458Z"
+      "fetchedAt": "2026-07-07T01:18:04.507Z"
     },
     "Iker Casillas": {
       "id": "3979",
       "stints": [
+        {
+          "club": "R.Madrid Yth.",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "Real Madrid U17",
           "start": 1996,
@@ -4101,11 +4562,17 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:33.261Z"
+      "fetchedAt": "2026-07-07T01:18:07.138Z"
     },
     "Jesús Navas": {
       "id": "15956",
       "stints": [
+        {
+          "club": "Sevilla FC Yth.",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "Sevilla FC U19",
           "start": 2001,
@@ -4132,11 +4599,17 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:36.433Z"
+      "fetchedAt": "2026-07-07T01:18:09.606Z"
     },
     "Georginio Wijnaldum": {
       "id": "49499",
       "stints": [
+        {
+          "club": "Sparta Youth",
+          "start": 1996,
+          "end": 2004,
+          "firstClub": true
+        },
         {
           "club": "Feyenoord Youth",
           "start": 2004,
@@ -4193,11 +4666,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:39.039Z"
+      "fetchedAt": "2026-07-07T01:18:12.083Z"
     },
     "Andrea Pirlo": {
       "id": "5817",
       "stints": [
+        {
+          "club": "Brescia Youth",
+          "start": 1986,
+          "end": 1994,
+          "firstClub": true
+        },
         {
           "club": "Brescia U17",
           "start": 1994,
@@ -4254,11 +4733,17 @@
           "end": 2018
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:41.838Z"
+      "fetchedAt": "2026-07-07T01:18:14.571Z"
     },
     "Paul Pogba": {
       "id": "122153",
       "stints": [
+        {
+          "club": "US Torcy Yth.",
+          "start": 1999,
+          "end": 2007,
+          "firstClub": true
+        },
         {
           "club": "Le Havre U17",
           "start": 2007,
@@ -4295,11 +4780,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:44.494Z"
+      "fetchedAt": "2026-07-07T01:18:16.945Z"
     },
     "Clarence Seedorf": {
       "id": "4168",
       "stints": [
+        {
+          "club": "Ajax U19",
+          "start": 1984,
+          "end": 1992,
+          "firstClub": true
+        },
         {
           "club": "Ajax",
           "start": 1992,
@@ -4331,11 +4822,17 @@
           "end": 2014
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:47.265Z"
+      "fetchedAt": "2026-07-07T01:18:19.749Z"
     },
     "David Villa": {
       "id": "7980",
       "stints": [
+        {
+          "club": "Langreo U19",
+          "start": 1991,
+          "end": 1999,
+          "firstClub": true
+        },
         {
           "club": "Sporting U19",
           "start": 1999,
@@ -4392,11 +4889,17 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:50.076Z"
+      "fetchedAt": "2026-07-07T01:18:22.351Z"
     },
     "Kaká": {
       "id": "3366",
       "stints": [
+        {
+          "club": "São Paulo U17",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "São Paulo",
           "start": 2001,
@@ -4433,33 +4936,51 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:52.868Z"
+      "fetchedAt": "2026-07-07T01:18:24.950Z"
     },
     "Rogério Ceni": {
       "id": "13811",
       "stints": [
+        {
+          "club": "Sinop FC",
+          "start": 1982,
+          "end": 1990,
+          "firstClub": true
+        },
         {
           "club": "São Paulo",
           "start": 1990,
           "end": 2016
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:55.569Z"
+      "fetchedAt": "2026-07-07T01:18:27.187Z"
     },
     "Paolo Maldini": {
       "id": "5803",
       "stints": [
+        {
+          "club": "Milan U19",
+          "start": 1977,
+          "end": 1985,
+          "firstClub": true
+        },
         {
           "club": "Milan",
           "start": 1985,
           "end": 2009
         }
       ],
-      "fetchedAt": "2026-07-04T03:32:58.078Z"
+      "fetchedAt": "2026-07-07T01:18:30.068Z"
     },
     "Wayne Rooney": {
       "id": "3332",
       "stints": [
+        {
+          "club": "Everton Youth",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "Everton U18",
           "start": 2001,
@@ -4491,11 +5012,17 @@
           "end": 2021
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:00.522Z"
+      "fetchedAt": "2026-07-07T01:18:32.597Z"
     },
     "Bastian Schweinsteiger": {
       "id": "2514",
       "stints": [
+        {
+          "club": "Oberaudorf Yth.",
+          "start": 1984,
+          "end": 1992,
+          "firstClub": true
+        },
         {
           "club": "Rosenheim Yth.",
           "start": 1992,
@@ -4532,11 +5059,17 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:02.792Z"
+      "fetchedAt": "2026-07-07T01:18:35.200Z"
     },
     "Luciano Acosta": {
       "id": "315169",
       "stints": [
+        {
+          "club": "CABJ U20",
+          "start": 2006,
+          "end": 2014,
+          "firstClub": true
+        },
         {
           "club": "Boca Juniors",
           "start": 2014,
@@ -4588,11 +5121,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:05.075Z"
+      "fetchedAt": "2026-07-07T01:18:37.454Z"
     },
     "Thomas Gravesen": {
       "id": "301",
       "stints": [
+        {
+          "club": "Vejle BK U19",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
         {
           "club": "Vejle BK",
           "start": 1995,
@@ -4629,11 +5168,17 @@
           "end": 2008
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:07.970Z"
+      "fetchedAt": "2026-07-07T01:18:39.631Z"
     },
     "Ángel Di María": {
       "id": "45320",
       "stints": [
+        {
+          "club": "Ros. Central II",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Rosario Central",
           "start": 2006,
@@ -4675,11 +5220,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:10.528Z"
+      "fetchedAt": "2026-07-07T01:18:41.962Z"
     },
     "James Milner": {
       "id": "3333",
       "stints": [
+        {
+          "club": "Leeds Youth",
+          "start": 1994,
+          "end": 2002,
+          "firstClub": true
+        },
         {
           "club": "Leeds U18",
           "start": 2002,
@@ -4736,11 +5287,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:13.351Z"
+      "fetchedAt": "2026-07-07T01:18:44.249Z"
     },
     "John Terry": {
       "id": "3160",
       "stints": [
+        {
+          "club": "West Ham Yth.",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
         {
           "club": "Chelsea Youth",
           "start": 1995,
@@ -4772,11 +5329,17 @@
           "end": 2018
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:15.824Z"
+      "fetchedAt": "2026-07-07T01:18:46.381Z"
     },
     "Steven Gerrard": {
       "id": "3109",
       "stints": [
+        {
+          "club": "Liverpool Youth",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "Liverpool U18",
           "start": 1996,
@@ -4793,11 +5356,17 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:18.288Z"
+      "fetchedAt": "2026-07-07T01:18:48.606Z"
     },
     "Giovani dos Santos": {
       "id": "44674",
       "stints": [
+        {
+          "club": "Monterrey Jgd.",
+          "start": 1994,
+          "end": 2002,
+          "firstClub": true
+        },
         {
           "club": "Barça Youth",
           "start": 2002,
@@ -4879,11 +5448,17 @@
           "end": 2021
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:22.454Z"
+      "fetchedAt": "2026-07-07T01:18:53.868Z"
     },
     "Robbie Keane": {
       "id": "3144",
       "stints": [
+        {
+          "club": "Wolves U18",
+          "start": 1989,
+          "end": 1997,
+          "firstClub": true
+        },
         {
           "club": "Wolves",
           "start": 1997,
@@ -4970,11 +5545,17 @@
           "end": 2018
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:25.718Z"
+      "fetchedAt": "2026-07-07T01:18:56.635Z"
     },
     "Djibril Cissé": {
       "id": "3966",
       "stints": [
+        {
+          "club": "AC Arles U19",
+          "start": 1989,
+          "end": 1997,
+          "firstClub": true
+        },
         {
           "club": "Nîmes Ol. U19",
           "start": 1997,
@@ -5066,11 +5647,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:28.302Z"
+      "fetchedAt": "2026-07-07T01:18:59.088Z"
     },
     "Mario Balotelli": {
       "id": "45146",
       "stints": [
+        {
+          "club": "Lumezzane U19",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Lumezzane",
           "start": 2006,
@@ -5157,22 +5744,34 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:31.047Z"
+      "fetchedAt": "2026-07-07T01:19:01.770Z"
     },
     "Jamie Carragher": {
       "id": "3597",
       "stints": [
+        {
+          "club": "Liverpool U18",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "Liverpool",
           "start": 1996,
           "end": 2013
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:33.295Z"
+      "fetchedAt": "2026-07-07T01:19:04.174Z"
     },
     "Luís Figo": {
       "id": "3446",
       "stints": [
+        {
+          "club": "Sporting Sub-15",
+          "start": 1979,
+          "end": 1987,
+          "firstClub": true
+        },
         {
           "club": "Sporting U17",
           "start": 1987,
@@ -5204,11 +5803,17 @@
           "end": 2009
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:35.906Z"
+      "fetchedAt": "2026-07-07T01:19:06.623Z"
     },
     "Maxwell": {
       "id": "4317",
       "stints": [
+        {
+          "club": "Cruzeiro U20",
+          "start": 1992,
+          "end": 2000,
+          "firstClub": true
+        },
         {
           "club": "Cruzeiro",
           "start": 2000,
@@ -5245,11 +5850,17 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:38.803Z"
+      "fetchedAt": "2026-07-07T01:19:10.007Z"
     },
     "Diego Forlán": {
       "id": "3408",
       "stints": [
+        {
+          "club": "Danubio U19",
+          "start": 1986,
+          "end": 1994,
+          "firstClub": true
+        },
         {
           "club": "Indep'te U20",
           "start": 1994,
@@ -5306,11 +5917,17 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:41.575Z"
+      "fetchedAt": "2026-07-07T01:19:12.855Z"
     },
     "Jan Vertonghen": {
       "id": "43250",
       "stints": [
+        {
+          "club": "Beerschot Yth.",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "Ajax U17",
           "start": 2003,
@@ -5357,11 +5974,17 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:44.076Z"
+      "fetchedAt": "2026-07-07T01:19:15.191Z"
     },
     "Raheem Sterling": {
       "id": "134425",
       "stints": [
+        {
+          "club": "QPR U18",
+          "start": 2002,
+          "end": 2010,
+          "firstClub": true
+        },
         {
           "club": "Liverpool U18",
           "start": 2010,
@@ -5398,11 +6021,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:46.816Z"
+      "fetchedAt": "2026-07-07T01:19:17.528Z"
     },
     "Antoine Griezmann": {
       "id": "125781",
       "stints": [
+        {
+          "club": "Mâconnais Jgd.",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Real Sociedad Y",
           "start": 2005,
@@ -5449,11 +6078,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:49.336Z"
+      "fetchedAt": "2026-07-07T01:19:19.791Z"
     },
     "Gervinho": {
       "id": "33481",
       "stints": [
+        {
+          "club": "JMG Abidjan",
+          "start": 1996,
+          "end": 2004,
+          "firstClub": true
+        },
         {
           "club": "Beveren U19",
           "start": 2004,
@@ -5515,11 +6150,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:51.849Z"
+      "fetchedAt": "2026-07-07T01:19:22.412Z"
     },
     "Mathieu Debuchy": {
       "id": "27306",
       "stints": [
+        {
+          "club": "LOSC Lille Yth.",
+          "start": 1992,
+          "end": 2000,
+          "firstClub": true
+        },
         {
           "club": "LOSC Lille U17",
           "start": 2000,
@@ -5566,11 +6207,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:54.360Z"
+      "fetchedAt": "2026-07-07T01:19:24.683Z"
     },
     "N'Golo Kanté": {
       "id": "225083",
       "stints": [
+        {
+          "club": "Suresnes",
+          "start": 2002,
+          "end": 2010,
+          "firstClub": true
+        },
         {
           "club": "Boulogne B",
           "start": 2010,
@@ -5607,11 +6254,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:56.968Z"
+      "fetchedAt": "2026-07-07T01:19:27.031Z"
     },
     "Fraser Forster": {
       "id": "52570",
       "stints": [
+        {
+          "club": "Newcastle U18",
+          "start": 1999,
+          "end": 2007,
+          "firstClub": true
+        },
         {
           "club": "Newcastle",
           "start": 2007,
@@ -5698,11 +6351,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:33:59.678Z"
+      "fetchedAt": "2026-07-07T01:19:29.446Z"
     },
     "Graziano Pellè": {
       "id": "29594",
       "stints": [
+        {
+          "club": "Lecce U19",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "Lecce",
           "start": 2003,
@@ -5789,11 +6448,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:02.253Z"
+      "fetchedAt": "2026-07-07T01:19:31.787Z"
     },
     "Dejan Lovren": {
       "id": "37838",
       "stints": [
+        {
+          "club": "Din. Zagreb U17",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Dinamo Zagreb",
           "start": 2006,
@@ -5840,11 +6505,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:05.199Z"
+      "fetchedAt": "2026-07-07T01:19:33.962Z"
     },
     "Toni Kroos": {
       "id": "31909",
       "stints": [
+        {
+          "club": "Greifs. SC Yth.",
+          "start": 1994,
+          "end": 2002,
+          "firstClub": true
+        },
         {
           "club": "H. Rostock Yth.",
           "start": 2002,
@@ -5881,11 +6552,17 @@
           "end": 2024
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:07.825Z"
+      "fetchedAt": "2026-07-07T01:19:36.294Z"
     },
     "Arturo Vidal": {
       "id": "37666",
       "stints": [
+        {
+          "club": "Colo-Colo U21",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Colo-Colo",
           "start": 2006,
@@ -5932,11 +6609,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:10.502Z"
+      "fetchedAt": "2026-07-07T01:19:38.523Z"
     },
     "Mario Götze": {
       "id": "74842",
       "stints": [
+        {
+          "club": "Ronsberg Yth.",
+          "start": 1990,
+          "end": 1998,
+          "firstClub": true
+        },
         {
           "club": "Hombr. SV Yth.",
           "start": 1998,
@@ -5983,11 +6666,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:13.088Z"
+      "fetchedAt": "2026-07-07T01:19:41.124Z"
     },
     "Harry Kane": {
       "id": "132098",
       "stints": [
+        {
+          "club": "Rovers FC Youth",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "Arsenal Youth",
           "start": 2001,
@@ -6064,11 +6753,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:15.554Z"
+      "fetchedAt": "2026-07-07T01:19:43.332Z"
     },
     "Jamal Musiala": {
       "id": "580195",
       "stints": [
+        {
+          "club": "TSV Lehnerz Jgd.",
+          "start": 2002,
+          "end": 2010,
+          "firstClub": true
+        },
         {
           "club": "Southampton Aca",
           "start": 2010,
@@ -6095,11 +6790,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:17.912Z"
+      "fetchedAt": "2026-07-07T01:19:45.297Z"
     },
     "Jamie Vardy": {
       "id": "197838",
       "stints": [
+        {
+          "club": "Sheff Wed U18",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "Stocksbridge",
           "start": 2003,
@@ -6126,11 +6827,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:22.016Z"
+      "fetchedAt": "2026-07-07T01:19:47.462Z"
     },
     "Emmanuel Adebayor": {
       "id": "8883",
       "stints": [
+        {
+          "club": "AC Merlan Lome",
+          "start": 1991,
+          "end": 1999,
+          "firstClub": true
+        },
         {
           "club": "FC Metz B",
           "start": 1999,
@@ -6207,11 +6914,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:25.583Z"
+      "fetchedAt": "2026-07-07T01:19:51.563Z"
     },
     "Son Heung-min": {
       "id": 91845,
       "stints": [
+        {
+          "club": "C. Buan ES",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Hupyeong MS",
           "start": 2005,
@@ -6268,11 +6981,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:27.565Z"
+      "fetchedAt": "2026-07-07T01:19:53.757Z"
     },
     "Ruud van Nistelrooy": {
       "id": "3407",
       "stints": [
+        {
+          "club": "Margriet Youth",
+          "start": 1983,
+          "end": 1991,
+          "firstClub": true
+        },
         {
           "club": "Den Bosch U17",
           "start": 1991,
@@ -6319,11 +7038,17 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:30.655Z"
+      "fetchedAt": "2026-07-07T01:19:56.096Z"
     },
     "Dele Alli": {
       "id": "207929",
       "stints": [
+        {
+          "club": "MK Dons U18",
+          "start": 2005,
+          "end": 2013,
+          "firstClub": true
+        },
         {
           "club": "MK Dons",
           "start": 2013,
@@ -6365,11 +7090,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:33.216Z"
+      "fetchedAt": "2026-07-07T01:19:58.506Z"
     },
     "Bernd Leno": {
       "id": "72476",
       "stints": [
+        {
+          "club": "Bietigheim Yth.",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "Stuttgart Yth.",
           "start": 2003,
@@ -6421,11 +7152,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:35.985Z"
+      "fetchedAt": "2026-07-07T01:20:00.812Z"
     },
     "Naby Keïta": {
       "id": "302215",
       "stints": [
+        {
+          "club": "Horoya AC U19",
+          "start": 2005,
+          "end": 2013,
+          "firstClub": true
+        },
         {
           "club": "Horoya AC",
           "start": 2013,
@@ -6472,11 +7209,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:38.649Z"
+      "fetchedAt": "2026-07-07T01:20:03.160Z"
     },
     "Dusan Tadić": {
       "id": "36139",
       "stints": [
+        {
+          "club": "Vojvodina U15",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "Vojvodina U17",
           "start": 2003,
@@ -6523,11 +7266,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:41.033Z"
+      "fetchedAt": "2026-07-07T01:20:05.710Z"
     },
     "Kai Havertz": {
       "id": "309400",
       "stints": [
+        {
+          "club": "Mariadorf Yth.",
+          "start": 2001,
+          "end": 2009,
+          "firstClub": true
+        },
         {
           "club": "Aachen Yth.",
           "start": 2009,
@@ -6559,11 +7308,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:43.326Z"
+      "fetchedAt": "2026-07-07T01:20:07.806Z"
     },
     "Riyad Mahrez": {
       "id": "171424",
       "stints": [
+        {
+          "club": "AAS Sarcelles",
+          "start": 2001,
+          "end": 2009,
+          "firstClub": true
+        },
         {
           "club": "Quimper FC",
           "start": 2009,
@@ -6592,14 +7347,20 @@
         {
           "club": "Al-Ahli",
           "start": 2023,
-          "end": 9999
+          "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:46.080Z"
+      "fetchedAt": "2026-07-07T01:20:10.238Z"
     },
     "Giorgio Chiellini": {
       "id": "29260",
       "stints": [
+        {
+          "club": "Livorno U19",
+          "start": 1992,
+          "end": 2000,
+          "firstClub": true
+        },
         {
           "club": "AS Livorno",
           "start": 2000,
@@ -6621,11 +7382,17 @@
           "end": 2024
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:48.577Z"
+      "fetchedAt": "2026-07-07T01:20:12.528Z"
     },
     "Jermain Defoe": {
       "id": "3875",
       "stints": [
+        {
+          "club": "Charlton U18",
+          "start": 1991,
+          "end": 1999,
+          "firstClub": true
+        },
         {
           "club": "West Ham",
           "start": 1999,
@@ -6692,11 +7459,17 @@
           "end": 2022
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:53.083Z"
+      "fetchedAt": "2026-07-07T01:20:14.913Z"
     },
     "Carlos Vela": {
       "id": "35773",
       "stints": [
+        {
+          "club": "Guadalajara U20",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Arsenal",
           "start": 2006,
@@ -6768,11 +7541,17 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-04T03:34:59.037Z"
+      "fetchedAt": "2026-07-07T01:20:17.641Z"
     },
     "Diego Costa": {
       "id": "44779",
       "stints": [
+        {
+          "club": "Barcelona EC",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Braga B",
           "start": 2006,
@@ -6879,11 +7658,17 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:01.916Z"
+      "fetchedAt": "2026-07-07T01:20:20.172Z"
     },
     "Koke": {
       "id": "74229",
       "stints": [
+        {
+          "club": "Atlético Yth.",
+          "start": 1999,
+          "end": 2007,
+          "firstClub": true
+        },
         {
           "club": "Atl.Madleño U18",
           "start": 2007,
@@ -6900,11 +7685,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:04.675Z"
+      "fetchedAt": "2026-07-07T01:20:22.842Z"
     },
     "Pierre-Emerick Aubameyang": {
       "id": "58864",
       "stints": [
+        {
+          "club": "St. Laval Yth.",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "FC Rouen Jugend",
           "start": 2001,
@@ -7011,11 +7802,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:08.419Z"
+      "fetchedAt": "2026-07-07T01:20:26.069Z"
     },
     "Pepe Reina": {
       "id": "7825",
       "stints": [
+        {
+          "club": "Barça Youth",
+          "start": 1989,
+          "end": 1997,
+          "firstClub": true
+        },
         {
           "club": "Barça U16",
           "start": 1997,
@@ -7097,11 +7894,17 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:13.721Z"
+      "fetchedAt": "2026-07-07T01:20:28.420Z"
     },
     "Lamine Yamal": {
       "id": "937958",
       "stints": [
+        {
+          "club": "Torreta Yth.",
+          "start": 2006,
+          "end": 2014,
+          "firstClub": true
+        },
         {
           "club": "Barça Youth",
           "start": 2014,
@@ -7123,11 +7926,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:17.145Z"
+      "fetchedAt": "2026-07-07T01:20:30.577Z"
     },
     "Frenkie de Jong": {
       "id": "326330",
       "stints": [
+        {
+          "club": "Willem II/RKC Y.",
+          "start": 2005,
+          "end": 2013,
+          "firstClub": true
+        },
         {
           "club": "Willem II/RKC-17",
           "start": 2013,
@@ -7174,11 +7983,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:19.832Z"
+      "fetchedAt": "2026-07-07T01:20:33.115Z"
     },
     "Phil Foden": {
       "id": "406635",
       "stints": [
+        {
+          "club": "Man City Youth",
+          "start": 2008,
+          "end": 2016,
+          "firstClub": true
+        },
         {
           "club": "Man City U18",
           "start": 2016,
@@ -7190,11 +8005,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:23.190Z"
+      "fetchedAt": "2026-07-07T01:20:35.245Z"
     },
     "Bruno Fernandes": {
       "id": "240306",
       "stints": [
+        {
+          "club": "Infesta For.",
+          "start": 1996,
+          "end": 2004,
+          "firstClub": true
+        },
         {
           "club": "Boavista CJ",
           "start": 2004,
@@ -7251,11 +8072,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:25.769Z"
+      "fetchedAt": "2026-07-07T01:20:37.778Z"
     },
     "Antonio Di Natale": {
       "id": "6031",
       "stints": [
+        {
+          "club": "Empoli U19",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "FC Empoli",
           "start": 1996,
@@ -7287,11 +8114,17 @@
           "end": 2016
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:28.345Z"
+      "fetchedAt": "2026-07-07T01:20:40.344Z"
     },
     "Juninho": {
       "id": "424676",
       "stints": [
+        {
+          "club": "Atlético-PR B",
+          "start": 2008,
+          "end": 2016,
+          "firstClub": true
+        },
         {
           "club": "Portimonense",
           "start": 2016,
@@ -7373,11 +8206,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:31.643Z"
+      "fetchedAt": "2026-07-07T01:20:42.759Z"
     },
     "Xavi": {
       "id": "7607",
       "stints": [
+        {
+          "club": "Barça Youth",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
         {
           "club": "Barça U16",
           "start": 1995,
@@ -7404,11 +8243,17 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:34.685Z"
+      "fetchedAt": "2026-07-07T01:20:45.446Z"
     },
     "Arjen Robben": {
       "id": "4360",
       "stints": [
+        {
+          "club": "Groningen Yth.",
+          "start": 1991,
+          "end": 1999,
+          "firstClub": true
+        },
         {
           "club": "Groningen U17",
           "start": 1999,
@@ -7450,11 +8295,17 @@
           "end": 2021
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:37.447Z"
+      "fetchedAt": "2026-07-07T01:20:47.901Z"
     },
     "Philipp Lahm": {
       "id": "2219",
       "stints": [
+        {
+          "club": "FTM Gern Yth.",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
         {
           "club": "B. München Yth.",
           "start": 1995,
@@ -7491,11 +8342,17 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:40.608Z"
+      "fetchedAt": "2026-07-07T01:20:50.311Z"
     },
     "Wesley Sneijder": {
       "id": "4673",
       "stints": [
+        {
+          "club": "Ajax Youth ",
+          "start": 1991,
+          "end": 1999,
+          "firstClub": true
+        },
         {
           "club": "Ajax U17",
           "start": 1999,
@@ -7542,11 +8399,17 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:43.191Z"
+      "fetchedAt": "2026-07-07T01:20:52.601Z"
     },
     "Robin van Persie": {
       "id": "4380",
       "stints": [
+        {
+          "club": "Excelsior Jeugd",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "Feyenoord Youth",
           "start": 1996,
@@ -7588,11 +8451,17 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:45.743Z"
+      "fetchedAt": "2026-07-07T01:20:55.108Z"
     },
     "Dirk Kuyt": {
       "id": "4010",
       "stints": [
+        {
+          "club": "Quick Boys Yth.",
+          "start": 1989,
+          "end": 1997,
+          "firstClub": true
+        },
         {
           "club": "Quick Boys U19",
           "start": 1997,
@@ -7629,11 +8498,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:48.402Z"
+      "fetchedAt": "2026-07-07T01:20:57.724Z"
     },
     "Giovanni van Bronckhorst": {
       "id": "3191",
       "stints": [
+        {
+          "club": "LMO",
+          "start": 1985,
+          "end": 1993,
+          "firstClub": true
+        },
         {
           "club": "Feyenoord",
           "start": 1993,
@@ -7680,11 +8555,17 @@
           "end": 2010
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:53.211Z"
+      "fetchedAt": "2026-07-07T01:21:02.090Z"
     },
     "Cesc Fàbregas": {
       "id": "8806",
       "stints": [
+        {
+          "club": "CE Mataró Youth",
+          "start": 1989,
+          "end": 1997,
+          "firstClub": true
+        },
         {
           "club": "Barça Youth",
           "start": 1997,
@@ -7726,11 +8607,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:55.706Z"
+      "fetchedAt": "2026-07-07T01:21:04.374Z"
     },
     "Tim Howard": {
       "id": "4267",
       "stints": [
+        {
+          "club": "NJ Imperials",
+          "start": 1990,
+          "end": 1998,
+          "firstClub": true
+        },
         {
           "club": "MetroStars",
           "start": 1998,
@@ -7777,11 +8664,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:35:58.669Z"
+      "fetchedAt": "2026-07-07T01:21:06.771Z"
     },
     "Yossi Benayoun": {
       "id": "7858",
       "stints": [
+        {
+          "club": "H. B. Sheva U19",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
         {
           "club": "Ajax U19",
           "start": 1995,
@@ -7873,11 +8766,17 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:02.430Z"
+      "fetchedAt": "2026-07-07T01:21:09.203Z"
     },
     "Hulk": {
       "id": "80562",
       "stints": [
+        {
+          "club": "São Paulo U17",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "Vitória U20",
           "start": 2003,
@@ -7939,11 +8838,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:05.200Z"
+      "fetchedAt": "2026-07-07T01:21:11.823Z"
     },
     "Michael Owen": {
       "id": "1397",
       "stints": [
+        {
+          "club": "Liverpool U18",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "Liverpool",
           "start": 1996,
@@ -7970,11 +8875,17 @@
           "end": 2013
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:07.906Z"
+      "fetchedAt": "2026-07-07T01:21:14.359Z"
     },
     "Marcelo": {
       "id": "44501",
       "stints": [
+        {
+          "club": "Fluminense U17",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Fluminense",
           "start": 2005,
@@ -7996,11 +8907,17 @@
           "end": 2024
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:11.459Z"
+      "fetchedAt": "2026-07-07T01:21:17.145Z"
     },
     "Patrick Vieira": {
       "id": "3183",
       "stints": [
+        {
+          "club": "Tours FC U19",
+          "start": 1985,
+          "end": 1993,
+          "firstClub": true
+        },
         {
           "club": "Cannes B",
           "start": 1993,
@@ -8037,11 +8954,17 @@
           "end": 2011
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:14.399Z"
+      "fetchedAt": "2026-07-07T01:21:19.629Z"
     },
     "Robert Pirès": {
       "id": "3185",
       "stints": [
+        {
+          "club": "Stade Reims U17",
+          "start": 1982,
+          "end": 1990,
+          "firstClub": true
+        },
         {
           "club": "Stade Reims B",
           "start": 1990,
@@ -8088,11 +9011,17 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:16.996Z"
+      "fetchedAt": "2026-07-07T01:21:22.217Z"
     },
     "Kurt Zouma": {
       "id": "157509",
       "stints": [
+        {
+          "club": "FC Vaulx Jugend",
+          "start": 2001,
+          "end": 2009,
+          "firstClub": true
+        },
         {
           "club": "St-Étienne U17",
           "start": 2009,
@@ -8164,11 +9093,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:19.500Z"
+      "fetchedAt": "2026-07-07T01:21:24.480Z"
     },
     "Claudio Pizarro": {
       "id": "532",
       "stints": [
+        {
+          "club": "AD Cantolao",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "CD Pesquero",
           "start": 1996,
@@ -8230,11 +9165,17 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:24.192Z"
+      "fetchedAt": "2026-07-07T01:21:27.169Z"
     },
     "Lukas Podolski": {
       "id": "15185",
       "stints": [
+        {
+          "club": "FC Jugend 07",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
         {
           "club": "1.FC Köln Yth.",
           "start": 1995,
@@ -8301,11 +9242,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:26.872Z"
+      "fetchedAt": "2026-07-07T01:21:29.479Z"
     },
     "Alexis Sánchez": {
       "id": "40433",
       "stints": [
+        {
+          "club": "Cobreloa U21",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Cobreloa",
           "start": 2005,
@@ -8387,11 +9334,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:29.808Z"
+      "fetchedAt": "2026-07-07T01:21:32.157Z"
     },
     "Casemiro": {
       "id": "16306",
       "stints": [
+        {
+          "club": "São Paulo U20",
+          "start": 2002,
+          "end": 2010,
+          "firstClub": true
+        },
         {
           "club": "São Paulo",
           "start": 2010,
@@ -8438,11 +9391,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:32.586Z"
+      "fetchedAt": "2026-07-07T01:21:34.455Z"
     },
     "Marcus Rashford": {
       "id": "258923",
       "stints": [
+        {
+          "club": "Man Utd Youth",
+          "start": 2006,
+          "end": 2014,
+          "firstClub": true
+        },
         {
           "club": "Man Utd U18",
           "start": 2014,
@@ -8474,11 +9433,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:35.262Z"
+      "fetchedAt": "2026-07-07T01:21:36.548Z"
     },
     "Mikel Oyarzabal": {
       "id": "351478",
       "stints": [
+        {
+          "club": "SD Eibar Youth",
+          "start": 2003,
+          "end": 2011,
+          "firstClub": true
+        },
         {
           "club": "Real Sociedad Y",
           "start": 2011,
@@ -8510,11 +9475,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:37.937Z"
+      "fetchedAt": "2026-07-07T01:21:38.833Z"
     },
     "Mason Mount": {
       "id": "346483",
       "stints": [
+        {
+          "club": "Chelsea Youth",
+          "start": 2007,
+          "end": 2015,
+          "firstClub": true
+        },
         {
           "club": "Chelsea U18",
           "start": 2015,
@@ -8556,11 +9527,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:40.515Z"
+      "fetchedAt": "2026-07-07T01:21:41.294Z"
     },
     "Andrés Iniesta": {
       "id": "7600",
       "stints": [
+        {
+          "club": "Albacete Balomp",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "Barça Youth",
           "start": 1996,
@@ -8597,11 +9574,17 @@
           "end": 2024
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:43.196Z"
+      "fetchedAt": "2026-07-07T01:21:43.618Z"
     },
     "Dominic Calvert-Lewin": {
       "id": "306024",
       "stints": [
+        {
+          "club": "Sheff Utd U18",
+          "start": 2006,
+          "end": 2014,
+          "firstClub": true
+        },
         {
           "club": "Sheff Utd",
           "start": 2014,
@@ -8638,11 +9621,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:45.954Z"
+      "fetchedAt": "2026-07-07T01:21:45.932Z"
     },
     "Marek Hamšík": {
       "id": "38593",
       "stints": [
+        {
+          "club": "Jupie FSMH Yth.",
+          "start": 1994,
+          "end": 2002,
+          "firstClub": true
+        },
         {
           "club": "Slovan U19",
           "start": 2002,
@@ -8689,11 +9678,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:48.892Z"
+      "fetchedAt": "2026-07-07T01:21:48.895Z"
     },
     "Ezequiel Lavezzi": {
       "id": "50570",
       "stints": [
+        {
+          "club": "CABJ U20",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "Estudiantes U20",
           "start": 2001,
@@ -8740,11 +9735,17 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:51.668Z"
+      "fetchedAt": "2026-07-07T01:21:51.178Z"
     },
     "Romelu Lukaku": {
       "id": "96341",
       "stints": [
+        {
+          "club": "Lierse SK Yth.",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Anderlecht Yth.",
           "start": 2006,
@@ -8831,11 +9832,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:54.003Z"
+      "fetchedAt": "2026-07-07T01:21:53.616Z"
     },
     "Rivaldo": {
       "id": "3372",
       "stints": [
+        {
+          "club": "Santa Cruz U20",
+          "start": 1982,
+          "end": 1990,
+          "firstClub": true
+        },
         {
           "club": "Santa Cruz-PE",
           "start": 1990,
@@ -8932,11 +9939,17 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:56.681Z"
+      "fetchedAt": "2026-07-07T01:21:56.279Z"
     },
     "Carlos Tevez": {
       "id": "4276",
       "stints": [
+        {
+          "club": "All Boys U20",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "CABJ U20",
           "start": 1996,
@@ -8993,11 +10006,17 @@
           "end": 2021
         }
       ],
-      "fetchedAt": "2026-07-04T03:36:59.198Z"
+      "fetchedAt": "2026-07-07T01:21:58.935Z"
     },
     "Javier Mascherano": {
       "id": "19981",
       "stints": [
+        {
+          "club": "River Plate II",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "River Plate",
           "start": 2003,
@@ -9044,11 +10063,17 @@
           "end": 2020
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:01.977Z"
+      "fetchedAt": "2026-07-07T01:22:01.308Z"
     },
     "Álvaro Morata": {
       "id": "128223",
       "stints": [
+        {
+          "club": "Atlético Yth.",
+          "start": 1999,
+          "end": 2007,
+          "firstClub": true
+        },
         {
           "club": "Getafe CF Youth",
           "start": 2007,
@@ -9145,11 +10170,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:04.360Z"
+      "fetchedAt": "2026-07-07T01:22:03.584Z"
     },
     "Ivan Rakitić": {
       "id": "32467",
       "stints": [
+        {
+          "club": "FC Basel U18",
+          "start": 1996,
+          "end": 2004,
+          "firstClub": true
+        },
         {
           "club": "FC Basel U21",
           "start": 2004,
@@ -9191,11 +10222,17 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:08.337Z"
+      "fetchedAt": "2026-07-07T01:22:05.905Z"
     },
     "Ever Banega": {
       "id": "12249",
       "stints": [
+        {
+          "club": "Boca Juniors II",
+          "start": 1999,
+          "end": 2007,
+          "firstClub": true
+        },
         {
           "club": "Boca Juniors",
           "start": 2007,
@@ -9257,11 +10294,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:10.798Z"
+      "fetchedAt": "2026-07-07T01:22:08.507Z"
     },
     "Manuel Neuer": {
       "id": "17259",
       "stints": [
+        {
+          "club": "Schalke 04 Yth.",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "Schalke 04 U17",
           "start": 2001,
@@ -9283,11 +10326,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:13.327Z"
+      "fetchedAt": "2026-07-07T01:22:11.496Z"
     },
     "Mats Hummels": {
       "id": "39728",
       "stints": [
+        {
+          "club": "B. München Yth.",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "FC Bayern U17",
           "start": 2003,
@@ -9339,11 +10388,17 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:16.079Z"
+      "fetchedAt": "2026-07-07T01:22:13.842Z"
     },
     "Ousmane Dembélé": {
       "id": "288230",
       "stints": [
+        {
+          "club": "Évreux Jugend",
+          "start": 2002,
+          "end": 2010,
+          "firstClub": true
+        },
         {
           "club": "Rennes Jugend",
           "start": 2010,
@@ -9380,11 +10435,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:18.854Z"
+      "fetchedAt": "2026-07-07T01:22:16.098Z"
     },
     "Philippe Coutinho": {
       "id": "80444",
       "stints": [
+        {
+          "club": "Inter",
+          "start": 2000,
+          "end": 2008,
+          "firstClub": true
+        },
         {
           "club": "Vasco da Gama",
           "start": 2008,
@@ -9471,11 +10532,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:21.442Z"
+      "fetchedAt": "2026-07-07T01:22:18.490Z"
     },
     "Trent Alexander-Arnold": {
       "id": "314353",
       "stints": [
+        {
+          "club": "Liverpool Youth",
+          "start": 2007,
+          "end": 2015,
+          "firstClub": true
+        },
         {
           "club": "Liverpool U18",
           "start": 2015,
@@ -9492,11 +10559,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:23.815Z"
+      "fetchedAt": "2026-07-07T01:22:20.787Z"
     },
     "Daniel Sturridge": {
       "id": "47082",
       "stints": [
+        {
+          "club": "Man City U18",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Man City",
           "start": 2006,
@@ -9548,11 +10621,17 @@
           "end": 2022
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:26.505Z"
+      "fetchedAt": "2026-07-07T01:22:23.460Z"
     },
     "Gonzalo Higuaín": {
       "id": "39153",
       "stints": [
+        {
+          "club": "River Plate U20",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "River Plate II",
           "start": 2005,
@@ -9604,11 +10683,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:29.088Z"
+      "fetchedAt": "2026-07-07T01:22:26.080Z"
     },
     "Dries Mertens": {
       "id": "56416",
       "stints": [
+        {
+          "club": "Anderlecht Yth.",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "KAA Gent U17",
           "start": 2003,
@@ -9665,11 +10750,17 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:31.334Z"
+      "fetchedAt": "2026-07-07T01:22:28.397Z"
     },
     "Lorenzo Insigne": {
       "id": "133964",
       "stints": [
+        {
+          "club": "SSC Napoli Yout",
+          "start": 1999,
+          "end": 2007,
+          "firstClub": true
+        },
         {
           "club": "Napoli U17",
           "start": 2007,
@@ -9726,11 +10817,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:33.905Z"
+      "fetchedAt": "2026-07-07T01:22:30.682Z"
     },
     "Xabi Alonso": {
       "id": "7476",
       "stints": [
+        {
+          "club": "Antiguoko Yth",
+          "start": 1990,
+          "end": 1998,
+          "firstClub": true
+        },
         {
           "club": "Antiguoko U19",
           "start": 1998,
@@ -9772,11 +10869,17 @@
           "end": 2017
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:36.493Z"
+      "fetchedAt": "2026-07-07T01:22:33.122Z"
     },
     "Leroy Sané": {
       "id": "192565",
       "stints": [
+        {
+          "club": "Wattensch. Yth.",
+          "start": 1997,
+          "end": 2005,
+          "firstClub": true
+        },
         {
           "club": "Schalke 04 Yth.",
           "start": 2005,
@@ -9818,11 +10921,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:39.543Z"
+      "fetchedAt": "2026-07-07T01:22:35.724Z"
     },
     "Klaas-Jan Huntelaar": {
       "id": "4357",
       "stints": [
+        {
+          "club": "VV Hummelo Yth.",
+          "start": 1986,
+          "end": 1994,
+          "firstClub": true
+        },
         {
           "club": "Graafschap Yth.",
           "start": 1994,
@@ -9899,11 +11008,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:42.833Z"
+      "fetchedAt": "2026-07-07T01:22:38.308Z"
     },
     "Patrick Kluivert": {
       "id": "4385",
       "stints": [
+        {
+          "club": "Ajax Youth ",
+          "start": 1983,
+          "end": 1991,
+          "firstClub": true
+        },
         {
           "club": "Ajax U17",
           "start": 1991,
@@ -9950,11 +11065,17 @@
           "end": 2008
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:45.683Z"
+      "fetchedAt": "2026-07-07T01:22:40.444Z"
     },
     "Juan Cuadrado": {
       "id": "91970",
       "stints": [
+        {
+          "club": "Medellín U20",
+          "start": 2000,
+          "end": 2008,
+          "firstClub": true
+        },
         {
           "club": "Indep. Medellín",
           "start": 2008,
@@ -10036,11 +11157,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:48.262Z"
+      "fetchedAt": "2026-07-07T01:22:42.681Z"
     },
     "Cody Gakpo": {
       "id": "434675",
       "stints": [
+        {
+          "club": "PSV Yth.",
+          "start": 2007,
+          "end": 2015,
+          "firstClub": true
+        },
         {
           "club": "PSV U17",
           "start": 2015,
@@ -10062,11 +11189,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:50.860Z"
+      "fetchedAt": "2026-07-07T01:22:44.941Z"
     },
     "Lilian Thuram": {
       "id": "3521",
       "stints": [
+        {
+          "club": "Melun FC Jugend",
+          "start": 1980,
+          "end": 1988,
+          "firstClub": true
+        },
         {
           "club": "Ent. Mel-Font",
           "start": 1988,
@@ -10098,11 +11231,17 @@
           "end": 2008
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:53.234Z"
+      "fetchedAt": "2026-07-07T01:22:47.148Z"
     },
     "Gerard Piqué": {
       "id": "18944",
       "stints": [
+        {
+          "club": "Barça Youth",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "Barça U16",
           "start": 2001,
@@ -10134,11 +11273,17 @@
           "end": 2023
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:55.790Z"
+      "fetchedAt": "2026-07-07T01:22:49.744Z"
     },
     "Gabriel Milito": {
       "id": "7968",
       "stints": [
+        {
+          "club": "Indep'te II",
+          "start": 1989,
+          "end": 1997,
+          "firstClub": true
+        },
         {
           "club": "Independiente",
           "start": 1997,
@@ -10160,11 +11305,17 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-04T03:37:58.611Z"
+      "fetchedAt": "2026-07-07T01:22:52.303Z"
     },
     "Edwin van der Sar": {
       "id": "3516",
       "stints": [
+        {
+          "club": "Foreholte Yth.",
+          "start": 1977,
+          "end": 1985,
+          "firstClub": true
+        },
         {
           "club": "VV Noordwijk Yo",
           "start": 1985,
@@ -10196,11 +11347,17 @@
           "end": 2011
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:01.272Z"
+      "fetchedAt": "2026-07-07T01:22:55.304Z"
     },
     "Lukas Jutkiewicz": {
       "id": "33507",
       "stints": [
+        {
+          "club": "Swindon U18",
+          "start": 1998,
+          "end": 2006,
+          "firstClub": true
+        },
         {
           "club": "Swindon Town",
           "start": 2006,
@@ -10282,11 +11439,17 @@
           "end": 2025
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:05.103Z"
+      "fetchedAt": "2026-07-07T01:22:58.116Z"
     },
     "Mark van Bommel": {
       "id": "3515",
       "stints": [
+        {
+          "club": "Fortuna U19",
+          "start": 1985,
+          "end": 1993,
+          "firstClub": true
+        },
         {
           "club": "Fortuna Sittard",
           "start": 1993,
@@ -10318,11 +11481,17 @@
           "end": 2013
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:07.917Z"
+      "fetchedAt": "2026-07-07T01:23:00.625Z"
     },
     "Santi Cazorla": {
       "id": "15799",
       "stints": [
+        {
+          "club": "Real Oviedo You",
+          "start": 1993,
+          "end": 2001,
+          "firstClub": true
+        },
         {
           "club": "Oviedo U19",
           "start": 2001,
@@ -10374,11 +11543,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:10.722Z"
+      "fetchedAt": "2026-07-07T01:23:03.287Z"
     },
     "Sergei Rebrov": {
       "id": 3122,
       "stints": [
+        {
+          "club": "Shakhtar U17",
+          "start": 1983,
+          "end": 1991,
+          "firstClub": true
+        },
         {
           "club": "Shakhtar D.",
           "start": 1991,
@@ -10425,11 +11600,17 @@
           "end": 2010
         }
       ],
-      "fetchedAt": "2026-07-06T23:17:29.394Z"
+      "fetchedAt": "2026-07-07T01:23:05.559Z"
     },
     "Folarin Balogun": {
       "id": "503770",
       "stints": [
+        {
+          "club": "Arsenal Youth",
+          "start": 2009,
+          "end": 2017,
+          "firstClub": true
+        },
         {
           "club": "Arsenal U18",
           "start": 2017,
@@ -10471,11 +11652,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:13.525Z"
+      "fetchedAt": "2026-07-07T01:23:07.890Z"
     },
     "Pablo Aimar": {
       "id": "3411",
       "stints": [
+        {
+          "club": "River Plate II",
+          "start": 1989,
+          "end": 1997,
+          "firstClub": true
+        },
         {
           "club": "River Plate",
           "start": 1997,
@@ -10507,11 +11694,17 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:16.475Z"
+      "fetchedAt": "2026-07-07T01:23:10.299Z"
     },
     "Pep Guardiola": {
       "id": "5950",
       "stints": [
+        {
+          "club": "G.Manresa Yth.",
+          "start": 1976,
+          "end": 1984,
+          "firstClub": true
+        },
         {
           "club": "Barça U16",
           "start": 1984,
@@ -10563,11 +11756,17 @@
           "end": 2006
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:19.072Z"
+      "fetchedAt": "2026-07-07T01:23:12.912Z"
     },
     "Juan Román Riquelme": {
       "id": "3854",
       "stints": [
+        {
+          "club": "Argentinos II",
+          "start": 1988,
+          "end": 1996,
+          "firstClub": true
+        },
         {
           "club": "Boca Juniors II",
           "start": 1996,
@@ -10624,7 +11823,7 @@
           "end": 2015
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:21.534Z"
+      "fetchedAt": "2026-07-07T01:23:15.155Z"
     },
     "Roy Keane": {
       "id": "3396",
@@ -10655,11 +11854,17 @@
           "end": 2006
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:24.379Z"
+      "fetchedAt": "2026-07-07T01:23:17.492Z"
     },
     "Alan Shearer": {
       "id": "3110",
       "stints": [
+        {
+          "club": "Southampton U18",
+          "start": 1980,
+          "end": 1988,
+          "firstClub": true
+        },
         {
           "club": "Southampton",
           "start": 1988,
@@ -10676,11 +11881,17 @@
           "end": 2006
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:27.084Z"
+      "fetchedAt": "2026-07-07T01:23:19.814Z"
     },
     "Peter Crouch": {
       "id": "4072",
       "stints": [
+        {
+          "club": "QPR Academy",
+          "start": 1987,
+          "end": 1995,
+          "firstClub": true
+        },
         {
           "club": "Tottenham Yth.",
           "start": 1995,
@@ -10772,11 +11983,17 @@
           "end": 2019
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:29.689Z"
+      "fetchedAt": "2026-07-07T01:23:22.238Z"
     },
     "Marco Asensio": {
       "id": "296622",
       "stints": [
+        {
+          "club": "RCD Mallorca Yo",
+          "start": 2004,
+          "end": 2012,
+          "firstClub": true
+        },
         {
           "club": "Mallorca U19",
           "start": 2012,
@@ -10828,11 +12045,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:32.490Z"
+      "fetchedAt": "2026-07-07T01:23:24.507Z"
     },
     "Jorginho": {
       "id": "102017",
       "stints": [
+        {
+          "club": "Verona U19",
+          "start": 2002,
+          "end": 2010,
+          "firstClub": true
+        },
         {
           "club": "Hellas Verona",
           "start": 2010,
@@ -10869,11 +12092,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:35.173Z"
+      "fetchedAt": "2026-07-07T01:23:27.111Z"
     },
     "Martin Ødegaard": {
       "id": "316264",
       "stints": [
+        {
+          "club": "Godset Yth. ",
+          "start": 2006,
+          "end": 2014,
+          "firstClub": true
+        },
         {
           "club": "Strømsgodset II",
           "start": 2014,
@@ -10940,11 +12169,17 @@
           "end": 9999
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:37.980Z"
+      "fetchedAt": "2026-07-07T01:23:29.438Z"
     },
     "Marco van Basten": {
       "id": "74471",
       "stints": [
+        {
+          "club": "Elinkwijk U19",
+          "start": 1973,
+          "end": 1981,
+          "firstClub": true
+        },
         {
           "club": "Ajax U19",
           "start": 1981,
@@ -10961,11 +12196,17 @@
           "end": 1995
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:40.543Z"
+      "fetchedAt": "2026-07-07T01:23:31.882Z"
     },
     "Frank Rijkaard": {
       "id": "70667",
       "stints": [
+        {
+          "club": "DWS Youth",
+          "start": 1971,
+          "end": 1979,
+          "firstClub": true
+        },
         {
           "club": "Ajax U19",
           "start": 1979,
@@ -11002,11 +12243,17 @@
           "end": 1995
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:43.051Z"
+      "fetchedAt": "2026-07-07T01:23:34.116Z"
     },
     "Wim Jonk": {
       "id": "101046",
       "stints": [
+        {
+          "club": "Volendam U19",
+          "start": 1978,
+          "end": 1986,
+          "firstClub": true
+        },
         {
           "club": "FC Volendam",
           "start": 1986,
@@ -11033,11 +12280,17 @@
           "end": 2001
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:45.591Z"
+      "fetchedAt": "2026-07-07T01:23:36.397Z"
     },
     "Jordi Alba": {
       "id": "69751",
       "stints": [
+        {
+          "club": "Barça Youth",
+          "start": 1995,
+          "end": 2003,
+          "firstClub": true
+        },
         {
           "club": "Barça U16",
           "start": 2003,
@@ -11084,11 +12337,17 @@
           "end": 2026
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:48.490Z"
+      "fetchedAt": "2026-07-07T01:23:39.006Z"
     },
     "Filippo Inzaghi": {
       "id": "5821",
       "stints": [
+        {
+          "club": "Piacenza U19",
+          "start": 1983,
+          "end": 1991,
+          "firstClub": true
+        },
         {
           "club": "Piacenza",
           "start": 1991,
@@ -11135,7 +12394,7 @@
           "end": 2012
         }
       ],
-      "fetchedAt": "2026-07-04T03:38:52.344Z"
+      "fetchedAt": "2026-07-07T01:23:41.813Z"
     }
   },
   "clubs": {
@@ -88325,5 +89584,6 @@
         "name": "Héctor Hernández"
       }
     ]
-  }
+  },
+  "schema": 2
 }
