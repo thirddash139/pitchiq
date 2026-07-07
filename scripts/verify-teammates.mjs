@@ -37,28 +37,41 @@ const ID_OVERRIDES = {
 // Find IDs at transfermarkt.com club URL: /verein/{id}
 const CLUB_ID_OVERRIDES = {
   "NY Red Bulls": 626,
-  // "Inter Milan": 46,
-  // "Man City": 281,
+  "Atlético Madrid": 13,
+  "LAFC": 51828,
+  "Anzhi": 2700,
 };
 
+// Aliases must be FULL alternative club names, never single generic words.
+// (A one-word alias like "milan" or "inter" substring-matches the wrong clubs:
+// "milan" hits Inter Milan, "inter" hits Inter Miami — phantom overlaps.)
 const CLUB_ALIASES = {
   "man united": ["manchester united", "man utd"],
   "man city": ["manchester city"],
-  "inter milan": ["inter", "internazionale"],
-  "ac milan": ["milan"],
+  "inter milan": ["internazionale", "inter mailand"],
+  "ac milan": ["ac mailand"],
   "psg": ["paris saint-germain", "paris sg"],
-  "bayern munich": ["bayern münchen", "bayern munich", "fc bayern"],
-  "borussia dortmund": ["borussia dortmund", "bvb"],
+  "bayern munich": ["bayern münchen", "fc bayern"],
+  "borussia dortmund": ["bvb 09"],
   "atlético madrid": ["atlético de madrid", "atletico madrid"],
-  "sporting cp": ["sporting lisbon", "sporting cp"],
+  "sporting cp": ["sporting lisbon", "sporting clube"],
   "ny red bulls": ["new york red bulls"],
   "nycfc": ["new york city"],
-  "la galaxy": ["los angeles galaxy", "la galaxy"],
+  "la galaxy": ["los angeles galaxy"],
   "dc united": ["d.c. united"],
-  "schalke 04": ["fc schalke 04", "schalke"],
-  "roma": ["as roma", "roma"],
+  "schalke 04": ["fc schalke 04"],
+  "roma": ["as roma"],
   "al nassr": ["al-nassr"],
   "al ittihad": ["al-ittihad"],
+  "shanghai shenhua": ["shanghai greenland shenhua", "shanghai greenland"],
+  "dinamo zagreb": ["gnk dinamo zagreb", "nk dinamo zagreb"],
+  "nacional": ["nacional montevideo", "club nacional de football"],
+  "bordeaux": ["girondins bordeaux", "girondins de bordeaux", "fc girondins"],
+  "las palmas": ["ud las palmas"],
+  "celtic": ["celtic fc", "celtic glasgow"],
+  "porto": ["fc porto"],
+  "lyon": ["olympique lyon", "olympique lyonnais"],
+  "fiorentina": ["acf fiorentina", "ac fiorentina"],
 };
 
 // ---------- helpers ----------
@@ -66,12 +79,18 @@ const CLUB_ALIASES = {
 const norm = (s) =>
   s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
 
+function containsAsWords(haystack, needle) {
+  // substring match anchored at word boundaries: "nacional" must NOT match "internacional"
+  const re = new RegExp(`(^|[^a-z0-9])${needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}($|[^a-z0-9])`);
+  return re.test(haystack);
+}
+
 function clubMatches(datasetClub, tmClub) {
   const d = norm(datasetClub.replace(/\s*\(loan\)\s*/i, ""));
   const t = norm(tmClub);
-  if (t.includes(d) || d.includes(t)) return true;
+  if (containsAsWords(t, d) || containsAsWords(d, t)) return true;
   const aliases = CLUB_ALIASES[d] || [];
-  return aliases.some((a) => t.includes(norm(a)));
+  return aliases.some((a) => containsAsWords(t, norm(a)));
 }
 
 function parseYears(str) {
@@ -362,8 +381,21 @@ function checkConnection(answer, mate, club, yearsStr, cache) {
   if (!B?.id) return { status: "UNRESOLVED", msg: `Could not resolve "${mate}" on Transfermarkt` };
 
   const windows = computeOverlapWindows(A.stints, B.stints, club);
-  if (!windows.length)
-    return { status: "NO_OVERLAP", msg: `${mate} + ${answer} — no shared window found at ${club}` };
+  if (!windows.length) {
+    // Diagnostic dump: what was each player actually doing around the listed years?
+    // Makes every flag self-explanatory: club-name mismatch vs wrong player vs genuine error.
+    const listed = parseYears(yearsStr);
+    const near = (stints) => {
+      const relevant = listed
+        ? stints.filter((s) => s.start <= (listed.end === 9999 ? CURRENT_YEAR : listed.end) + 2 && (s.end === 9999 ? CURRENT_YEAR : s.end) >= listed.start - 2)
+        : stints;
+      return relevant.map((s) => `${s.club} ${fmtYears(s)}`).join("; ") || "nothing in range";
+    };
+    return {
+      status: "NO_OVERLAP",
+      msg: `${mate} + ${answer} — no shared window found at ${club}. ${answer}: [${near(A.stints)}] | ${mate}: [${near(B.stints)}]`,
+    };
+  }
 
   const listed = parseYears(yearsStr);
   if (!listed) {
