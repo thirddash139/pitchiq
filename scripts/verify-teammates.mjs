@@ -31,6 +31,9 @@ const ID_OVERRIDES = {
   "Son Heung-min": 91845,
   "Sergei Rebrov": 3122,
   "Ronaldo Nazário": 3140,
+  "Rafael Márquez": 2904,
+  "Eduardo da Silva": 24633,
+  "Juninho": 5354,
 };
 
 // Club-name → Transfermarkt club ID pins for ambiguous search results.
@@ -63,7 +66,7 @@ const CLUB_ALIASES = {
   "roma": ["as roma"],
   "al nassr": ["al-nassr"],
   "al ittihad": ["al-ittihad"],
-  "shanghai shenhua": ["shanghai greenland shenhua", "shanghai greenland"],
+  "shanghai shenhua": ["shanghai greenland shenhua", "shanghai greenland", "sh shenhua"],
   "dinamo zagreb": ["gnk dinamo zagreb", "nk dinamo zagreb"],
   "nacional": ["nacional montevideo", "club nacional de football"],
   "bordeaux": ["girondins bordeaux", "girondins de bordeaux", "fc girondins"],
@@ -89,6 +92,9 @@ function clubMatches(datasetClub, tmClub) {
   const d = norm(datasetClub.replace(/\s*\(loan\)\s*/i, ""));
   const t = norm(tmClub);
   if (containsAsWords(t, d) || containsAsWords(d, t)) return true;
+  // TM abbreviates "New York Red Bulls" to just "New York" in transfer lists;
+  // guard against matching NYCFC ("New York City")
+  if (d === "ny red bulls" && containsAsWords(t, "new york") && !t.includes("city")) return true;
   const aliases = CLUB_ALIASES[d] || [];
   return aliases.some((a) => containsAsWords(t, norm(a)));
 }
@@ -118,7 +124,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // ---------- cache ----------
 
-const CACHE_SCHEMA = 2; // bump when stint-building logic changes → forces player re-fetch
+const CACHE_SCHEMA = 3; // bump when stint-building logic changes → forces player re-fetch
 
 function loadCache() {
   try {
@@ -152,23 +158,31 @@ async function resolveId(name) {
   return (exact || results[0]).id;
 }
 
-// Build stints from transfer history: each transfer's clubTo starts a stint,
-// closed by the date of the next transfer.
-// FIRST-CLUB FIX: a player's first club has no incoming transfer record, so it
-// would otherwise never become a stint (this broke Suárez@Nacional, Eduardo@Dinamo).
-// The earliest transfer's ORIGIN club is the first club — added as a stint ending
-// at that transfer, with a conservative 8-year lookback for the start.
+// Build stints TWO ways and union them, because Transfermarkt's transfer list
+// contains end-of-loan "return" records that poison a pure timeline model
+// (e.g. Mbappé's loan-end sent him to "Monaco 2018-2024" on paper).
+//
+// 1) TIMELINE: at clubTo from transfer date until the next transfer (any club).
+// 2) CHAIN: at clubTo from transfer date until the next transfer DEPARTING FROM
+//    that club (clubFrom === clubTo). Immune to return-record poison: a player's
+//    real departure is the transfer that leaves the club, not a paper return.
+//
+// Union is deliberately generous: it can't create clubs a player never had,
+// so genuine NO_OVERLAP errors still flag; it only repairs false alarms.
+// FIRST-CLUB FIX: earliest transfer's origin club, 8-year lookback.
 async function fetchStints(id) {
   const data = await get(`/players/${id}/transfers`);
   const transfers = (data.transfers || [])
-    .filter((t) => t.date)
+    .filter((t) => t.date && !t.upcoming)
     .sort((a, b) => new Date(a.date) - new Date(b.date));
   const stints = [];
   const junk = /retired|without club|career break|unknown|own youth/i;
+  const toName = (t) => t.clubTo?.name || t.to?.clubName;
+  const fromName = (t) => t.clubFrom?.name || t.from?.clubName;
 
   if (transfers.length) {
     const first = transfers[0];
-    const originClub = first.clubFrom?.name || first.from?.clubName;
+    const originClub = fromName(first);
     if (originClub && !junk.test(originClub)) {
       const end = new Date(first.date).getFullYear();
       stints.push({ club: originClub, start: end - 8, end, firstClub: true });
@@ -177,13 +191,22 @@ async function fetchStints(id) {
 
   for (let i = 0; i < transfers.length; i++) {
     const t = transfers[i];
-    const clubName = t.clubTo?.name || t.to?.clubName;
-    if (!clubName) continue;
-    if (junk.test(clubName)) continue;
+    const clubName = toName(t);
+    if (!clubName || junk.test(clubName)) continue;
     const start = new Date(t.date).getFullYear();
+
+    // timeline stint: until next transfer of any kind
     const next = transfers[i + 1];
-    const end = next ? new Date(next.date).getFullYear() : 9999;
-    stints.push({ club: clubName, start, end });
+    const timelineEnd = next ? new Date(next.date).getFullYear() : 9999;
+    stints.push({ club: clubName, start, end: timelineEnd });
+
+    // chain stint: until next transfer departing FROM this club
+    const departure = transfers.slice(i + 1).find((x) => {
+      const f = fromName(x);
+      return f && norm(f) === norm(clubName);
+    });
+    const chainEnd = departure ? new Date(departure.date).getFullYear() : 9999;
+    if (chainEnd !== timelineEnd) stints.push({ club: clubName, start, end: chainEnd });
   }
   return stints;
 }
